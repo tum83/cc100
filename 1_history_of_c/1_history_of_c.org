@@ -1,0 +1,5 @@
+#+TITLE:History of C 
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:King, ch. 1.1
+#+STARTUP:overview
+#+OPTIONS:hideblocks

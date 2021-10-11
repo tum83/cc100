@@ -1,5 +1,45 @@
 #+TITLE:History of C 
 #+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE:King, ch. 1.1
+#+SUBTITLE:King, ch. 1
 #+STARTUP:overview
 #+OPTIONS:hideblocks
+
+* What will you learn?
+
+  * What is C?
+  * What is its origin?
+  * What is its importance?
+  * What's the difference to C++?
+  * Why are we not just learning C++?
+  * What are C's strengths and weaknesses?
+  * Why are you learning C from me?
+  * What's next in the course?
+
+  Source: [[king][King (2008) ch.1]]
+
+* What is C?
+
+  C is a widely used high-level programming language developed in the
+  early 1970s at Bell Laboratories. 
+  
+* Where does C come from?
+
+  Cp. K&R ([[kr][Kernighan/Ritchie, 1978]])
+
+* How important is C?
+
+* What is the difference between C and C++?
+
+* Why are we not just learning C++?
+  
+* Why am I teaching C/C++?
+
+* What's next?
+  
+* References
+
+  <<king>> King (2008). C Programming - A Modern
+  Approach. Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]].
+
+  <<kr>> Kernighan/Ritchie (1978). The C Programming
+  Language. Prentice Hall. [[https://en.wikipedia.org/wiki/The_C_Programming_Language][Online: wikipedia.org]].

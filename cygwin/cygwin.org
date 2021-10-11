@@ -1,0 +1,37 @@
+#+TITLE:Cygwin environment
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:Cygwin Linux-like environment for Windows
+#+STARTUP:overview
+#+OPTIONS:hideblocks
+* Installing gcc
+
+  Source: [[https://stackoverflow.com/questions/47215330/how-do-i-install-gcc-on-cygwin][stackoverflow]]
+
+  #+begin_quote
+  * You should launch the installer of cygwin setup-x86_64.exe (if you
+    have deleted it from your computer than just download it from
+    https://cygwin.com/install.html).
+  * In the Cygwin Setup dialog window just press Next, and press Next
+    again. In dialog "Cygwin Setup - Choose Installation Directory"
+    you should select root directory in wich CygWin has been installed
+    & press Next, and again, and again & again.
+  * Your will see dialog "Cygwin Setup - Select Package", in the
+    "View" combobox you should select "Full", and in the "Search" edit
+    you should enter "gcc". Further in the list below in "Package"
+    column find "gcc-core" row & change combobox in "New" column from
+    "Skip" value to the version of gcc wich you need.
+  * Further press Next & you will see "CygWin Setup - Review and
+    confirm changes" dialog. In this dialog could be presented other
+    packages besides gcc-core, this is some updates & you should leave
+    it without changes (my own recommendation). But you must be sure
+    that gcc-core is presented in change-list, than just press Next
+    button & wait for ending of installation.
+
+  That's all. Try to start bash or cmd & enter something like "gcc
+  --version". This instruction could be used for installation of other
+  useful things of CygWin, for example "make". Good luck!
+  #+end_quote
+
+* Editing with vi
+
+  https://www.cs.colostate.edu/helpdocs/vi.html 

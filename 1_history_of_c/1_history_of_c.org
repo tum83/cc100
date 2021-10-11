@@ -1,6 +1,6 @@
 #+TITLE:History of C 
 #+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE:King, ch. 1
+#+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview
 #+OPTIONS:hideblocks
 

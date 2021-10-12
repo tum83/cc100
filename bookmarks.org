@@ -19,3 +19,23 @@
    vocabulary, writing style, mathematics, number of citations etc. If
    you find any of these interesting and want to use them for your
    research, you might ask me why I assigned a particular level.
+
+** Udemy course
+
+   * [ ] [[https://blog.udemy.com/what-is-c-programming/][What is C programming? Learn the basics (2021)]]
+   * [ ] [[https://www.udemy.com/course/c-programming-for-beginners/][Udemy Course: Huw Collingbourne (2019)]]
+** IDEs
+
+   * [[https://codelite.org][CodeLite]]: "CodeLite is an open source, free, cross platform IDE
+     specialized in C, C++, PHP and JavaScript (mainly for backend
+     developers using Node.js) programming languages which runs best
+     on all major Platforms ( OSX, Windows and Linux)."
+   * Download 64-bit version - exe file. Run it. Accept warning
+     condition. Accept license. Accept path suggestions. Have
+     additional shortcuts created (desktop and launcher).
+   * Welcome screen asks for your profile (intended use): pick C/C++
+     development.
+   * Setup compilers: scan for existing compilers or install MinGW
+     compiler. Download newer (stable) version if you like. Check out
+     forums and wiki (both on the web).
+   

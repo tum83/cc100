@@ -2,35 +2,31 @@
 
 # What's in this repo?
 
--   Repository for DSC 482.01 - Artificial Intelligence
--   Emacs Org-mode files (`.org`) are rendered as Markdown.
--   Markdown files (`.md`) are uploaded for the mobile app.
+-   Repository for CSC 100 - Introduction to Programming in C/C++
+-   Emacs Org-mode files are rendered as Markdown.
 -   For a TOC, open the bullet point list menu
 
 
-## [Schedule](https://github.com/birkenkrahe/ai482/blob/main/schedule.md) of the course (up to date)
+## [Schedule](https://github.com/birkenkrahe/dsc101/blob/main/schedule.md) of the course (up to date)
 
 
-## [Agenda](https://github.com/birkenkrahe/ai482/blob/main/agenda.md) for every session
+## [Agenda](https://github.com/birkenkrahe/dsc101/blob/main/agenda.md) for every session
 
 
-## [AI Bookmarks](https://github.com/birkenkrahe/ai482/blob/main/bookmarks.md) for your projects
+## [Course diary](https://github.com/birkenkrahe/dsc101/blob/main/diary.md) for further reading
 
 
-## [AI Course diary](https://github.com/birkenkrahe/ai482/blob/main/diary.md) for further reading
+## [Discussion forums](https://github.com/birkenkrahe/dsc101/discussions) for assignments
 
 
-## [AI Discussion forums](https://github.com/birkenkrahe/ai482/discussions) for assignments
+## [Frequently Asked Questions (FAQ)](https://github.com/birkenkrahe/dsc101/blob/main/FAQ.md)
 
 
-## [AI Frequently Asked Questions (FAQ)](https://github.com/birkenkrahe/ai482/blob/main/FAQ.md)
-
-
-## [AI Syllabus](https://github.com/birkenkrahe/ai482/blob/main/syllabus.md) for a course overview
+## [Syllabus](https://github.com/birkenkrahe/dsc101/blob/main/syllabus.md) for a course overview
 
 
 ## History
 
-First offered @Lyon: Fall 2021 (Undergrad). To be offered: Fall
-Semester 2022, 2024, 2026, 2028. Course number DSC 482.
+First offered @Lyon: Spring 2022 (Undergrad). To be offered:
+Spring 2024, 2026, 2028.
 

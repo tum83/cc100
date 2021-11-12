@@ -31,6 +31,10 @@
 * What is the difference between C and C++?
 
   Source: [[lemonaki][Lemonaki, 2021]]
+
+  Ritchie: [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Space Travel game 1969]]
+
+  Torvalds: [[https://medium.com/nerd-for-tech/linus-torvalds-c-is-really-a-terrible-language-2248b839bee3][C++ is really a terrible language]]
   
 * Why are we not just learning C++?
   
@@ -46,4 +50,5 @@
   <<kr>> Kernighan/Ritchie (1978). The C Programming
   Language. Prentice Hall. [[https://en.wikipedia.org/wiki/The_C_Programming_Language][Online: wikipedia.org]].
 
-  <<lemonaki>> 
+  <<lemonaki>> Lemonaki, Dionysia (November 4, 2021). C vs. C++ -
+  What's The Difference [blog]. URL: [[https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/][freecodecamp.org.]]

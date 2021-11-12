@@ -30,10 +30,12 @@
 
 * What is the difference between C and C++?
 
+  Source: [[lemonaki][Lemonaki, 2021]]
+  
 * Why are we not just learning C++?
   
 * Why am I teaching C/C++?
-
+  
 * What's next?
   
 * References
@@ -43,3 +45,5 @@
 
   <<kr>> Kernighan/Ritchie (1978). The C Programming
   Language. Prentice Hall. [[https://en.wikipedia.org/wiki/The_C_Programming_Language][Online: wikipedia.org]].
+
+  <<lemonaki>> 

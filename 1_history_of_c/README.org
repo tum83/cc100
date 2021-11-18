@@ -2,9 +2,10 @@
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview
+#+OPTIONS: toc:1
 #+OPTIONS:hideblocks
-
 * What will you learn?
+  
 
   * What is C?
   * What is its origin?
@@ -21,7 +22,6 @@
 
   C is a widely used high-level programming language developed in the
   early 1970s at Bell Laboratories. 
-  
 * Where does C come from?
 
   Cp. K&R ([[kr][Kernighan/Ritchie, 1978]])

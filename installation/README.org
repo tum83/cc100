@@ -80,8 +80,8 @@
   is an interface. Another UML diagram for ~man~ shows its use from
   outside the system, as a so-called use case diagram:
 
+    [[./img/man1.png]]
   
-
 * References
 
   <<king>> King (2008). C Programming - A Modern

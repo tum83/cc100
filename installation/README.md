@@ -1,20 +1,20 @@
 
 # Table of Contents
 
-1.  [What will you learn?](#org36d8890)
-2.  [Glossary](#org49a5757)
-3.  [Install Ubuntu under Windows 10](#orga8a2001)
-4.  [Install a compiler](#orgc83dfee)
-5.  [References](#org5510b81)
+1.  [What will you learn?](#orgc6a0e98)
+2.  [Glossary](#orge748572)
+3.  [Install Ubuntu under Windows 10](#org853f671)
+4.  [Install a compiler](#orga4457bb)
+5.  [References](#org8e4735c)
 
 
 
-<a id="org36d8890"></a>
+<a id="orgc6a0e98"></a>
 
 # What will you learn?
 
 > "It's nostalgic to edit, build and run C programs in text mode, but
-> it works well and is quite efficient." --[Dan Gookin](#orgf60a038)
+> it works well and is quite efficient." --[Dan Gookin](#org39970a7)
 
 -   Install Ubuntu under Windows 10
 -   Install a compiler
@@ -23,10 +23,10 @@
 -   Finding your code
 -   Compiling and running
 
-Source: [Gookin, chapter 1](#orgf60a038)
+Source: [Gookin, chapter 1](#org39970a7)
 
 
-<a id="org49a5757"></a>
+<a id="orge748572"></a>
 
 # Glossary
 
@@ -65,7 +65,7 @@ Source: [Gookin, chapter 1](#orgf60a038)
 </table>
 
 
-<a id="orga8a2001"></a>
+<a id="org853f671"></a>
 
 # Install Ubuntu under Windows 10
 
@@ -90,23 +90,23 @@ Windows.
 </table>
 
 
-<a id="orgc83dfee"></a>
+<a id="orga4457bb"></a>
 
 # Install a compiler
 
 
-<a id="org5510b81"></a>
+<a id="org8e4735c"></a>
 
 # References
 
-<a id="org34b01e9"></a> King (2008). C Programming - A Modern
+<a id="org5ed624d"></a> King (2008). C Programming - A Modern
 Approach. Norton. [Online: knking.com](http://knking.com/books/c2/index.html).
 
-<a id="org7903a8f"></a> Kernighan/Ritchie (1978). The C Programming
+<a id="orgdfe3220"></a> Kernighan/Ritchie (1978). The C Programming
 Language. Prentice Hall. [Online: wikipedia.org](https://en.wikipedia.org/wiki/The_C_Programming_Language).
 
-<a id="orgc835cff"></a> Lemonaki, Dionysia (November 4, 2021). C vs. C++ -
+<a id="org282af7c"></a> Lemonaki, Dionysia (November 4, 2021). C vs. C++ -
 What's The Difference [blog]. URL: [freecodecamp.org.](https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/)
 
-<a id="orgf60a038"></a> Gookin D (2021). Tiny C Projects. Manning.
+<a id="org39970a7"></a> Gookin D (2021). Tiny C Projects. Manning.
 

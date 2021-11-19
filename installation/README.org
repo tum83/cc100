@@ -72,7 +72,7 @@
 
 * UML diagram for ~man~
 
-  
+  [[./img/man.png]]
 
 * References
 

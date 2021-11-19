@@ -38,6 +38,40 @@
 
 * Install a compiler
 
+  The GNU C compiler, ~gcc~, already comes pre-installed with
+  Linux. You can check its version with the shell command ~gcc
+  --version~. The ~--version~ is a so-called Unix flag or command line
+  option. To see all command line options, you can use the ~--help~
+  flag.
+
+  Another popular C compiler (with more options) is ~clang~. Install
+  it in Ubuntu with the command ~sudo apt install clang~. Let's look
+  at this command:
+
+  | ~sudo~    | any following command is executed with administrator rights |
+  | ~apt~     | the software package manager program for Ubuntu             |
+  | ~install~ | utility program to install whatever follows                 |
+  | ~clang~   | a C programming language compiler                           |
+
+* Get helpful information
+
+  Help information on a Unix system is stored in so-called manual or
+  ~man~ pages. Their format is standardized. There are man pages for
+  every one of the commands introduced so far. Try some of these:
+
+  | ~man gcc~     |
+  | ~man sudo~    |
+  | ~man apt~     |
+  | ~man install~ |
+  | ~man clang~   |
+  | ~man man~     |
+
+  ~man~ itself is also a utility, and has a ~man~ page, of
+  course. When you open it, you see that ~man~ is an ~interface~
+  program.
+
+* UML diagram for ~man~
+
   
 
 * References

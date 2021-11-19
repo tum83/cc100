@@ -1,0 +1,54 @@
+#+TITLE:Installation
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:CSC100 Introduction to programming in C/C++
+#+STARTUP:overview
+#+OPTIONS: toc:1
+#+OPTIONS:hideblocks
+* What will you learn?
+
+
+  #+begin_quote
+  "It's nostalgic to edit, build and run C programs in text mode, but
+  it works well and is quite efficient." --[[gookin][Dan Gookin]]
+  #+end_quote
+
+  * Install Ubuntu under Windows 10
+  * Install a compiler
+  * Basic shell commands
+  * Choose a text editor
+  * Finding your code
+  * Compiling and running
+
+  Source: [[gookin][Gookin, chapter 1]]
+
+* Glossary
+
+  | [[https://en.wikipedia.org/wiki/Compiler][Compiler]] | Software to turn source code into executable code                    |
+  | Shell    | Software to control your computer from the command line (using text) |
+  | Editor   | Software to create and edit source code (as a text document)         |
+  | Ubuntu   | Popular Linux distribution or "distro"                               |
+
+* Install Ubuntu under Windows 10
+
+  The easiest way to get hold of C. [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-linux-under-windows-10][See this FAQ]] on how to download
+  and run Ubuntu for free as an app from the Microsoft store under
+  Windows.
+
+  | Time | ca. 15 min. |
+
+* Install a compiler
+
+  
+
+* References
+
+  <<king>> King (2008). C Programming - A Modern
+  Approach. Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]].
+
+  <<kr>> Kernighan/Ritchie (1978). The C Programming
+  Language. Prentice Hall. [[https://en.wikipedia.org/wiki/The_C_Programming_Language][Online: wikipedia.org]].
+
+  <<lemonaki>> Lemonaki, Dionysia (November 4, 2021). C vs. C++ -
+  What's The Difference [blog]. URL: [[https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/][freecodecamp.org.]]
+
+  <<gookin>> Gookin D (2021). Tiny C Projects. Manning.

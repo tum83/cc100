@@ -70,9 +70,17 @@
   course. When you open it, you see that ~man~ is an ~interface~
   program.
 
-* UML diagram for ~man~
+* UML diagrams for ~man~
+
 
   [[./img/man.png]]
+
+  UML (Unified Modeling Language) is useful to create diagrams of
+  aspects of a system - in this case the diagram only says that ~man~
+  is an interface. Another UML diagram for ~man~ shows its use from
+  outside the system, as a so-called use case diagram:
+
+  
 
 * References
 

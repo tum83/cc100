@@ -13,7 +13,7 @@
    I usually look at the articles in some detail (though I rarely work
    through them - that would be your job), and assign a label for the
    difficulty level Lvl = 0 (simple), 1 (moderate), 2 (difficult), or 3
-   (hard).
+   (hard). Sites or tutorials aren't labeled by difficulty.
 
    Papers can be hard for different reason: length, technical
    vocabulary, writing style, mathematics, number of citations etc. If
@@ -21,7 +21,6 @@
    research, you might ask me why I assigned a particular level.
 
 ** Udemy course
-
    * [ ] [[https://blog.udemy.com/what-is-c-programming/][What is C programming? Learn the basics (2021)]]
    * [ ] [[https://www.udemy.com/course/c-programming-for-beginners/][Udemy Course: Huw Collingbourne (2019)]]
 ** IDEs
@@ -38,4 +37,8 @@
    * Setup compilers: scan for existing compilers or install MinGW
      compiler. Download newer (stable) version if you like. Check out
      forums and wiki (both on the web).
-   
+** What is a programming language
+
+   A lot of vocal fry [[https://www.codecademy.com/resources/blog/programming-languages/][in this video]] but you can also just read the
+   transcript. Includes some good links, like [[https://pypl.github.io/PYPL.html][PYPL]]. I have started the (free) C++
+   course from Codeacademy (they're a big online course provider).  

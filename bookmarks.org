@@ -42,3 +42,8 @@
    A lot of vocal fry [[https://www.codecademy.com/resources/blog/programming-languages/][in this video]] but you can also just read the
    transcript. Includes some good links, like [[https://pypl.github.io/PYPL.html][PYPL]]. I have started the (free) C++
    course from Codeacademy (they're a big online course provider).  
+** [[https://youtu.be/48JlgiBpw_I][Absolute beginner's guide to Emacs]] (1 hr 15 min)
+
+   * [[https://systemcrafters.net/emacs-essentials/absolute-beginners-guide-to-emacs/][Notes]] (Emacs Org mode file committed to GitHub)
+
+   

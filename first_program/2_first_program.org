@@ -10,7 +10,7 @@
 
 * C: pun
 
-  Source: King, ch. 2
+  Source: [[king][King, ch. 2]]
 
   #+begin_src C
     #include <stdio.h>
@@ -42,3 +42,9 @@
   #+end_src
 
   #+RESULTS:
+
+* Sources
+
+  <<gcc>> GNU gcc
+
+  <<king>> King, C Programming 2nd ed.

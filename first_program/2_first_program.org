@@ -25,6 +25,17 @@
   #+RESULTS:
   | To C | or not to C | that is the question. |
 
+  In the following code chunk, I use the flags
+  * ~:main yes~, which builds a ~int main(void)~ function
+  * ~:includes <stdio.h>~, which includes the ~stdio.h~ library
+
+  #+begin_src C :exports both :main yes :includes <stdio.h>
+    printf("hello world");
+  #+end_src
+
+  #+RESULTS:
+  : hello world
+
 * C++: Hello world
 
   #+begin_src cpp
@@ -42,6 +53,13 @@
   #+end_src
 
   #+RESULTS:
+
+* SQL
+
+  #+begin_src sqlite
+    drop table if exists r;
+    create table t(a int, b int);
+  #+end_src
 
 * Sources
 

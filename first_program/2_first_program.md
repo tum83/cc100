@@ -1,14 +1,15 @@
 
 # Table of Contents
 
-1.  [Org babel languages](#org6aab114)
-2.  [C: pun](#org9475055)
-3.  [C++: Hello world](#orgd5c66cb)
-4.  [Sources](#orgcc47043)
+1.  [Org babel languages](#orgaddaa0c)
+2.  [C: pun](#orgc73dd57)
+3.  [C++: Hello world](#org230eba9)
+4.  [SQL](#orge14b59b)
+5.  [Sources](#orgce8065b)
 
 
 
-<a id="org6aab114"></a>
+<a id="orgaddaa0c"></a>
 
 # [Org babel languages](https://orgmode.org/worg/org-contrib/babel/languages/index.html)
 
@@ -16,11 +17,11 @@
 -   C++ chunks require "cpp"
 
 
-<a id="org9475055"></a>
+<a id="orgc73dd57"></a>
 
 # C: pun
 
-Source: [King, ch. 2](#org2000706)
+Source: [King, ch. 2](#org8d81cf3)
 
     #include <stdio.h>
     
@@ -30,8 +31,17 @@ Source: [King, ch. 2](#org2000706)
       return 0;
     }
 
+In the following code chunk, I use the flags
 
-<a id="orgd5c66cb"></a>
+-   `:main yes`, which builds a `int main(void)` function
+-   `:includes <stdio.h>`, which includes the `stdio.h` library
+
+    printf("hello world");
+
+    hello world
+
+
+<a id="org230eba9"></a>
 
 # C++: Hello world
 
@@ -47,11 +57,19 @@ Source: [King, ch. 2](#org2000706)
     }
 
 
-<a id="orgcc47043"></a>
+<a id="orge14b59b"></a>
+
+# SQL
+
+    drop table if exists r;
+    create table t(a int, b int);
+
+
+<a id="orgce8065b"></a>
 
 # Sources
 
-<a id="orge29f2fb"></a> GNU gcc
+<a id="orgce243d2"></a> GNU gcc
 
-<a id="org2000706"></a> King, C Programming 2nd ed.
+<a id="org8d81cf3"></a> King, C Programming 2nd ed.
 

@@ -28,6 +28,7 @@
   In the following code chunk, I use the flags
   * ~:main yes~, which builds a ~int main(void)~ function
   * ~:includes <stdio.h>~, which includes the ~stdio.h~ library
+  * ~:exports both~ enables GitHub to print the output, too.
 
   #+begin_src C :exports both :main yes :includes <stdio.h>
     printf("hello world");

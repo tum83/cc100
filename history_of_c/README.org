@@ -16,7 +16,7 @@
   * What's next in the course?
 
   Source: [[king][King (2008) ch.1]]
-
+  -----
 * What is C?
 
   C is a widely used high-level programming language developed in the
@@ -41,6 +41,9 @@
 
 * What's next?
 
+  * Getting started: Infrastructure (shell, compiler, editor)
+  * First program: "hello world"
+  -----
 * References
 
   <<king>> King (2008). C Programming - A Modern

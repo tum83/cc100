@@ -1,11 +1,10 @@
-#+TITLE:History of C 
+#+TITLE:History of C
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview
 #+OPTIONS: toc:1
 #+OPTIONS:hideblocks
 * What will you learn?
-  
 
   * What is C?
   * What is its origin?
@@ -17,11 +16,11 @@
   * What's next in the course?
 
   Source: [[king][King (2008) ch.1]]
-
+  -----
 * What is C?
 
   C is a widely used high-level programming language developed in the
-  early 1970s at Bell Laboratories. 
+  early 1970s at Bell Laboratories.
 * Where does C come from?
 
   Cp. K&R ([[kr][Kernighan/Ritchie, 1978]])
@@ -35,13 +34,13 @@
   Ritchie: [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Space Travel game 1969]]
 
   Torvalds: [[https://medium.com/nerd-for-tech/linus-torvalds-c-is-really-a-terrible-language-2248b839bee3][C++ is really a terrible language]]
-  
+
 * Why are we not just learning C++?
-  
+
 * Why am I teaching C/C++?
-  
+
 * What's next?
-  
+
 * References
 
   <<king>> King (2008). C Programming - A Modern

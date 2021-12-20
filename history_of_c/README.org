@@ -22,8 +22,8 @@
   #+attr_html: :width 500px
   [[./img/unix.png]]
 
-  /Image: Thompson & Ritchie with a DEC PDP-11, 1970. Source: [[brock][Brock,
-  2019]]/
+  /Image: Thompson & Ritchie with a DEC PDP-11, 1970. Source: Brock,
+  2019/
 
   |C is a widely used, popular, standardized programming language.|
 
@@ -33,14 +33,13 @@
   
 * Where does C come from?
 
-  Cp. K&R ([[kr][Kernighan/Ritchie, 1978]])
+  Cp. K&R (Kernighan/Ritchie, 1978)
 
 * How important is C?
 
   #+attr_html: :width 500px
   [[./img/usage.jpg]]
   /Image: Usage of C. Source: Data Flair/
-  
   
 * What is the difference between C and C++?
 
@@ -62,9 +61,12 @@
   -----
 * References
 
-  <<brock>> Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
+  Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
   Source Code Release [Blog]. URL: [[https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/][computerhistory.org]].
-  
+
+  Data Flair (n.d.). Applications of C Programming That Will Make You
+  Fall In Love With C [Tutorial]. URL: d[[https://data-flair.training/blogs/applications-of-c/][ata-flair.training.]]
+
   King (2008). C Programming - A Modern
   Approach. Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]].
 

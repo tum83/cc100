@@ -24,7 +24,7 @@
 
   /Image: Thompson & Ritchie & DEC PDP-11, 1970. (Brock, 2019)/
 
-  | C is a high-level programming language created in the 1970s. |
+  | C is a programming language created in the early 1970s. |
 
   * Usage: cp. [[https://data-flair.training/blogs/applications-of-c/][Data Flair]]
   * Popularity: cp. [[https://www.tiobe.com/tiobe-index/c/][TIOBE Index]]
@@ -32,6 +32,20 @@
 
   | Challenge: How popular do you think C is today? | [fn:4] |
 
+* What is a programming language?
+
+  #+begin_quote
+  "A programming language is a formal language comprising a set of
+  strings that produce various kinds of machine code output. Programming
+  languages are one kind of computer language, and are used in computer
+  programming to implement algorithms." (Source: [[https://en.wikipedia.org/wiki/Programming_language][Wikipedia]])
+  #+end_quote
+
+  * Formal language?
+  * Set of strings?
+  * Machine code?
+  * Algorithm?
+  
 * Where does C come from?
 
   #+attr_html: :width 300px

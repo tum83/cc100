@@ -25,7 +25,11 @@
   /Image: Thompson & Ritchie with a DEC PDP-11, 1970. Source: [[brock][Brock,
   2019]]/
 
-  
+  |C is a widely used, popular, standardized programming language.|
+
+  * Usage: cp. [[https://data-flair.training/blogs/applications-of-c/][Data Flair]] 
+  * Popularity: cp. [[https://www.tiobe.com/tiobe-index/c/][TIOBE Index]]
+  * Standard: cp. [[https://blog.ansi.org/2018/11/c-language-standard-iso-iec-9899-2018-c18/#gref][ANSI]]
   
 * Where does C come from?
 
@@ -33,6 +37,11 @@
 
 * How important is C?
 
+  #+attr_html: :width 500px
+  [[./img/usage.jpg]]
+  /Image: Usage of C. Source: Data Flair/
+  
+  
 * What is the difference between C and C++?
 
   Source: [[lemonaki][Lemonaki, 2021]]

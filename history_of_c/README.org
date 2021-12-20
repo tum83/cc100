@@ -24,22 +24,42 @@
 
   /Image: Thompson & Ritchie & DEC PDP-11, 1970. (Brock, 2019)/
 
-  |C is a widely used, popular, standardized programming language.|
+  | C is a high-level programming language created in the 1970s. |
 
-  * Usage: cp. [[https://data-flair.training/blogs/applications-of-c/][Data Flair]] 
+  * Usage: cp. [[https://data-flair.training/blogs/applications-of-c/][Data Flair]]
   * Popularity: cp. [[https://www.tiobe.com/tiobe-index/c/][TIOBE Index]]
   * Standard: cp. [[https://blog.ansi.org/2018/11/c-language-standard-iso-iec-9899-2018-c18/#gref][ANSI]]
-  
+
+  | Challenge: How popular do you think C is today? | [fn:4] |
+
 * Where does C come from?
 
-  Cp. K&R (Kernighan/Ritchie, 1978)
+  #+attr_html: :width 300px
+  [[./img/kr.png]]
+
+  /Image: "K&R" (Kernighan/Ritchie, 1978)/
+
+  * By-product of the UNIX operating system 1969
+  * Developed on DEC PDP-7 (8K words of main memory)0
+  * Written originally in assembly language
+  * UNIX rewritten in C by 1973 for [[https://en.wikipedia.org/wiki/PDP-11][DEC PDP-11]]
+  * Standardization of C, 1973-2018
+
+  | Challenge: what does "8K words of main memory" mean? | [fn:2]) |
+
+  #+attr_html: :width 500px
+  [[./img/pdp11.jpg]]
+
+  /Image: PDP-11/70 ([[https://www.flickr.com/photos/mratzloff/9169358863][Source]])/
+
+  | Challenge: was C the first programming language? | [fn:3] |
 
 * How important is C?
 
   #+attr_html: :width 500px
   [[./img/usage.jpg]]
   /Image: Usage of C. Source: Data Flair/
-  
+
 * What is the difference between C and C++?
 
   Source: [[lemonaki][Lemonaki, 2021]]
@@ -63,6 +83,12 @@
   Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
   Source Code Release [Blog]. URL: [[https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/][computerhistory.org]].
 
+  Chatley R., Donaldson A., Mycroft A. (2019) The Next 7000
+  Programming Languages. In: Steffen B., Woeginger G. (eds) Computing
+  and Software Science. Lecture Notes in Computer Science,
+  vol 10000. Springer,
+  Cham. https://doi.org/10.1007/978-3-319-91908-9_15
+
   Data Flair (n.d.). Applications of C Programming That Will Make You
   Fall In Love With C [Tutorial]. URL: d[[https://data-flair.training/blogs/applications-of-c/][ata-flair.training.]]
 
@@ -77,5 +103,21 @@
 
 * Footnotes
 
+[fn:4]Since 2000, C has consistently ranked among the top two
+languages in the TIOBE index (based on searches).
+
+[fn:3]Answer: no. By 1966, there were already ca. 700 programming
+languages (Chatley et al, 2019), today there are almost 9,000. C
+descends from ALGOL60, other important languages are Lisp (functional
+language), SIMULA (first OOP language), and PROLOG (logic language).
+
+[fn:2]How many bits can be stored in memory of 8K words depends on the
+bit length of a word (or byte). One byte holds 8 = 2^3 bits (binary
+digits, or memory locations capable of storing 2 states). 8K byte
+correspond to 8 * 2^10 = 8 * 1,024 = 8,192 bits. By comparison, the
+main memory of my laptop is 16GB = 16 * 2^30 = 3.2E+31 bits. It
+follows that UNIX (and C) had to be designed to be very small, or
+space effective.
+
 [fn:1]All sources are referenced at the end of the script, followed by
-the footnotes, which do unfortunately not render as links [[https://github.com/birkenkrahe/cc100/tree/main/history_of_c][on GitHub]]. 
+the footnotes, which do unfortunately not render as links [[https://github.com/birkenkrahe/cc100/tree/main/history_of_c][on GitHub]].

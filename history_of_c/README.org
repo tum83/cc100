@@ -15,17 +15,16 @@
   * Why are you learning C from me?
   * What's next in the course?
 
-  Source: King (2008) ch.1
+  Source: King (2008) ch.1[fn:1]
   -----
 * What is C?
 
   #+attr_html: :width 500px
   [[./img/unix.png]]
 
-  /Image: Thompson & Ritchie with a DEC PDP-11, 1970. Source: Brock,
-  2019/
+  /Image: Thompson & Ritchie & DEC PDP-11, 1970. (Brock, 2019)/
 
-  |C is a widely used, popular, standardized programming language.|[fn:1]
+  |C is a widely used, popular, standardized programming language.|
 
   * Usage: cp. [[https://data-flair.training/blogs/applications-of-c/][Data Flair]] 
   * Popularity: cp. [[https://www.tiobe.com/tiobe-index/c/][TIOBE Index]]
@@ -78,4 +77,5 @@
 
 * Footnotes
 
-[fn:1]In the script, important statements will be blocked out like this.
+[fn:1]All sources are referenced at the end of the script, followed by
+the footnotes, which do unfortunately not render as links [[https://github.com/birkenkrahe/cc100/tree/main/history_of_c][on GitHub]]. 

@@ -45,7 +45,9 @@
   * Set of strings?
   * Machine code?
   * Algorithm?
-  
+
+    [[./img/nerds.gif]]
+    
 * Where does C come from?
 
   #+attr_html: :width 300px

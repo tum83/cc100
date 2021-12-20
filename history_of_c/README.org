@@ -15,7 +15,7 @@
   * Why are you learning C from me?
   * What's next in the course?
 
-  Source: [[king][King (2008) ch.1]]
+  Source: King (2008) ch.1
   -----
 * What is C?
 
@@ -41,6 +41,7 @@
 
 * What's next?
 
+  * What's in this course?
   * Getting started: Infrastructure (shell, compiler, editor)
   * First program: "hello world"
   -----

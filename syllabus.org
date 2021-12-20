@@ -1,43 +1,65 @@
 #+TITLE:CSC 100.01 Spring 2022 Syllabus
 #+AUTHOR: Marcus Birkenkrahe
-#+SUBTITLE: Artificial Intelligence
+#+SUBTITLE: Introduction to Programming in C/C++ (CSC 100) Spring 2022
 #+options: toc:nil
-* TODO General Course Information
+* General Course Information
 
   * Meeting Times: Monday/Wednesday/Friday, 11:00-11:50 hrs
-  * Meeting place: ...
+  * Meeting place: Lyon Building Room 104
   * Professor: Marcus Birkenkrahe
-  * Office: Derby 210
+  * Office: Derby Science Building 210
   * Phone: (870) 307-7254
   * Office hours: Mon/Wed/Fri 12:00-12:30 PM; Tue/Thu 2.30-3.00 PM
-  * Text: King (2008). C Programming - A Modern Approach. New York:
+  * Required text: King (2008). C Programming - A Modern Approach. New York:
     Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]]
 
-** TODO Objectives
+** Objectives
 
+   This course introduces you to system programming using C. We cover
+   C++ as an extension. System programming is pure power: it enables
+   you to converse with the computer at a level unknown to users of
+   Python or other high level languages. You also learn about:
+   compilers, working on the command line, text editors like vi and
+   Emacs, using C for Internet of Things (IoT) devices, cybersecurity,
+   and using UML. You get a foundation in computational, critical
+   thinking in concert with one of the three most popular languages
+   (the other two are Python and Java).  We will endeavour to cover
+   most of chapters 1-15 of the textbook by King.
 
-** TODO Student Learning Outcomes
+** Student Learning Outcomes
 
    Students who complete CSC 100.01 "Introduction to programming in
    C/C++", will be able to:
 
-   
+   * Master basic sequential programming skills (conditional
+     statements, loops, functions, input/output, use of data types)
+   * Explain the basic components of a procedural programming language
+   * Apply the basics of programming to solve a variety of
+     quantitative problems
+   * Master relevant computing infrastructure (compiler, editor, shell)
+   * Know how to effectively present assignment results
+
 ** Course requirements
-   
+
    No prior knowledge required. Some knowledge of, and experience with
    computers is useful but not critical. Curiosity is essential. You
    will gain data literacy skills by taking this course. The course
    will prepare you for further studies in computer and data science,
-   or in other disciplines that use modern computing.
+   or in other disciplines that use modern computing, i.e. every
+   discipline, from accounting to zoology).
 
-** TODO Grading system
+** Grading system
 
-   | WHEN            | DESCRIPTION    | IMPACT |
-   |-----------------+----------------+--------|
-   | Weekly          | Participation  |    15% |
-   | Before midterms | Protocol       |    15% |
-   | TBD             | Presentation   |    30% |
-   | Last week       | AI application |    40% |
+   | WHEN[fn:1]    | DESCRIPTION            | IMPACT |
+   |---------------+------------------------+--------|
+   | Every session | Homework/Participation |    10% |
+   | Weekly        | Quizzes                |    10% |
+   | Monthly       | Tests                  |    30% |
+   | Biweekly      | Lab projects           |    30% |
+   | End of term   | Final exam             |    20% |
+
+   You should be able to see your current grade at any time using the
+   Schoology gradebook for the course.
 
 *** Grading table
 
@@ -50,123 +72,49 @@
     |    *%* | *Midterm Grade* | *Final Grade* |
     |--------+-----------------+---------------|
     | 100-98 | A+              |               |
-    |  97-96 | A               | A             |
-    |  95-90 | A-              |               |
+    |  97-96 | A               | A (passed -   |
+    |  95-90 | A-              | very good)    |
     |--------+-----------------+---------------|
     |  89-86 | B+              |               |
-    |  85-80 | B               | B             |
-    |  79-76 | B-              |               |
+    |  85-80 | B               | B (passed -   |
+    |  79-76 | B-              | good)         |
     |--------+-----------------+---------------|
     |  75-70 | C+              |               |
-    |  69-66 | C               | C             |
-    |  65-60 | C-              |               |
+    |  69-66 | C               | C (passed -   |
+    |  65-60 | C-              | satisfactory) |
     |--------+-----------------+---------------|
     |  59-56 | D+              |               |
-    |  55-50 | D               | D             |
+    |  55-50 | D               | D (passed)    |
     |--------+-----------------+---------------|
-    |   49-0 | F               | F             |
+    |   49-0 | F               | F (failed)    |
     |--------+-----------------+---------------|
 
+*** Homework/Participation (10%)
+    - Complete small assignments in class (participation)
+    - Complete assignments outside of class (homework)
+    - Be ready to present your results
 
-*** Presentation (30%)
+*** Weekly Quizzes (10%)
+    - Answer multiple choice questions
+    - Complete quiz online outside of class
+    - Use for drills thereafter
 
-    * Present part of a chapter from AIMA, OR
-    * Review and present an AI research paper, OR
-    * Research and present an AI application.
+*** Monthly tests (30%)
+    - Complete 45 min online test in class
+    - Recall last month of lectures and labs
+    - Read relevant textbook chapters
 
-*** Application (40%)
+*** Biweekly lab projects (30%)
+    - Solve programming problems in class
+    - Complete assignments outside of class if necessary
+    - Be ready to present your solutions
 
-    * Identify an AI application area, AND
-    * Research how AI could be used, AND
-    * Present briefly at sprint reviews, AND
-    * Present your application idea at the end of term.
+*** Final exam (20%)
+    - 120 min multiple choice exam
+    - Online in Schoology in the classroom
+    - Sourced from the weekly quiz questions
 
-*** Protocol (15%)
-
-    * Record a classroom session, AND
-    * Create a protocol of the session, AND
-    * Upload the protocol to GitHub.
-
-*** Participation (15%)
-
-    * Participate in group discussions, OR
-    * Participate in class discussion, OR
-    * Present a glossary term, OR
-    * Present an interesting AI application.
-
-*** Grading examples
-
-**** Example - Midterm grade
-
-     At midterms, student X has achieved the following results:
-
-     | GRADE PART           | WEIGHT   | RESULT   |
-     |----------------------+----------+----------|
-     | Session Protocol     |      15% |      80% |
-     | Weekly participation |      15% |      90% |
-
-     # Student X's midterm result is computed as follows:
-
-     # #+begin_src R :session :results output
-     #   ## midterm weights (only practice and participation)
-     #   weight_m <- c("protocol"=0.5,
-     #                 "participation"=0.5)
-     #   ## results vector
-     #   result_m <- c("protocol"=80,
-     #                 "participation"=90)
-     #   ## midterm grade
-     #   grade_m <-
-     #     weight_m["protocol"] * result_m["protocol"] +
-     #     weight_m["participation"] * result_m["participation"]
-     #   names(grade_m) <- NULL
-     #   grade_m
-     # #+end_src
-
-     # #+RESULTS:
-     # : [1] 85
-
-     Student X's midterm result is a "B" (~85%~).
-
-**** Example - Final grade
-
-     After the finals, student X has achieved the following results:
-
-     | GRADE PART           | WEIGHT | RESULT |
-     |----------------------+--------+--------|
-     | Session protocol     |    15% |    80% |
-     | Weekly participation |    15% |    90% |
-     | Presentation         |    30% |    95% |
-     | Final application    |    40% |    95% |
-
-     # # Student X's midterm result is computed as follows:
-
-     # #+begin_src R :session :results output
-     #   ## full term weight vector according to grading table
-     #   weight <- c("presentation"= 0.3,
-     #               "application"=0.4,
-     #               "protocol"=0.15,
-     #               "participation"=0.15)
-     #   ## results vector
-     #   result <- c("presentation"=95,
-     #               "application"=95,
-     #               "protocol"=80,
-     #               "participation"=90)
-     #   ## midterm grade
-     #   grade <-
-     #     weight["presentation"] * result["presentation"] +
-     #     weight["application"] * result["application"] +
-     #     weight["protocol"] * result["protocol"] +
-     #     weight["participation"] * result["participation"]
-     #   names(grade) <- NULL
-     #   grade
-     # #+end_src
-
-     # #+RESULTS:
-     # : [1] 92
-
-     Student X's midterm result is an "A" (~92%~).
-
-* Standard Policies
+* Standard Policies[fn:3]
 ** Honor Code
 
    All graded work in this class is to be pledged in accordance with
@@ -194,49 +142,56 @@
 ** Disabilities
 
    Students seeking reasonable accommodations based on documented
-   learning disabilities must contact Danell Hetrick in the Morrow
-   Academic Center at (870) 307-7021 or at danell.hetrick@lyon.edu.
+   learning disabilities must contact Interim Director of Academic
+   Support Courtney Beal in the Morrow Academic Center at (870)
+   307-7016 or at courtney.beal@lyon.edu.
 
 ** Harassment, Discrimination, and Sexual Misconduct
 
    Title IX and Lyon’s policy prohibit harassment, discrimination and
    sexual misconduct. Lyon encourages anyone experiencing harassment,
-   discrimination or sexual misconduct to talk to Lai-Monte Hunter,
-   Title IX Coordinator and Vice-President for Student Life, or
-   Sh’Nita Mitchell, Title IX Investigator and Associate Dean for
-   Residence Life, about what happened so they can get the support
-   they need and Lyon can respond appropriately.  Lyon is legally
-   obligated to respond to reports of sexual misconduct, and
-   therefore we cannot guarantee the confidentiality of a report,
-   unless made to a confidential resource (Chaplain, Counselor, or
-   Nurse). As a faculty member, I am required to report possible
-   Title IX violations and must provide our Title IX coordinator with
-   all relevant details.  I cannot, therefore, guarantee
-   confidentiality.
+   discrimination or sexual misconduct to talk to Danell Hetrick,
+   Title IX Coordinator and Interim Vice-President for Student Life,
+   or Sh’Nita Mitchell, Title IX Investigator and Associate Dean for
+   Students, about what happened so they can get the support they need
+   and Lyon can respond appropriately.  Lyon is legally obligated to
+   respond to reports of sexual misconduct, and therefore we cannot
+   guarantee the confidentiality of a report, unless made to a
+   confidential resource (Chaplain, Counselor, or Nurse). As a faculty
+   member, I am required to report possible Title IX violations and
+   must provide our Title IX coordinator with all relevant details.  I
+   cannot, therefore, guarantee confidentiality.
 
-** College-Wide COVID-19 Policies for Fall, 2021
+** College-Wide COVID-19 Policies for Spring, 2022
 
-   Masks are mandated for all students in classrooms, laboratories and studios.  They remain optional for all persons on the Lyon campus in all other locations and outside.
-   Participation in community surveillance testing in mandatory.
-   Vaccines are STRONGLY encouraged for all faculty, staff, and students. Vaccines are NOT MANDATED for Lyon College community members.
+   - Masks are mandated for all students in classrooms, laboratories
+     and studios.  They remain optional for all persons on the Lyon
+     campus in all other locations and outside.
+   - Participation in community surveillance testing is mandatory.
+   - Vaccines are STRONGLY encouraged for all faculty, staff, and
+     students. Vaccines are NOT MANDATED for Lyon College community
+     members.
 
-   Details specific to this course may be found in the subsequent pages of this syllabus. Those details will include at least the following:
-   A description of the course consistent with the Lyon College catalog.
-   A list of student learning outcomes for the course.
-   A summary of all course requirements.
-   An explanation of the grading system to be used in the course.
-   Any course-specific attendance policies that go beyond the College policy.
-   Details about what constitutes acceptable and unacceptable student collaboration on graded work.
+   Details specific to this course may be found in the subsequent
+   pages of this syllabus. Those details will include at least the
+   following:
+   - A description of the course consistent with the Lyon College catalog.
+   - A list of student learning outcomes for the course.
+   - A summary of all course requirements.
+   - An explanation of the grading system to be used in the course.
+   - Any course-specific attendance policies that go beyond the College policy.
+   - Details about what constitutes acceptable and unacceptable
+     student collaboration on graded work.
 
 * TODO Course specific information
-** Assignments and Honor Code
+** Assignments and Honor Code[fn:2]
 
    There will be numerous assignments during the semester - e.g.
    programming, lessons, tests, and sprint reviews. They are due at
    the beginning of the class period on the due date. Once class
    begins, the assigment will be considered one day late if it has not
    been turned in.  Late programs will not be accepted without an
-   extension.  Extensions will *not* be granted for reasons such as:
+   extension. Extensions will *not* be granted for reasons such as:
 
    * You could not get to a computer
    * You could not get a computer to do what you wanted it to do
@@ -265,8 +220,8 @@
 
    What is not cheating?  Here are some examples:
 
-   * Talking to someone in general terms about concepts involved in
-     an assignment
+   * Talking to someone in general terms about concepts involved in an
+     assignment
    * Asking someone for help with a specific error message or bug in
      your program
    * Getting help with the specifics of language syntax or citation
@@ -284,87 +239,96 @@
    test, please e-mail me or leave a message on my phone before the
    scheduled time, and we can make arrangements when you return.
 
-** Important Dates:
+** Important Dates[fn:4]:
 
-   | DATE           | DESCRIPTION                                |
-   |----------------+--------------------------------------------|
-   | August 30      | Last day to drop w/o record of a course    |
-   | September 6    | Labor day (no classes)                     |
-   | October 2-5    | Fall break (no classes)                    |
-   | October 6      | Mid-semester grade reports due             |
-   | October 13     | Last day to drop a course with a "W" grade |
-   | October 20     | Service day on campus (no classes)         |
-   | Nobember 24-28 | Thanksgiving Break (no classes)            |
-   | December 3     | Last day of class                          |
-   | December 6-10  | Final exams                                |
-   | December 15    | Final grades due                           |
+   | DATE        | DAY              | DESCRIPTION                                  |
+   |-------------+------------------+----------------------------------------------|
+   | 4 January   | Tuesday          | Last day to deposit for 2022 spring semester |
+   | 11 January  | Tuesday          | Classes begin                                |
+   | 17 January  | Monday           | MLK Day - no classes                         |
+   | 18 January  | Tuesday          | Last day to add a class                      |
+   | 25 January  | Tuesday          | Last day to drop without record of a course  |
+   |             |                  | Last day to declare a course pass-fail       |
+   |             |                  | Deadline for removal of incompletes          |
+   | 19-27 March | Saturday-Sunday  | Spring break                                 |
+   | 15-18 April | Friday-Monday    | Easter break                                 |
+   | 4 May       | Wednesday        | Last day of classes                          |
+   | 5-10 May    | Thursday-Tuesday | Final exams                                  |
+   | 10 May      | Tuesday          | Senior grades due by noon                    |
+   | 18 May      | Wednesday        | All grades due by noon                       |
 
 ** Schedule and session content
 
-   | DATE       | AIMA                     | PROJECTS               |
-   |------------+--------------------------+------------------------|
-   | Wed-18-Aug | Course overview          |                        |
-   | Fri-20-Aug |                          |                        |
-   |------------+--------------------------+------------------------|
-   | Mon-23-Aug | What is AI?              |                        |
-   | Wed-25-Aug |                          | Session Protocol 1     |
-   | Fri-27-Aug |                          | Session Protocol 2     |
-   |------------+--------------------------+------------------------|
-   | Mon-30-Aug | History of AI            |                        |
-   | Wed-1-Sep  |                          | Session Protocol 3     |
-   | Fri-3-Sep  |                          | Session Protocol 4     |
-   |------------+--------------------------+------------------------|
-   | Mon-6-Sep  | LABOR DAY                |                        |
-   | Wed-8-Sep  | State of the Art of AI   |                        |
-   | Fri-10-Sep | APPLICATIONS             | 1st sprint review      |
-   |------------+--------------------------+------------------------|
-   | Mon-13-Sep | Risks and benefits of AI |                        |
-   | Wed-15-Sep |                          | Session Protocol 5     |
-   | Fri-17-Sep |                          | Session Protocol 6     |
-   |------------+--------------------------+------------------------|
-   | Mon-20-Sep | Introduction summary     |                        |
-   | Wed-22-Sep | Topical Presentation 1   | Session Protocol 7     |
-   | Fri-24-Sep | Topical Presentation 2   | Session Protocol 8     |
-   |------------+--------------------------+------------------------|
-   | Mon-27-Sep |                          | Session Protocol 9     |
-   | Wed-29-Sep | Topical Presentation 3   | Session Protocol 10    |
-   | Fri-1-Oct  | Topical Presentation 4   | Session Protocol 11    |
-   |------------+--------------------------+------------------------|
-   | Mon-4-Oct  | FALL BREAK               |                        |
-   | Wed-6-Oct  | Topical Presentation 5   | Session Protocol 12(X) |
-   | Fri-8-Oct  | APPLICATIONS             | 2nd sprint review      |
-   |------------+--------------------------+------------------------|
-   | Mon-11-Oct |                          |                        |
-   | Wed-13-Oct | Topical Presentation 6   | Session Protocol 13(X) |
-   | Fri-15-Oct |                          |                        |
-   |------------+--------------------------+------------------------|
-   | Mon-18-Oct |                          |                        |
-   | Wed-20-Oct | SERVICE DAY              |                        |
-   | Fri-22-Oct | Topical Presentation 7   | Session Protocol 14(X) |
-   |------------+--------------------------+------------------------|
-   | Mon-25-Oct |                          |                        |
-   | Wed-27-Oct | Topical Presentation 8   | Session Protocol 15(X) |
-   | Fri-29-Oct |                          |                        |
-   |------------+--------------------------+------------------------|
-   | Mon-1-Nov  |                          |                        |
-   | Wed-3-Nov  | Topical Presentation 9   | Session Protocol 16(X) |
-   | Fri-5-Nov  | APPLICATIONS             | 3rd sprint review      |
-   |------------+--------------------------+------------------------|
-   | Mon-8-Nov  |                          |                        |
-   | Wed-10-Nov | Topical Presentation 10  | Session Protocol 17(X) |
-   | Fri-12-Nov |                          |                        |
-   |------------+--------------------------+------------------------|
-   | Mon-15-Nov |                          |                        |
-   | Wed-17-Nov | Topical Presentation 11  | Session Protocol 18(X) |
-   | Fri-19-Nov |                          |                        |
-   |------------+--------------------------+------------------------|
-   | 22-Nov     |                          |                        |
-   | 24-Nov     | THANKSGIVING             |                        |
-   | 26-Nov     | THANKSGIVING             |                        |
-   |------------+--------------------------+------------------------|
-   | 29-Nov     | PROJECT PRESENTATIONS    |                        |
-   | 1-Dec      | PROJECT PRESENTATIONS    |                        |
-   | 3-Dec      | PROJECT PRESENTATIONS    |                        |
-   |------------+--------------------------+------------------------|
+   Changes are possible - tentative schedule.
 
-   (X) = Extra credit
+   | NO | WEEK | DATE       | KING CHAPTER   | ASSIGNMENT |
+   |----+------+------------+----------------+------------|
+   |  1 |    1 | Wed-12-Jan | C Fundamentals |            |
+   |  2 |      | Fri-14-Jan |                | Program 1  |
+   |----+------+------------+----------------+------------|
+   |  3 |    2 | Wed-19-Jan | C Fundamentals | Program 2  |
+   |  4 |      | Fri-21-Jan | Input/Output   |            |
+   |----+------+------------+----------------+------------|
+   |  4 |    3 | Mon-24-Jan |                |            |
+   |  5 |      | Wed-26-Jan |                |            |
+   |  6 |      | Fri-28-Jan |                |            |
+   |----+------+------------+----------------+------------|
+   |  7 |    4 | Mon-31-Jan |                |            |
+   |  8 |      | Wed-02-Feb |                |            |
+   |  9 |      | Fri-04-Feb |                |            |
+   |----+------+------------+----------------+------------|
+   | 10 |    5 | Mon-07-Feb |                |            |
+   | 11 |      | Wed-09-Feb |                |            |
+   | 12 |      | Fri-11-Feb |                |            |
+   |----+------+------------+----------------+------------|
+   | 13 |    6 | Mon-14-Feb |                |            |
+   | 14 |      | Wed-16-Feb |                |            |
+   | 15 |      | Fri-18-Feb |                |            |
+   |----+------+------------+----------------+------------|
+   | 16 |    7 | Mon-21-Feb |                |            |
+   | 17 |      | Wed-23-Feb |                |            |
+   | 18 |      | Fri-25-Feb |                |            |
+   |----+------+------------+----------------+------------|
+   | 19 |    8 | Mon-28-Feb |                |            |
+   | 20 |      | Wed-02-Mar |                |            |
+   | 21 |      | Fri-04-Mar |                |            |
+   |----+------+------------+----------------+------------|
+   | 22 |    9 | Mon-07-Mar |                |            |
+   | 23 |      | Wed-09-Mar |                |            |
+   | 24 |      | Fri-11-Mar |                |            |
+   |----+------+------------+----------------+------------|
+   | 25 |   10 | Mon-14-Mar |                |            |
+   | 26 |      | Wed-16-Mar |                |            |
+   | 27 |      | Fri-18-Mar |                |            |
+   |----+------+------------+----------------+------------|
+   | 28 |   11 | Mon-28-Mar |                |            |
+   | 29 |      | Wed-30-Mar |                |            |
+   | 30 |      | Fri-01-Apr |                |            |
+   |----+------+------------+----------------+------------|
+   | 31 |   12 | Mon-04-Apr |                |            |
+   | 32 |      | Wed-06-Apr |                |            |
+   | 33 |      | Fri-08-Apr |                |            |
+   |----+------+------------+----------------+------------|
+   | 34 |   13 | Mon-11-Apr |                |            |
+   | 35 |      | Wed-13-Apr |                |            |
+   |----+------+------------+----------------+------------|
+   | 36 |   14 | Wed-20-Apr |                |            |
+   | 37 |      | Fri-22-Apr |                |            |
+   |----+------+------------+----------------+------------|
+   | 38 |   15 | Mon-25-Apr |                |            |
+   | 39 |      | Wed-27-Apr |                |            |
+   | 40 |      | Fri-29-Apr |                |            |
+   |----+------+------------+----------------+------------|
+   | 41 |   16 | Mon-02-May |                |            |
+   | 42 |      | Wed-04-May |                |            |
+   |----+------+------------+----------------+------------|
+
+* Footnotes
+
+[fn:4]Academic calendar sent by the Provost, Melissa Taverner.
+
+[fn:3]Sent by the Interim Provost, Anthony Grafton. 
+
+[fn:2]Taken from David Sonnier with minor modifications. 
+
+[fn:1]Schedule may change depending on course load and progress.

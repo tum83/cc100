@@ -25,7 +25,7 @@
   /Image: Thompson & Ritchie with a DEC PDP-11, 1970. Source: Brock,
   2019/
 
-  |C is a widely used, popular, standardized programming language.[fn:1]|
+  |C is a widely used, popular, standardized programming language.|[fn:1]
 
   * Usage: cp. [[https://data-flair.training/blogs/applications-of-c/][Data Flair]] 
   * Popularity: cp. [[https://www.tiobe.com/tiobe-index/c/][TIOBE Index]]

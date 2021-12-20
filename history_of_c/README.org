@@ -19,8 +19,14 @@
   -----
 * What is C?
 
-  C is a widely used high-level programming language developed in the
-  early 1970s at Bell Laboratories.
+  #+attr_html: :width 500px
+  [[./img/unix.png]]
+
+  /Image: Thompson & Ritchie with a DEC PDP-11, 1970. Source: [[brock][Brock,
+  2019]]/
+
+  
+  
 * Where does C come from?
 
   Cp. K&R ([[kr][Kernighan/Ritchie, 1978]])
@@ -47,6 +53,9 @@
   -----
 * References
 
+  <<brock>> Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
+  Source Code Release [Blog]. URL: [[https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/][computerhistory.org]].
+  
   King (2008). C Programming - A Modern
   Approach. Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]].
 

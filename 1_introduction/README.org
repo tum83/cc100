@@ -80,7 +80,7 @@
   /Image: Usage of C. Source: Data Flair/
 
   Some well-known programs written in C:
-  * The Linux kernel
+  * The Linux kernel (and therefore, Android)
   * UNIX operating system (core of MacOS)
   * Windows 1.0 to Windows XP
   * Doom (early video game)
@@ -88,7 +88,7 @@
   * Git version control system
   * Clang and MinGW compilers
   * ...Any software that crosses platforms easily...
-  
+
   See also: "[[https://youtu.be/smGalmxPVYc][Why C programming is awesome]]" (Hawkes, 2016).
 
 ** The Latin of programming languages
@@ -180,11 +180,17 @@
 
 * Summary
 
-  * The C programming language was created 50 years ago
-  * C is small, simple, fast, and close to the computer
-  * Written
-  * The object-oriented programming (OOP) language C++ contains C
-  * 
+  | The C programming language was created 50 years ago           |
+  | C is small, simple, very fast, and close to the computer      |
+  | Linux (and Android) are largely written in C                  |
+  | The object-oriented programming (OOP) language C++ contains C |
+  | System programming is a powerful skill set                    |
+
+** TODO Concept glossary
+
+   | CONCEPT | DEFINITION |
+   |---------+------------|
+   |         |            |
 
 * What's next?
 

@@ -1,17 +1,24 @@
+#+TITLE:Infrastructure
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:CSC100 Introduction to programming in C/C++
+#+STARTUP:overview
+#+OPTIONS: toc:1
+#+OPTIONS:hideblocks
 * What are you going to learn?
 
   * Why we don't just get coding
-  * Which infrastructure we need
-  * Installing Linux under Windows
-  * Installing Emacs under Linux
-  * Using the command line
-  * Using the Emacs editor
-  
+  * Installing Codeblocks under Windows
+  * Installing Codeblocks under MacOS
+  * Installing Codeblocks under Linux
+  * Powerful alternative: GNU Linux/Emacs
+  * Summary of concepts/code
+  * What's next
+
 * Why we don't just get coding
 
   There are two reasons - one is philosophical, the other is
   technical.
-  
+
   #+begin_quote
   "Understanding underlying technologies helps you develop a sense of
   what can go wrong. Knowing just high-level tools makes it easy to ask
@@ -25,21 +32,70 @@
 
   The other reason has to do with C itself:
 
-  * C source code needs to be written and edited
-  * C source code needs to be compiled, linked and debugged
-  * Compiler, linker and editor are separate software
-  
-* Which infrastructure we need
+  | TASK                                                    | SOFTWARE |
+  |---------------------------------------------------------+----------|
+  | C source code needs to be written and edited            | editor   |
+  | C source code needs to be compiled, linked and debugged | compiler |
+  | C object code needs to be run                           | shell    |
 
-  
-  
-* Installing Linux under Windows
-* Installing Emacs under Linux
-* Using the command line
-* Using the Emacs editor
+  #+attr_html: :width 600px
+  [[./img/workflow.png]]
 
+  /Image: C programming workflow / BPMN model/
+
+* Installing Code::Blocks
+
+** Windows
+
+** MacOS
+
+** Linux
+
+* Alternative: GNU Linux/Emacs
+** What's that?
+
+   Linux probably doesn't need an introduction. But Emacs might.
+
+  * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][How and why I use Emacs]] (FAQ)
+  * [[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs]] (Kenlon, 2020).
+
+  #+attr_html: :width 600px
+  [[./img/linuxemacs.png]]
+
+** Installation
+   
+   * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-linux-under-windows-10][Installing Linux under Windows]] (FAQ)
+   * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-emacs-as-a-data-science-ide-on-windows-10][Installing Emacs (+ESS) under Windows]] (FAQ)
+   * [[https://ubuntu.com/tutorials/command-line-for-beginners#1-overview][Ubuntu Linux Commandline Tutorial]]
+   * [[https://www.gnu.org/software/emacs/tour/][Emacs Tutorial]] (~C-h t~ in Emacs)
+
+** Trends
+
+   Again, you probably know that Linux (via Android) is the trend king
+   among operating systems ([[https://hostingtribunal.com/blog/linux-statistics/#gref][Galov, 2021]]).
+   
+   "[[https://youtu.be/9ahR5K_wkNQ][M-x Forever: Why Emacs will outlast text editor trends]]"
+   (Wilson, 2021).
+
+   #+attr_html: :width 600px
+   [[./img/trend.png]]
+
+   /Figure: Interest in different text editors from worldwide Google
+   searches 2004-2021. [[https://trends.google.com/trends/explore?date=all&q=Emacs,%2Fm%2F0134xwrk,%2Fm%2F07zh7,%2Fm%2F0b6h18n,%2Fm%2F0_x5x3g][Source: trends.google.com]]/
+* TODO Summary
+* What's next
 * References
 
+  Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
+  Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
+  
+  Kenlon (March 10, 2020). Getting started with Emacs [blog]. [[https://opensource.com/article/20/3/getting-started-emacs][URL:
+  opensource.com.]]
+  
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
-  
+
+  Wilson (November 28, 2021). M-x Forever: Why Emacs will outlast text
+  editor trends. Emacs conference 2021 [video]. [[https://youtu.be/9ahR5K_wkNQ][URL:
+  youtu.be/9ahR5K_wkNQ]].
+

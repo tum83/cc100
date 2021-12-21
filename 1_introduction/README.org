@@ -158,12 +158,13 @@
 
   /Figure: Computer Landscape. Modified from: Steinhart, 2019/
 
-  However: Bjarne Stroustrup said 2011 that "[[https://youtu.be/KlPC3O1DVcg][C is obsolete]]"[fn:6],
-  while Linus Torvalds wrote (in 2007) that "[[http://harmful.cat-v.org/software/c++/linus][C++ is a horrible
-  language]]"[fn:7].
+  - Bjarne Stroustrup (2011): "[[https://youtu.be/KlPC3O1DVcg][C is obsolete]]"[fn:6]
+  - Linus Torvalds (2007): "[[http://harmful.cat-v.org/software/c++/linus][C++ is a horrible language]]"[fn:7].
 
 * Why am I teaching C/C++?
 
+  It's personal.
+  
   #+attr_html: :width 500px
   [[./img/desy.png]]
   /Image: The C++ Virtual Library, 1993-1995 ([[https://www.desy.de/user/projects/C++.html][Source]])/
@@ -184,9 +185,30 @@
 
 ** TODO Concept glossary
 
-   | CONCEPT | DEFINITION |
-   |---------+------------|
-   |         |            |
+   | CONCEPT/TOPIC           | DEFINITION                                          |
+   |-------------------------+-----------------------------------------------------|
+   | DEC PDP-11              | 1970s mainframe computer                            |
+   | UNIX                    | Operating system (ca. 1969)                         |
+   | ANSI                    | American National Standard Institute                |
+   | String                  | A data type representing text                       |
+   | Assembler               | Machine code (hard to write/read)                   |
+   | Algorithm               | Fixed process or set of rules                       |
+   | Linux                   | Operating system (ca. 1991)                         |
+   | C                       | Imperative, procedural programming language         |
+   | C++                     | Object-oriented (OO) superset of C                  |
+   | gcc                     | GNU compiler bundle (incl. C/C++)                   |
+   | Clang                   | C/C++ compiler                                      |
+   | Java,C#                 | OO programming language                             |
+   | Perl                    | Scripting language                                  |
+   | Git                     | Software version control system                     |
+   | GitHub                  | Developer's platform (owned by Microsoft)           |
+   | Library                 | Bundle of useful functions and routines             |
+   | Portability             | Ability of software to run on different hardwares   |
+   | Efficiency              | Software speed of execution and memory requirements |
+   | Permissiveness          | Degree to which a language tolerates ambiguities    |
+   | Object-orientation      | Ability to define abstractions                      |
+   | System programming      | Programming close to the machine                    |
+   | Application programming | Programming close to the user                       |
 
 * What's next?
 

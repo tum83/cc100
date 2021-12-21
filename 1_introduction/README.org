@@ -21,7 +21,6 @@
 
   #+attr_html: :width 500px
   [[./img/unix.png]]
-
   /Image: Thompson & Ritchie & DEC PDP-11, 1970. (Brock, 2019)/
 
   | C is a programming language created in the early 1970s. |
@@ -53,7 +52,6 @@
 
   #+attr_html: :width 300px
   [[./img/kr.png]]
-
   /Image: "K&R" (Kernighan/Ritchie, 1978)/
 
   * By-product of the UNIX operating system 1969 [fn:3]
@@ -68,7 +66,6 @@
 
    #+attr_html: :width 500px
    [[./img/pdp11.jpg]]
-
    /Image: PDP-11/70 ([[https://www.flickr.com/photos/mratzloff/9169358863][Source]])/
 
    | Challenge: was C the first programming language? | [fn:5] |
@@ -116,13 +113,13 @@
    ...
 
    [[./img/slow.png]]
+   /Image source: [[https://github.com/kostya/benchmarks][Kostya benchmark, GitHub, Nov 2021]]/
 
    * Excerpts for parsing and printing a Mandelbrot set
    * Benchmarks depend on algorithm implementation
    * C always wins the size battle (memory allocation)
    * Some very specialized languages are even faster
 
-   /Images source: [[https://github.com/kostya/benchmarks][Kostya benchmark, GitHub, Nov 2021]]/
 
 ** Strengths and weaknesses
 
@@ -169,7 +166,6 @@
 
   #+attr_html: :width 500px
   [[./img/desy.png]]
-
   /Image: The C++ Virtual Library, 1993-1995 ([[https://www.desy.de/user/projects/C++.html][Source]])/
 
   #+begin_quote

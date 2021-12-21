@@ -1,4 +1,4 @@
-#+TITLE:History of C
+#+TITLE:Introduction to C
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview

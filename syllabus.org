@@ -267,9 +267,7 @@
 
 ** Schedule and session content
 
-   Changes are possible - tentative schedule.
-
-   
+   Changes are possible - the [[https://github.com/birkenkrahe/cc100/blob/main/schedule.org][updated schedule is here]].  
 
 * References
 

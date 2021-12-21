@@ -87,6 +87,7 @@
   * Wolfenstein 3D
   * Git version control system
   * Clang and MinGW compilers
+  * ...Any software that crosses platforms easily...
   
   See also: "[[https://youtu.be/smGalmxPVYc][Why C programming is awesome]]" (Hawkes, 2016).
 

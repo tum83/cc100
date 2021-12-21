@@ -20,9 +20,20 @@
    you find any of these interesting and want to use them for your
    research, you might ask me why I assigned a particular level.
 
-** Udemy course
-   * [ ] [[https://blog.udemy.com/what-is-c-programming/][What is C programming? Learn the basics (2021)]]
-   * [ ] [[https://www.udemy.com/course/c-programming-for-beginners/][Udemy Course: Huw Collingbourne (2019)]]
+** C Programming tutorials (free)
+
+   The freeCodeCamp course uses our environment (Code::Blocks).
+   
+   * [[https://youtu.be/KJgsSFOSQv0][C Programming Tutorial for Beginners (4hrs)]] - freeCodeCamp
+   * [[https://youtu.be/Bz4MxDeEM6k][C Programming All-in-One Tutorial Series (10 hrs)]] - Caleb Curry
+
+** Udemy course (not free)
+
+   I only know about these because I bought them a while back.
+   
+   * [[https://blog.udemy.com/what-is-c-programming/][What is C programming? Learn the basics (2021)]]
+   * [[https://www.udemy.com/course/c-programming-for-beginners/][Udemy Course: Huw Collingbourne (2019)]]
+
 ** IDEs
 
    * [[https://codelite.org][CodeLite]]: "CodeLite is an open source, free, cross platform IDE
@@ -42,6 +53,7 @@
    A lot of vocal fry [[https://www.codecademy.com/resources/blog/programming-languages/][in this video]] but you can also just read the
    transcript. Includes some good links, like [[https://pypl.github.io/PYPL.html][PYPL]]. I have started the (free) C++
    course from Codeacademy (they're a big online course provider).  
+
 ** [[https://youtu.be/48JlgiBpw_I][Absolute beginner's guide to Emacs]] (1 hr 15 min)
 
    * [[https://systemcrafters.net/emacs-essentials/absolute-beginners-guide-to-emacs/][Notes]] (Emacs Org mode file committed to GitHub)

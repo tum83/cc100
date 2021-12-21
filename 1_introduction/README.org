@@ -183,7 +183,7 @@
   | The object-oriented programming (OOP) language C++ contains C |
   | System programming is a powerful skill set                    |
 
-** TODO Concept glossary
+** Concept glossary
 
    | CONCEPT/TOPIC           | DEFINITION                                          |
    |-------------------------+-----------------------------------------------------|

@@ -1,0 +1,7 @@
+#+TITLE:Systems 
+#+AUTHOR:Systems 
+#+SUBTITLE:CSC100 Introduction to Programming in C/C++
+#+STARTUP:overview
+#+OPTIONS:hideblocks
+#+OPTIONS: toc:nil num:nil ^:nil
+#+INFOJS_OPT: :view:info

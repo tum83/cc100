@@ -1,7 +1,0 @@
-#+TITLE:Course Overview 
-#+AUTHOR:Course Overview 
-#+SUBTITLE:CSC100 Introduction to programming in C/C++
-#+STARTUP:overview
-#+OPTIONS:hideblocks
-#+OPTIONS: toc:nil num:nil ^:nil
-#+INFOJS_OPT: :view:info

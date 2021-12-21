@@ -138,7 +138,6 @@
 
 * What's next?
 
-  - What's in this course? (Lecture)
   - Getting started: Infrastructure (Lab)
   - First program: "hello world" (Lecture + Lab)
 

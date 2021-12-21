@@ -79,11 +79,44 @@
   [[./img/usage.jpg]]
   /Image: Usage of C. Source: Data Flair/
 
-  Indirectly, the following languages are C-based:
-  * C++ (OOP extension of C, games)
-  * Java (OOP, VM-portable, and no pointers)
-  * C# (Microsoft, games)
-  * Perl (scripting, text mining)
+** The Latin of programming languages
+
+   The following languages are C-based:
+   * C++ (OOP extension of C, games)
+   * Java (OOP, VM-portable, and no pointers)
+   * C# (Microsoft, games)
+   * Perl (scripting, text mining)
+
+** Lightning fast and terribly tiny
+
+   #+begin_quote
+   "C is fast because it's the speed of light, and relativity?"
+   ([[https://stackoverflow.com/questions/418914/why-is-c-so-fast-and-why-arent-other-languages-as-fast-or-faster][Stackoverflow]])
+   #+end_quote
+
+   [[./img/fast.png]]
+
+   ...
+
+   [[./img/slow.png]]
+
+   * Excerpts for parsing and printing a Mandelbrot set
+   * Benchmarks depend on algorithm implementation
+   * C always wins the size battle (memory allocation)
+   * Some very specialized languages are even faster
+
+   /Images source: [[https://github.com/kostya/benchmarks][Kostya benchmark, GitHub, Nov 2021]]/
+
+** Strengths and weaknesses
+
+   | STRENGTH              | WEAKNESS                     |
+   |-----------------------+------------------------------|
+   | Efficiency            | Permissiveness (Error-prone) |
+   | Portability           | Terseness and Understanding  |
+   | Power                 | Large program maintenance    |
+   | Flexibility           |                              |
+   | Standard library      |                              |
+   | Integration with UNIX |                              |
 
 * What is the difference between C and C++?
 
@@ -130,7 +163,7 @@
   - First program: "hello world" (Lecture + Lab)
 
   [[./img/river.gif]]
-  
+
 * References
 
   Brock (October 17, 2019). The Earliest Unix Code: An Anniversary

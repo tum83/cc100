@@ -102,26 +102,14 @@
 
 * Why are we not just learning C++?
 
-  #+begin_quote
-  "Understanding underlying technologies helps you develop a sense of
-  what can go wrong. Knowing just high-level tools makes it easy to ask
-  the wrong questions. It's worth learning to use a hammer before
-  graduating to a nail gun. Learning underlying systems and tools gives
-  you the power to build new tools, which is important because there
-  will always be a need for tool builders, even if tool users are more
-  common. Learning about computers so that the behavior of programs
-  isn't a mystery enables you to craft better code." (Steinhart, 2019)
-  #+end_quote
-
-  * Object-orientation is a difficult paradigm
-  * System programming is pure power
-  * [[https://medium.com/nerd-for-tech/linus-torvalds-c-is-really-a-terrible-language-2248b839bee3][Linus Torvalds: "C++ is really a terrible language!"]]
-    (Zivuku, 2021)
+  * Object-orientation is a difficult paradigm (C++)
+  * System programming is pure power (C)
+  * C is simpler, smaller, and faster
 
   #+attr_html: :width 500px
-  [[./img/power.png]]
+  [[./img/power2.png]]
 
-  /Figure: Computer Landscape. Image source: Steinhart, 2019/
+  /Figure: Computer Landscape. Modified from: Steinhart, 2019/
 
 * Why am I teaching C/C++?
 
@@ -171,8 +159,6 @@
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
 
-  Zivuku (Apr 20, 2021). Linus Torvalds: "C++ is really a terrible
-  language!"
 * Footnotes
 
 [fn:3]The motivation to create Unix, according to [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Wikipedia]], was to

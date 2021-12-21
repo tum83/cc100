@@ -1,4 +1,14 @@
-* Why
+* What are you going to learn?
+
+  * Why we don't just get coding
+  * Which infrastructure we need
+  * Installing Linux under Windows
+  * Installing Emacs under Linux
+  * Using the command line
+  * Using the Emacs editor
+  
+* Why we don't just get coding
+  
   #+begin_quote
   "Understanding underlying technologies helps you develop a sense of
   what can go wrong. Knowing just high-level tools makes it easy to ask
@@ -10,6 +20,14 @@
   isn't a mystery enables you to craft better code." (Steinhart, 2019)
   #+end_quote
 
+* Which infrastructure we need
+
+  
+  
+* Installing Linux under Windows
+* Installing Emacs under Linux
+* Using the command line
+* Using the Emacs editor
 
 * References
 

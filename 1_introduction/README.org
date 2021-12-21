@@ -79,8 +79,17 @@
   [[./img/usage.jpg]]
   /Image: Usage of C. Source: Data Flair/
 
-  See also: "[[https://youtu.be/smGalmxPVYc][Why C programming is awesome]]" (Hawkes, 2016).
+  Some well-known programs written in C:
+  * The Linux kernel
+  * UNIX operating system (core of MacOS)
+  * Windows 1.0 to Windows XP
+  * Doom (early video game)
+  * Wolfenstein 3D
+  * Git version control system
+  * Clang and MinGW compilers
   
+  See also: "[[https://youtu.be/smGalmxPVYc][Why C programming is awesome]]" (Hawkes, 2016).
+
 ** The Latin of programming languages
 
    The following languages are C-based:
@@ -88,6 +97,11 @@
    * Java (OOP, VM-portable, and no pointers)
    * C# (Microsoft, games)
    * Perl (scripting, text mining)
+
+   #+begin_quote
+   "C is to programming languages what Latin is to Western natural
+   languages." (Anonymous)
+   #+end_quote
 
 ** Lightning fast and terribly tiny
 
@@ -149,7 +163,7 @@
   However: Bjarne Stroustrup said 2011 that "[[https://youtu.be/KlPC3O1DVcg][C is obsolete]]"[fn:6],
   while Linus Torvalds wrote (in 2007) that "[[http://harmful.cat-v.org/software/c++/linus][C++ is a horrible
   language]]"[fn:7].
-  
+
 * Why am I teaching C/C++?
 
   #+attr_html: :width 500px
@@ -163,6 +177,14 @@
   theory simulations in theoretical particle physics).
   #+end_quote
 
+* Summary
+
+  * The C programming language was created 50 years ago
+  * C is small, simple, fast, and close to the computer
+  * Written
+  * The object-oriented programming (OOP) language C++ contains C
+  * 
+
 * What's next?
 
   - Getting started: Infrastructure (Lab)
@@ -175,7 +197,7 @@
   Big Think (Jun 13, 2011). Bjarne Stroustrup: Why the Programming
   Language C Is Obsolete | Big Think [video]. [[https://youtu.be/KlPC3O1DVcg][URL:
   youtu.be/KlPC3O1DVcg]].
-  
+
   Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
   Source Code Release [Blog]. URL: [[https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/][computerhistory.org]].
 
@@ -204,7 +226,7 @@
 
   Torvalds (6 Sep 2007). Linus Torvalds on C++ [blog]. [[http://harmful.cat-v.org/software/c++/linus][URL:
   harmful.cat-v.org]].
-  
+
 * Footnotes
 
 [fn:7]Torvalds (who wrote the Linux kernel in C) argues here in favor

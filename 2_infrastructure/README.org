@@ -8,6 +8,9 @@
   * Using the Emacs editor
   
 * Why we don't just get coding
+
+  There are two reasons - one is philosophical, the other is
+  technical.
   
   #+begin_quote
   "Understanding underlying technologies helps you develop a sense of
@@ -20,6 +23,12 @@
   isn't a mystery enables you to craft better code." (Steinhart, 2019)
   #+end_quote
 
+  The other reason has to do with C itself:
+
+  * C source code needs to be written and edited
+  * C source code needs to be compiled, linked and debugged
+  * Compiler, linker and editor are separate software
+  
 * Which infrastructure we need
 
   

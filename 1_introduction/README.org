@@ -79,6 +79,8 @@
   [[./img/usage.jpg]]
   /Image: Usage of C. Source: Data Flair/
 
+  See also: "[[https://youtu.be/smGalmxPVYc][Why C programming is awesome]]" (Hawkes, 2016).
+  
 ** The Latin of programming languages
 
    The following languages are C-based:
@@ -144,6 +146,10 @@
 
   /Figure: Computer Landscape. Modified from: Steinhart, 2019/
 
+  However: Bjarne Stroustrup said 2011 that "[[https://youtu.be/KlPC3O1DVcg][C is obsolete]]"[fn:6],
+  while Linus Torvalds wrote (in 2007) that "[[http://harmful.cat-v.org/software/c++/linus][C++ is a horrible
+  language]]"[fn:7].
+  
 * Why am I teaching C/C++?
 
   #+attr_html: :width 500px
@@ -166,6 +172,10 @@
 
 * References
 
+  Big Think (Jun 13, 2011). Bjarne Stroustrup: Why the Programming
+  Language C Is Obsolete | Big Think [video]. [[https://youtu.be/KlPC3O1DVcg][URL:
+  youtu.be/KlPC3O1DVcg]].
+  
   Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
   Source Code Release [Blog]. URL: [[https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/][computerhistory.org]].
 
@@ -192,7 +202,20 @@
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
 
+  Torvalds (6 Sep 2007). Linus Torvalds on C++ [blog]. [[http://harmful.cat-v.org/software/c++/linus][URL:
+  harmful.cat-v.org]].
+  
 * Footnotes
+
+[fn:7]Torvalds (who wrote the Linux kernel in C) argues here in favor
+of writing his hugely successful version control program ~git~ in C
+instead of C++. He highlights sme of the strengths of C: efficient,
+system-level, portable code.
+
+[fn:6]However, he is biased, since he is the creator of C++. The title
+of the video is misleading: Stroustrup believes that every C program
+should rather be a proper C++ program. However, he also concedes that
+C++ is still too complex for many ("We have to clean it up").
 
 [fn:3]The motivation to create Unix, according to [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Wikipedia]], was to
 port Thompson's space travel video game to the PDP-7 mainframe

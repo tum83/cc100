@@ -62,17 +62,30 @@
   #+attr_html: :width 600px
   [[./img/linuxemacs.png]]
 
-** Installation
+** Installation & Mastery
+
+   Both Linux and Emacs is the beginning of a beautiful, multi-hour
+   journey. I estimate that it'll take > 2 hours until you're
+   reasonably competent to use either. Once you invest this time,
+   you'll have a set of very valuable, marketable, transferable
+   computer craft skills.
    
    * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-linux-under-windows-10][Installing Linux under Windows]] (FAQ)
    * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-emacs-as-a-data-science-ide-on-windows-10][Installing Emacs (+ESS) under Windows]] (FAQ)
+   * [[https://systemcrafters.net/emacs-essentials/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]] (2021)
    * [[https://ubuntu.com/tutorials/command-line-for-beginners#1-overview][Ubuntu Linux Commandline Tutorial]]
    * [[https://www.gnu.org/software/emacs/tour/][Emacs Tutorial]] (~C-h t~ in Emacs)
 
-** Trends
+** Trends - Freedom or Slavery?
 
    Again, you probably know that Linux (via Android) is the trend king
    among operating systems ([[https://hostingtribunal.com/blog/linux-statistics/#gref][Galov, 2021]]).
+
+   Below is a recent evaluation of Emacs' popularity. However,
+   comparing Emacs with text editors does not make too much sense
+   since Emacs is much more than a text editor, and also much more
+   than an (language-specific) IDE. Watch the video for this and much
+   more up to date information:
    
    "[[https://youtu.be/9ahR5K_wkNQ][M-x Forever: Why Emacs will outlast text editor trends]]"
    (Wilson, 2021).
@@ -82,10 +95,28 @@
 
    /Figure: Interest in different text editors from worldwide Google
    searches 2004-2021. [[https://trends.google.com/trends/explore?date=all&q=Emacs,%2Fm%2F0134xwrk,%2Fm%2F07zh7,%2Fm%2F0b6h18n,%2Fm%2F0_x5x3g][Source: trends.google.com]]/
+
+   From a data science point of view, search trend data are
+   problematic because it is not clear how they are collected and
+   labelled, who or why is searching for something.
+
+   The key characteristic of Emacs (besides its being firmly rooted in
+   text) is its self-extensibility and large, stable, knowledgeable,
+   active user community. With an estimated 27 million developers
+   world-wide, 5% amounts to 1,350,000 developers who're using
+   Emacs. Among professional developers, Vim/Emacs are still
+   irreplaceable. IDEs (like Code::Blocks, Netbeans, Ellipse, Visual
+   Studio Code) are Okay for small scripting projects and web
+   applications ([[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][Biggs/Donovan, 2020]]).
+   
 * TODO Summary
 * What's next
 * References
 
+  Biggs/Donovan (November 9, 2020). Modern IDEs are magic. Why are so
+  many coders still using Vim and Emacs? [Blog]. URL:
+  [[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][stackoverflow.org]].
+  
   Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
   Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
   
@@ -99,3 +130,5 @@
   editor trends. Emacs conference 2021 [video]. [[https://youtu.be/9ahR5K_wkNQ][URL:
   youtu.be/9ahR5K_wkNQ]].
 
+  Wilson (March 8, 2021). The Absolute Beginner's Guide to Emacs
+  [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].

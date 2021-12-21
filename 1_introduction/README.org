@@ -195,9 +195,10 @@
    | Algorithm               | Fixed process or set of rules                       |
    | Linux                   | Operating system (ca. 1991)                         |
    | C                       | Imperative, procedural programming language         |
+   | compiler                | Software to translate source into machine code      |
    | C++                     | Object-oriented (OO) superset of C                  |
-   | gcc                     | GNU compiler bundle (incl. C/C++)                   |
    | Clang                   | C/C++ compiler                                      |
+   | gcc                     | GNU compiler bundle (incl. C/C++)                   |
    | Java,C#                 | OO programming language                             |
    | Perl                    | Scripting language                                  |
    | Git                     | Software version control system                     |

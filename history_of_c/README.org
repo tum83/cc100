@@ -32,22 +32,23 @@
 
   | Challenge: How popular do you think C is today? | [fn:4] |
 
-* What is a programming language?
+** What is a programming language?
 
-  #+begin_quote
-  "A programming language is a formal language comprising a set of
-  strings that produce various kinds of machine code output. Programming
-  languages are one kind of computer language, and are used in computer
-  programming to implement algorithms." (Source: [[https://en.wikipedia.org/wiki/Programming_language][Wikipedia]])
-  #+end_quote
+   #+begin_quote
+   "A programming language is a formal language comprising a set of
+   strings that produce various kinds of machine code output. Programming
+   languages are one kind of computer language, and are used in computer
+   programming to implement algorithms." (Source: [[https://en.wikipedia.org/wiki/Programming_language][Wikipedia]])
+   #+end_quote
 
-  * Formal language?
-  * Set of strings?
-  * Machine code?
-  * Algorithm?
+   * Formal language?
+   * Set of strings?
+   * Machine code?
+   * Algorithm?
 
-    [[./img/nerds.gif]]
-    
+   [[./img/standards.png]]
+   /Image source: [[https://xkcd.com/927/][xkcd]]/
+
 * Where does C come from?
 
   #+attr_html: :width 300px
@@ -55,7 +56,7 @@
 
   /Image: "K&R" (Kernighan/Ritchie, 1978)/
 
-  * By-product of the UNIX operating system 1969
+  * By-product of the UNIX operating system 1969 [fn:5]
   * Developed on DEC PDP-7 (8K words of main memory)0
   * Written originally in assembly language
   * UNIX rewritten in C by 1973 for [[https://en.wikipedia.org/wiki/PDP-11][DEC PDP-11]]
@@ -63,12 +64,14 @@
 
   | Challenge: what does "8K words of main memory" mean? | [fn:2]) |
 
-  #+attr_html: :width 500px
-  [[./img/pdp11.jpg]]
+** Looks matter
 
-  /Image: PDP-11/70 ([[https://www.flickr.com/photos/mratzloff/9169358863][Source]])/
+   #+attr_html: :width 500px
+   [[./img/pdp11.jpg]]
 
-  | Challenge: was C the first programming language? | [fn:3] |
+   /Image: PDP-11/70 ([[https://www.flickr.com/photos/mratzloff/9169358863][Source]])/
+
+   | Challenge: was C the first programming language? | [fn:3] |
 
 * How important is C?
 
@@ -76,24 +79,71 @@
   [[./img/usage.jpg]]
   /Image: Usage of C. Source: Data Flair/
 
+  Indirectly, the following languages are C-based:
+  * C++ (OOP extension of C, games)
+  * Java (OOP, VM-portable, and no pointers)
+  * C# (Microsoft, games)
+  * Perl (scripting, text mining)
+
 * What is the difference between C and C++?
+
+  C++ is a superset of C.
+
+  #+attr_html: :width 400px
+  [[./img/ccpp.png]]
+
+  | WHAT | C                      | C++                     |
+  |------+------------------------+-------------------------|
+  | TIME | Thompson/Ritchie 1970s | Stroustrup 1980s        |
+  | TYPE | Imperative procedural  | Object-oriented         |
+  | USE  | System programming     | Games, graphics, search |
 
   Source: [[lemonaki][Lemonaki, 2021]]
 
-  Ritchie: [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Space Travel game 1969]]
-
-  Torvalds: [[https://medium.com/nerd-for-tech/linus-torvalds-c-is-really-a-terrible-language-2248b839bee3][C++ is really a terrible language]]
-
 * Why are we not just learning C++?
+
+  #+begin_quote
+  "Understanding underlying technologies helps you develop a sense of
+  what can go wrong. Knowing just high-level tools makes it easy to ask
+  the wrong questions. It's worth learning to use a hammer before
+  graduating to a nail gun. Learning underlying systems and tools gives
+  you the power to build new tools, which is important because there
+  will always be a need for tool builders, even if tool users are more
+  common. Learning about computers so that the behavior of programs
+  isn't a mystery enables you to craft better code." (Steinhart, 2019)
+  #+end_quote
+
+  * Object-orientation is a difficult paradigm
+  * System programming is pure power
+  * [[https://medium.com/nerd-for-tech/linus-torvalds-c-is-really-a-terrible-language-2248b839bee3][Linus Torvalds: "C++ is really a terrible language!"]]
+    (Zivuku, 2021)
+
+  #+attr_html: :width 500px
+  [[./img/power.png]]
+
+  /Figure: Computer Landscape. Image source: Steinhart, 2019/
 
 * Why am I teaching C/C++?
 
+  #+attr_html: :width 500px
+  [[./img/desy.png]]
+
+  /Image: The C++ Virtual Library, 1993-1995 ([[https://www.desy.de/user/projects/C++.html][Source]])/
+
+  #+begin_quote
+  I used C++ during my PhD studies at DESY, Germany, to write a
+  library of multigrid functions (numerical method for lattice gauge
+  theory simulations in theoretical particle physics).
+  #+end_quote
+
 * What's next?
 
-  * What's in this course?
-  * Getting started: Infrastructure (shell, compiler, editor)
-  * First program: "hello world"
-  -----
+  - What's in this course? (Lecture)
+  - Getting started: Infrastructure (Lab)
+  - First program: "hello world" (Lecture + Lab)
+
+  [[./img/river.gif]]
+  
 * References
 
   Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
@@ -108,6 +158,8 @@
   Data Flair (n.d.). Applications of C Programming That Will Make You
   Fall In Love With C [Tutorial]. URL: d[[https://data-flair.training/blogs/applications-of-c/][ata-flair.training.]]
 
+  Gustedt (2019). Modern C. Manning.
+
   King (2008). C Programming - A Modern
   Approach. Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]].
 
@@ -117,7 +169,16 @@
   Lemonaki, Dionysia (November 4, 2021). C vs. C++ -
   What's The Difference [blog]. URL: [[https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/][freecodecamp.org.]]
 
+  Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
+  nostarch.com.]]
+
+  Zivuku (Apr 20, 2021). Linus Torvalds: "C++ is really a terrible
+  language!"
 * Footnotes
+
+[fn:5]The motivation to create Unix, according to [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Wikipedia]], was to
+port Thompson's space travel video game to the PDP-7 mainframe
+computer. So in a way we owe modern computing to gaming.
 
 [fn:4]Since 2000, C has consistently ranked among the top two
 languages in the TIOBE index (based on searches).
@@ -136,4 +197,8 @@ follows that UNIX (and C) had to be designed to be very small, or
 space effective.
 
 [fn:1]All sources are referenced at the end of the script, followed by
-the footnotes, which do unfortunately not render as links [[https://github.com/birkenkrahe/cc100/tree/main/history_of_c][on GitHub]].
+the footnotes, which do unfortunately not render as links [[https://github.com/birkenkrahe/cc100/tree/main/history_of_c][on
+GitHub]]. The book by King (2008) does not cover a few recent updates to
+the ANSI standard for C, like C11, and the current standard C17. The
+next major C standard revision (C23) is expected for 2023. Gustedt
+(2019) is a good book on "modern C".

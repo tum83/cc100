@@ -1,0 +1,18 @@
+* Why
+  #+begin_quote
+  "Understanding underlying technologies helps you develop a sense of
+  what can go wrong. Knowing just high-level tools makes it easy to ask
+  the wrong questions. It's worth learning to use a hammer before
+  graduating to a nail gun. Learning underlying systems and tools gives
+  you the power to build new tools, which is important because there
+  will always be a need for tool builders, even if tool users are more
+  common. Learning about computers so that the behavior of programs
+  isn't a mystery enables you to craft better code." (Steinhart, 2019)
+  #+end_quote
+
+
+* References
+
+  Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
+  nostarch.com.]]
+  

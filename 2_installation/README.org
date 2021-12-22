@@ -43,6 +43,17 @@
 
   /Image: C programming workflow / BPMN model/
 
+  I'm suggesting three alternative roads to program C:
+
+  1. ~Code::Blocks~ - this is the simplest solution. ~Code::Blocks~ is
+     an IDE, an environment to develop, test and run C and C++ programs.
+  2. ~Cygwin~ - next up is cygwin for Windows only, which allows you
+     to use your Windows computer like a Linux distribution. You can
+     easily install many different utility programs and different
+     compilers. C programs have to be edited, run and tested in
+     command line mode.
+  3. 
+  
 * Installing Code::Blocks
 
 ** Windows
@@ -51,7 +62,30 @@
 
 ** Linux
 
-* Alternative: GNU Linux/Emacs
+
+* Alternative 1: Cygwin (Windows only)
+** What's that?
+
+   * Cygwin is a large collection of GNU and Open Source tools which
+     provide a functionality similar to GNU/Linux on Windows.
+   * Programs appear as part of a drive called ~cygdrive~. The
+     distribution consists of an executable ~setup.exe~ and a ~.dll~
+     file (Windows' dynamically linked library file type).
+   * To run /native/ Linux apps on cygwin, they must be compiled from
+     the source.
+
+     #+begin_quote
+     [[./img/cygwin.png]]
+     #+end_quote
+     
+** Installation
+
+   
+** Use
+
+   
+
+* Alternative 2: GNU Linux/Emacs (Windows and MacOS)
 ** What's that?
 
    Linux probably doesn't need an introduction. But Emacs might.
@@ -110,12 +144,29 @@
    applications ([[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][Biggs/Donovan, 2020]]).
    
 * TODO Summary
+
+  | CONCEPT       | EXPLANATION                                   |
+  |---------------+-----------------------------------------------|
+  | Coding        | Programming or scripting[fn:1]                      |
+  | Native app    | Designed for a specific computer architecture |
+  | Cygwin        | Linux tools for Windows                       |
+  | Emacs         | Extensible text editor                        |
+  | GNU/Linux     | Open Source operating system                  |
+  | IDE           | Integrated Development Environment            |
+  | Code::Blocks  | C/C++ IDE                                     |
+  | gcc           | GNU compiler bundle                           |
+  | Clang         | C/C++ compiler                                |
+  | Google trends | Search trend dashboard                        |
+  |               |                                               |
+
 * What's next
 * References
 
   Biggs/Donovan (November 9, 2020). Modern IDEs are magic. Why are so
   many coders still using Vim and Emacs? [Blog]. URL:
   [[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][stackoverflow.org]].
+
+  Cygwin 
   
   Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
   Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
@@ -132,3 +183,11 @@
 
   Wilson (March 8, 2021). The Absolute Beginner's Guide to Emacs
   [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
+
+* Footnotes
+
+[fn:1]Some developers take exception to the terms, but we use them
+interchangeably in this course. Script languages (e.g. Perl, Python,
+JavaScript,R etc.) do not need to be compiled - the computer can
+translate the source code (that you write) straight into executable
+(or object) code that runs and generates a result.

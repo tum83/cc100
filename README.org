@@ -5,17 +5,28 @@
 * What's in this repo?
 
   * Repository for CSC 100 - Introduction to Programming in C/C++
-  * Emacs Org-mode files are rendered as Markdown.
+  * Emacs Org-mode files( ~.org~) are rendered as Markdown (not on
+    mobile app).
+  * Markdown files (~.md~) are rendered on mobile app
   * For a TOC, open the bullet point list menu 
 
 ** [[https://github.com/birkenkrahe/dsc101/blob/main/schedule.md][Schedule]] of the course (up to date)
 ** [[https://github.com/birkenkrahe/dsc101/blob/main/agenda.md][Agenda]] for every session
 ** [[https://github.com/birkenkrahe/dsc101/blob/main/diary.md][Course diary]] for further reading
 ** [[https://github.com/birkenkrahe/dsc101/discussions][Discussion forums]] for assignments
-** [[https://github.com/birkenkrahe/dsc101/blob/main/FAQ.md][Frequently Asked Questions (FAQ)]]
-** [[https://github.com/birkenkrahe/dsc101/blob/main/syllabus.md][Syllabus]] for a course overview
+** [[https://github.com/birkenkrahe/cc100/blob/main/FAQ.md][Frequently Asked Questions (FAQ)]]
+** [[https://github.com/birkenkrahe/cc100/blob/main/syllabus.md][Syllabus]] for a course overview
+* How to use GitHub
 
-** History
+  * Register and get added as a collaborator to ~birkenkrahe/cc100~
+  * Complete the GitHub starter course
+  * Fork the ~birkenkrahe/c100~ repo to your own account
+  * File access: on desktop/laptop, open ~.org~ files
+  * Mobile file accessOn the mobile GitHub app, open ~.md~ files
+  * Check regularly (or setup notification) for changes
+  * Commit changes to your fork
+  
+* History
 
    First offered @Lyon: Spring 2022 (Undergrad). To be offered:
    Spring 2024, 2026, 2028.

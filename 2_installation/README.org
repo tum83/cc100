@@ -52,8 +52,8 @@
      easily install many different utility programs and different
      compilers. C programs have to be edited, run and tested in
      command line mode.
-  3. 
-  
+  3.
+
 * Installing Code::Blocks
 
 ** Windows
@@ -77,24 +77,55 @@
      #+begin_quote
      [[./img/cygwin.png]]
      #+end_quote
-     
-** Installation
+     /Image: screenshot of the cygwin terminal command ~pwd~/
 
-   
-** Use
+** Installation and use
 
+   * Go to the [[https://cygwin.com/install.html][Cygwin install page]] and download [[https://cygwin.com/setup-x86_64.exe][~setup-x86_64.exe~]]
+   * Run ~setup-x86_64.exe~ and accept all settings until you come to
+     the package selection screen.
+
+   #+attr_html: :width 500px
+   [[./img/cygwin1.png]]
+
+   Choose ~Full~ in the ~View~ menu on the upper left, then continue
+   with ~Next~ until the installation is finished. Agree to put the
+   launcher into startup and a shortcut on the desktop[fn:2].
+
+   #+attr_html: :width 500px
+   [[./img/cygwin2.png]]
    
+
+   * Start ~cygwin~ by executing the launcher. A terminal window (also
+     called Command Line or shell) opens. You can now use many
+     programs that Linux users have, too. Most importantly for our
+     purposes, you have ~gcc~, the GNU compiler bundle. To test this,
+     execute the following commands (press ~Enter~ after each
+     command).
+
+   #+attr_html: :width 500px
+   [[./img/cygwin3.png]]
+
+   * To close cygwin, close the window or enter ~exit~ on the command
+     line.
+
+   * To update or install cygwin, start the ~setup-x68_64.exe~ program
+     again add missing programs, or uninstall them, in the
+     installation menu. [[https://youtu.be/VyIY8cjn9xY][Here is a good video]] (MacDonald, 2020)
+     explaining how to do that from the command line with a few
+     keystrokes - a good illustration for the power of the command
+     line.
 
 * Alternative 2: GNU Linux/Emacs (Windows and MacOS)
 ** What's that?
 
    Linux probably doesn't need an introduction. But Emacs might.
 
-  * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][How and why I use Emacs]] (FAQ)
-  * [[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs]] (Kenlon, 2020).
+   * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][How and why I use Emacs]] (FAQ)
+   * [[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs]] (Kenlon, 2020).
 
-  #+attr_html: :width 600px
-  [[./img/linuxemacs.png]]
+   #+attr_html: :width 600px
+   [[./img/linuxemacs.png]]
 
 ** Installation & Mastery
 
@@ -103,7 +134,7 @@
    reasonably competent to use either. Once you invest this time,
    you'll have a set of very valuable, marketable, transferable
    computer craft skills.
-   
+
    * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-linux-under-windows-10][Installing Linux under Windows]] (FAQ)
    * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-emacs-as-a-data-science-ide-on-windows-10][Installing Emacs (+ESS) under Windows]] (FAQ)
    * [[https://systemcrafters.net/emacs-essentials/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]] (2021)
@@ -120,7 +151,7 @@
    since Emacs is much more than a text editor, and also much more
    than an (language-specific) IDE. Watch the video for this and much
    more up to date information:
-   
+
    "[[https://youtu.be/9ahR5K_wkNQ][M-x Forever: Why Emacs will outlast text editor trends]]"
    (Wilson, 2021).
 
@@ -142,14 +173,19 @@
    irreplaceable. IDEs (like Code::Blocks, Netbeans, Ellipse, Visual
    Studio Code) are Okay for small scripting projects and web
    applications ([[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][Biggs/Donovan, 2020]]).
-   
-* TODO Summary
+
+* Summary
+
+  *
+    
+* TODO Concepts
 
   | CONCEPT       | EXPLANATION                                   |
   |---------------+-----------------------------------------------|
-  | Coding        | Programming or scripting[fn:1]                      |
+  | Coding        | Programming or scripting[fn:1]                |
   | Native app    | Designed for a specific computer architecture |
   | Cygwin        | Linux tools for Windows                       |
+  | x86_64        | Built for a x86 (CPU) 64-bit computer         |
   | Emacs         | Extensible text editor                        |
   | GNU/Linux     | Open Source operating system                  |
   | IDE           | Integrated Development Environment            |
@@ -157,7 +193,9 @@
   | gcc           | GNU compiler bundle                           |
   | Clang         | C/C++ compiler                                |
   | Google trends | Search trend dashboard                        |
-  |               |                                               |
+  | Launcher      | Program that starts another program           |
+  | Startup       | Set of programs that are started at boot time |
+  | Booting       | Starting a computer                           |
 
 * What's next
 * References
@@ -166,13 +204,17 @@
   many coders still using Vim and Emacs? [Blog]. URL:
   [[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][stackoverflow.org]].
 
-  Cygwin 
-  
+  Cygwin
+
   Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
   Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
-  
+
   Kenlon (March 10, 2020). Getting started with Emacs [blog]. [[https://opensource.com/article/20/3/getting-started-emacs][URL:
   opensource.com.]]
+
+  MacDonald (September 7, 2020). How to install Cygwin packages, 1/2
+  (Using the installer via the GUI) [video]. [[https://youtu.be/VyIY8cjn9xY][URL:
+  youtu.be/VyIY8cjn9xY]].
   
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
@@ -185,6 +227,11 @@
   [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
 
 * Footnotes
+
+[fn:2]As a Windows user you probably know what that means, but just in
+case: cygwin is now added to the programs that are started whenever
+the computer boots, and you can find the program launcher on your
+desktop.
 
 [fn:1]Some developers take exception to the terms, but we use them
 interchangeably in this course. Script languages (e.g. Perl, Python,

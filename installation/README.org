@@ -1,4 +1,4 @@
-#+TITLE:Installation
+#+TITLE:
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview
@@ -6,18 +6,14 @@
 #+OPTIONS:hideblocks
 * What will you learn?
 
-
   #+begin_quote
   "It's nostalgic to edit, build and run C programs in text mode, but
   it works well and is quite efficient." --[[gookin][Dan Gookin]]
   #+end_quote
 
-  * Install Ubuntu under Windows 10
+  * Install Ubuntu Linux under Windows 10
   * Install a compiler
-  * Basic shell commands
-  * Choose a text editor
-  * Finding your code
-  * Compiling and running
+  * Get help under Linux
 
   Source: [[gookin][Gookin, chapter 1]]
 
@@ -82,7 +78,8 @@
 
   [[./img/man1.png]]
 
-  The diagram says that 
+  The diagram says that there is a way for a ~User~ to ~Get help~ in
+  the ~Linux operating system~.
 
 * References
 

@@ -25,7 +25,10 @@
    The freeCodeCamp course uses our environment (Code::Blocks).
    
    * [[https://youtu.be/KJgsSFOSQv0][C Programming Tutorial for Beginners (4hrs)]] - freeCodeCamp
+     
    * [[https://youtu.be/Bz4MxDeEM6k][C Programming All-in-One Tutorial Series (10 hrs)]] - Caleb Curry
+     I looked at the first few - fairly slow, funny
+   * [[https://youtu.be/2NWeucMKrLI][C Programming tutorial (5hrs)]] - thenewboston
 
 ** Udemy course (not free)
 

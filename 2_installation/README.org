@@ -1,4 +1,4 @@
-#+TITLE:Infrastructure
+#+TITLE:Installation
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview

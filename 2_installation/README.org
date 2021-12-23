@@ -7,10 +7,12 @@
 * What are you going to learn?
 
   * Why we don't just get coding
-  * Installing Codeblocks under Windows
-  * Installing Codeblocks under MacOS
-  * Installing Codeblocks under Linux
-  * Powerful alternative: GNU Linux/Emacs
+  * Installing Emacs under Windows
+  * Installing Emacs under MacOS
+  * Installing a C compiler under Windows
+  * Installing a C compiler under MacOS
+  * Setting the correct $PATH
+  * Testing our installation with "hello world"
   * Summary of concepts/code
   * What's next
 
@@ -43,159 +45,57 @@
 
   /Image: C programming workflow / BPMN model/
 
-  I'm suggesting three alternative roads to program C:
+  There are different routes to getting C running on your computer,
+  depending on your operating system (Linux, MacOS or Windows). Here
+  is a selection[fn:4]:
 
   1. ~Code::Blocks~ - this is the simplest solution. ~Code::Blocks~ is
-     an IDE, an environment to develop, test and run C and C++ programs.
-  2. ~Cygwin~ - next up is cygwin for Windows only, which allows you
-     to use your Windows computer like a Linux distribution. You can
-     easily install many different utility programs and different
-     compilers. C programs have to be edited, run and tested in
-     command line mode.
-  3.
+     an IDE, an environment to develop, test and run C, C++ and
+     FORTRAN[fn:3] programs. An alternative is ~CodeLite~. Both are
+     free and open source.
+  2. ~Cygwin~ allows you to use your Windows computer like a Linux
+     distribution. You can easily install many different utility
+     programs and different compilers. C programs have to be edited,
+     run and tested in command line mode. You can now also run Emacs
+     if you like. See FAQ.
+  3. ~GNU Emacs~ and the ~gcc~ compiler (~MinGW~ for Windows, or
+     ~XCode~ with ~gcc~ for MacOS). This is what I'll be doing for the
+     duration of the course. I'll show you how to do it, and then 
+  4. ~GNU Linux~ and ~GNU Emacs~ together - install Ubuntu Linux and
+     Emacs. This gives you the greatest flexibility but it also takes
+     the longest to install. Once you master this third route, you'll
+     have learnt a lot of useful, transferable skills.
 
-* Installing Code::Blocks
-
-** Windows
-
-** MacOS
-
-** Linux
-
-
-* Alternative 1: Cygwin (Windows only)
-** What's that?
-
-   * Cygwin is a large collection of GNU and Open Source tools which
-     provide a functionality similar to GNU/Linux on Windows.
-   * Programs appear as part of a drive called ~cygdrive~. The
-     distribution consists of an executable ~setup.exe~ and a ~.dll~
-     file (Windows' dynamically linked library file type).
-   * To run /native/ Linux apps on cygwin, they must be compiled from
-     the source.
-
-     #+begin_quote
-     [[./img/cygwin.png]]
-     #+end_quote
-     /Image: screenshot of the cygwin terminal command ~pwd~/
-
-** Installation and use
-
-   * Go to the [[https://cygwin.com/install.html][Cygwin install page]] and download [[https://cygwin.com/setup-x86_64.exe][~setup-x86_64.exe~]]
-   * Run ~setup-x86_64.exe~ and accept all settings until you come to
-     the package selection screen.
-
-   #+attr_html: :width 500px
-   [[./img/cygwin1.png]]
-
-   Choose ~Full~ in the ~View~ menu on the upper left, then continue
-   with ~Next~ until the installation is finished. Agree to put the
-   launcher into startup and a shortcut on the desktop[fn:2].
-
-   #+attr_html: :width 500px
-   [[./img/cygwin2.png]]
-   
-
-   * Start ~cygwin~ by executing the launcher. A terminal window (also
-     called Command Line or shell) opens. You can now use many
-     programs that Linux users have, too. Most importantly for our
-     purposes, you have ~gcc~, the GNU compiler bundle. To test this,
-     execute the following commands (press ~Enter~ after each
-     command).
-
-   #+attr_html: :width 500px
-   [[./img/cygwin3.png]]
-
-   * To close cygwin, close the window or enter ~exit~ on the command
-     line.
-
-   * To update or install cygwin, start the ~setup-x68_64.exe~ program
-     again add missing programs, or uninstall them, in the
-     installation menu. [[https://youtu.be/VyIY8cjn9xY][Here is a good video]] (MacDonald, 2020)
-     explaining how to do that from the command line with a few
-     keystrokes - a good illustration for the power of the command
-     line.
-
-* Alternative 2: GNU Linux/Emacs (Windows and MacOS)
-** What's that?
-
-   Linux probably doesn't need an introduction. But Emacs might.
-
-   * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][How and why I use Emacs]] (FAQ)
-   * [[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs]] (Kenlon, 2020).
-
-   #+attr_html: :width 600px
-   [[./img/linuxemacs.png]]
-
-** Installation & Mastery
-
-   Both Linux and Emacs is the beginning of a beautiful, multi-hour
-   journey. I estimate that it'll take > 2 hours until you're
-   reasonably competent to use either. Once you invest this time,
-   you'll have a set of very valuable, marketable, transferable
-   computer craft skills.
-
-   * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-linux-under-windows-10][Installing Linux under Windows]] (FAQ)
-   * [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#how-can-i-install-emacs-as-a-data-science-ide-on-windows-10][Installing Emacs (+ESS) under Windows]] (FAQ)
-   * [[https://systemcrafters.net/emacs-essentials/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]] (2021)
-   * [[https://ubuntu.com/tutorials/command-line-for-beginners#1-overview][Ubuntu Linux Commandline Tutorial]]
-   * [[https://www.gnu.org/software/emacs/tour/][Emacs Tutorial]] (~C-h t~ in Emacs)
-
-** Trends - Freedom or Slavery?
-
-   Again, you probably know that Linux (via Android) is the trend king
-   among operating systems ([[https://hostingtribunal.com/blog/linux-statistics/#gref][Galov, 2021]]).
-
-   Below is a recent evaluation of Emacs' popularity. However,
-   comparing Emacs with text editors does not make too much sense
-   since Emacs is much more than a text editor, and also much more
-   than an (language-specific) IDE. Watch the video for this and much
-   more up to date information:
-
-   "[[https://youtu.be/9ahR5K_wkNQ][M-x Forever: Why Emacs will outlast text editor trends]]"
-   (Wilson, 2021).
-
-   #+attr_html: :width 600px
-   [[./img/trend.png]]
-
-   /Figure: Interest in different text editors from worldwide Google
-   searches 2004-2021. [[https://trends.google.com/trends/explore?date=all&q=Emacs,%2Fm%2F0134xwrk,%2Fm%2F07zh7,%2Fm%2F0b6h18n,%2Fm%2F0_x5x3g][Source: trends.google.com]]/
-
-   From a data science point of view, search trend data are
-   problematic because it is not clear how they are collected and
-   labelled, who or why is searching for something.
-
-   The key characteristic of Emacs (besides its being firmly rooted in
-   text) is its self-extensibility and large, stable, knowledgeable,
-   active user community. With an estimated 27 million developers
-   world-wide, 5% amounts to 1,350,000 developers who're using
-   Emacs. Among professional developers, Vim/Emacs are still
-   irreplaceable. IDEs (like Code::Blocks, Netbeans, Ellipse, Visual
-   Studio Code) are Okay for small scripting projects and web
-   applications ([[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][Biggs/Donovan, 2020]]).
+* Emacs for C programming
 
 * Summary
 
-  *
+  * To program in C, we need a computer, a compiler, and an editor.
+  * You can use an IDE like ~Code::Blocks~, a Linux-like environment
+    like ~Cygwin~ , or ~Linux~ directly, or an editor like Emacs
+  * You'll have to download the compiler for your operating system:
+    ~MinGW~ (that's ~GNU gcc~) for Windows, ~XCode~ (that's ~Clang~)
+    for MacOS. Linux comes with ~gcc~ already.
     
 * TODO Concepts
 
-  | CONCEPT       | EXPLANATION                                   |
-  |---------------+-----------------------------------------------|
-  | Coding        | Programming or scripting[fn:1]                |
-  | Native app    | Designed for a specific computer architecture |
-  | Cygwin        | Linux tools for Windows                       |
-  | x86_64        | Built for a x86 (CPU) 64-bit computer         |
-  | Emacs         | Extensible text editor                        |
-  | GNU/Linux     | Open Source operating system                  |
-  | IDE           | Integrated Development Environment            |
-  | Code::Blocks  | C/C++ IDE                                     |
-  | gcc           | GNU compiler bundle                           |
-  | Clang         | C/C++ compiler                                |
-  | Google trends | Search trend dashboard                        |
-  | Launcher      | Program that starts another program           |
-  | Startup       | Set of programs that are started at boot time |
-  | Booting       | Starting a computer                           |
+  | CONCEPT       | EXPLANATION                                    |
+  |---------------+------------------------------------------------|
+  | Binary file   | File built from source for a specific platform |
+  | Coding        | Programming or scripting[fn:1]                 |
+  | Native app    | Designed for a specific computer architecture  |
+  | Cygwin        | Linux tools for Windows                        |
+  | x86_64        | Built for a x86 (CPU) 64-bit computer          |
+  | Emacs         | Extensible text editor                         |
+  | GNU/Linux     | Open Source operating system                   |
+  | IDE           | Integrated Development Environment             |
+  | Code::Blocks  | C/C++ IDE                                      |
+  | gcc           | GNU compiler bundle                            |
+  | Clang         | C/C++ compiler                                 |
+  | Google trends | Search trend dashboard                         |
+  | Launcher      | Program that starts another program            |
+  | Startup       | Set of programs that are started at boot time  |
+  | Booting       | Starting a computer                            |
 
 * What's next
 * References
@@ -227,6 +127,22 @@
   [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
 
 * Footnotes
+
+[fn:7]In fact, the site will of course store data related to your
+network location and access manner - your operating system, and many
+details that could, in principle, be used to trace the download back
+to you.
+
+[fn:6]A "binary" program is a file that will run on your computer
+without any extra effort. This means that the program is suited to the
+specifics of the computer. The binary itself is compiled from
+so-called "source code", the original, human-readable format of the
+code. The binary, on the other hand, can only be read by a machine.
+ 
+[fn:3][[https://en.wikipedia.org/wiki/Fortran][FORTRAN]] is even older than C. It is optimized for scientific and
+numerical computations. Many other languages that are "good at math",
+like R, use FORTRAN routines. FORTRAN was also one my first
+programming language.
 
 [fn:2]As a Windows user you probably know what that means, but just in
 case: cygwin is now added to the programs that are started whenever

@@ -7,7 +7,8 @@
 * What are you going to learn?
 
   * Why we don't just get coding
-  * Installing Emacs under Windows
+  * Emacs for C Programming
+  * Installing and using Emacs
   * Installing Emacs under MacOS
   * Installing a C compiler under Windows
   * Installing a C compiler under MacOS
@@ -46,27 +47,25 @@
   /Image: C programming workflow / BPMN model/
 
   There are different routes to getting C running on your computer,
-  depending on your operating system (Linux, MacOS or Windows). Here
-  is a selection[fn:4]:
+  depending on your operating system (Linux, MacOS or Windows)[fn:4].
 
-  1. ~Code::Blocks~ - this is the simplest solution. ~Code::Blocks~ is
-     an IDE, an environment to develop, test and run C, C++ and
-     FORTRAN[fn:3] programs. An alternative is ~CodeLite~. Both are
-     free and open source.
-  2. ~Cygwin~ allows you to use your Windows computer like a Linux
-     distribution. You can easily install many different utility
-     programs and different compilers. C programs have to be edited,
-     run and tested in command line mode. You can now also run Emacs
-     if you like. See FAQ.
-  3. ~GNU Emacs~ and the ~gcc~ compiler (~MinGW~ for Windows, or
-     ~XCode~ with ~gcc~ for MacOS). This is what I'll be doing for the
-     duration of the course. I'll show you how to do it, and then 
-  4. ~GNU Linux~ and ~GNU Emacs~ together - install Ubuntu Linux and
-     Emacs. This gives you the greatest flexibility but it also takes
-     the longest to install. Once you master this third route, you'll
-     have learnt a lot of useful, transferable skills.
 
 * Emacs for C programming
+
+** What is Emacs ?
+
+** How do you install Emacs?
+*** Windows
+*** MacOS
+*** Linux
+
+* Getting a compiler
+
+** Windows
+
+** MacOS
+
+** Linux
 
 * Summary
 
@@ -76,7 +75,7 @@
   * You'll have to download the compiler for your operating system:
     ~MinGW~ (that's ~GNU gcc~) for Windows, ~XCode~ (that's ~Clang~)
     for MacOS. Linux comes with ~gcc~ already.
-    
+
 * TODO Concepts
 
   | CONCEPT       | EXPLANATION                                    |
@@ -115,7 +114,7 @@
   MacDonald (September 7, 2020). How to install Cygwin packages, 1/2
   (Using the installer via the GUI) [video]. [[https://youtu.be/VyIY8cjn9xY][URL:
   youtu.be/VyIY8cjn9xY]].
-  
+
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
 
@@ -128,6 +127,22 @@
 
 * Footnotes
 
+[fn:4] 1) ~Code::Blocks~ - this is the simplest
+solution. ~Code::Blocks~ is an IDE, an environment to develop, test
+and run C, C++ and FORTRAN[fn:3] programs. An alternative is
+~CodeLite~. Both are free and open source. 2) ~Cygwin~ allows you to
+use your Windows computer like a Linux distribution. You can easily
+install many different utility programs and different compilers. C
+programs have to be edited, run and tested in command line mode. You
+can now also run Emacs if you like. See FAQ. 3) ~GNU Emacs~ and the
+~gcc~ compiler (~MinGW~ for Windows, or ~XCode~ with ~gcc~ for
+MacOS). This is what I'll be doing for the duration of the course. 4)
+~GNU Linux~ and ~GNU Emacs~ together - install Ubuntu Linux and
+Emacs. This gives you the greatest flexibility but it also takes the
+longest to install. Once you master this third route, you'll have
+learnt a lot of useful, transferable skills.
+
+
 [fn:7]In fact, the site will of course store data related to your
 network location and access manner - your operating system, and many
 details that could, in principle, be used to trace the download back
@@ -138,7 +153,7 @@ without any extra effort. This means that the program is suited to the
 specifics of the computer. The binary itself is compiled from
 so-called "source code", the original, human-readable format of the
 code. The binary, on the other hand, can only be read by a machine.
- 
+
 [fn:3][[https://en.wikipedia.org/wiki/Fortran][FORTRAN]] is even older than C. It is optimized for scientific and
 numerical computations. Many other languages that are "good at math",
 like R, use FORTRAN routines. FORTRAN was also one my first

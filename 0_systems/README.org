@@ -46,7 +46,9 @@
 
 * TODO Ways to describe and manipulate systems
 
+
 ** Models/abstractions
+
    
 ** Stories/Narratives
 
@@ -62,3 +64,6 @@
   * Systems can be described through models or stories
   * Computers are a special case of information system
   * Attributes related to system properties are called "systemic"
+
+* Footnotes
+

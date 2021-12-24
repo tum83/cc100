@@ -47,12 +47,41 @@
   /Image: C programming workflow / BPMN model/
 
   There are different routes to getting C running on your computer,
-  depending on your operating system (Linux, MacOS or Windows)[fn:4].
+  depending on your operating system (Linux, MacOS or Windows)[fn:1].
 
-
+  The problem with IDEs is that they're clunky. 
+  
 * Emacs for C programming
 
 ** What is Emacs ?
+
+   #+attr_html: :width 500px
+   [[./img/emacs.png]]
+   /Image: GNU Emacs logo. Source: 
+   
+   Emacs is an extensible editor written in C, with Emacs Lisp, a Lisp
+   dialect, as an extenstion language. It was first released
+   in 1985. Its extensibility and a large, active, passionate
+   community of developers and users made sure that it still evolves. 
+
+** How do you use Emacs?
+
+   I've written an article about this for the introductory data
+   science course ([[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][FAQ]]). I use Emacs for most of my computing needs,
+   not just as an editor, but also for writing, organizing, and
+   planning.
+
+   Here are a few reports from first-time Emacs users that you might
+   find interesting:
+   * [[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs]] - blog (Kenlon, 2020).
+   * [[https://youtu.be/Y8koAgkBEnM][Switching to GNU Emacs]] - video (DistroTube, 2019).
+
+** How will we use Emacs?
+
+   We'll use it as an editor to write source code, as a notebook to
+   write literate programs, and as a shell to build and run code.
+
+      
 
 ** How do you install Emacs?
 *** Windows
@@ -76,25 +105,22 @@
     ~MinGW~ (that's ~GNU gcc~) for Windows, ~XCode~ (that's ~Clang~)
     for MacOS. Linux comes with ~gcc~ already.
 
-* TODO Concepts
+* TODO Jargon
 
-  | CONCEPT       | EXPLANATION                                    |
-  |---------------+------------------------------------------------|
-  | Binary file   | File built from source for a specific platform |
-  | Coding        | Programming or scripting[fn:1]                 |
-  | Native app    | Designed for a specific computer architecture  |
-  | Cygwin        | Linux tools for Windows                        |
-  | x86_64        | Built for a x86 (CPU) 64-bit computer          |
-  | Emacs         | Extensible text editor                         |
-  | GNU/Linux     | Open Source operating system                   |
-  | IDE           | Integrated Development Environment             |
-  | Code::Blocks  | C/C++ IDE                                      |
-  | gcc           | GNU compiler bundle                            |
-  | Clang         | C/C++ compiler                                 |
-  | Google trends | Search trend dashboard                         |
-  | Launcher      | Program that starts another program            |
-  | Startup       | Set of programs that are started at boot time  |
-  | Booting       | Starting a computer                            |
+  | CONCEPT          | EXPLANATION                                      |
+  |------------------+--------------------------------------------------|
+  | Source code      | Human-readable program                           |
+  | Compiling        | Translating source                               |
+  | Linking          | Linking compiled program to libraries            |
+  | Library          | Bundle of reusable macros or functions           |
+  | Object code      | Code ready for execution by a machine            |
+  | Execution        | Running object code on a machine                 |
+  | Interpreter      | Machine that interprets and executes source code |
+  | Script           | Source code for an interpreter                   |
+  | Emacs            | Extensible text editor (via Emacs Lisp)          |
+  | GNU              | "GNU's not UNIX"                                 |
+  | GNU/Linux        | Free, open source operating system               |
+  | Richard Stallman | Creator of the GNU project and Emacs             |
 
 * What's next
 * References
@@ -103,17 +129,14 @@
   many coders still using Vim and Emacs? [Blog]. URL:
   [[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][stackoverflow.org]].
 
-  Cygwin
-
+  DistroTube (October 4, 2019). Switching to GNU Emacs [video]. [[https://youtu.be/Y8koAgkBEnM][URL:
+  youtu.be/Y8koAgkBEnM]].
+  
   Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
   Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
 
   Kenlon (March 10, 2020). Getting started with Emacs [blog]. [[https://opensource.com/article/20/3/getting-started-emacs][URL:
   opensource.com.]]
-
-  MacDonald (September 7, 2020). How to install Cygwin packages, 1/2
-  (Using the installer via the GUI) [video]. [[https://youtu.be/VyIY8cjn9xY][URL:
-  youtu.be/VyIY8cjn9xY]].
 
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
@@ -127,45 +150,6 @@
 
 * Footnotes
 
-[fn:4] 1) ~Code::Blocks~ - this is the simplest
-solution. ~Code::Blocks~ is an IDE, an environment to develop, test
-and run C, C++ and FORTRAN[fn:3] programs. An alternative is
-~CodeLite~. Both are free and open source. 2) ~Cygwin~ allows you to
-use your Windows computer like a Linux distribution. You can easily
-install many different utility programs and different compilers. C
-programs have to be edited, run and tested in command line mode. You
-can now also run Emacs if you like. See FAQ. 3) ~GNU Emacs~ and the
-~gcc~ compiler (~MinGW~ for Windows, or ~XCode~ with ~gcc~ for
-MacOS). This is what I'll be doing for the duration of the course. 4)
-~GNU Linux~ and ~GNU Emacs~ together - install Ubuntu Linux and
-Emacs. This gives you the greatest flexibility but it also takes the
-longest to install. Once you master this third route, you'll have
-learnt a lot of useful, transferable skills.
-
-
-[fn:7]In fact, the site will of course store data related to your
-network location and access manner - your operating system, and many
-details that could, in principle, be used to trace the download back
-to you.
-
-[fn:6]A "binary" program is a file that will run on your computer
-without any extra effort. This means that the program is suited to the
-specifics of the computer. The binary itself is compiled from
-so-called "source code", the original, human-readable format of the
-code. The binary, on the other hand, can only be read by a machine.
-
-[fn:3][[https://en.wikipedia.org/wiki/Fortran][FORTRAN]] is even older than C. It is optimized for scientific and
-numerical computations. Many other languages that are "good at math",
-like R, use FORTRAN routines. FORTRAN was also one my first
-programming language.
-
-[fn:2]As a Windows user you probably know what that means, but just in
-case: cygwin is now added to the programs that are started whenever
-the computer boots, and you can find the program launcher on your
-desktop.
-
-[fn:1]Some developers take exception to the terms, but we use them
-interchangeably in this course. Script languages (e.g. Perl, Python,
-JavaScript,R etc.) do not need to be compiled - the computer can
-translate the source code (that you write) straight into executable
-(or object) code that runs and generates a result.
+[fn:1]Code::Blocks, CodeLite, Netbeans, Microsoft Visual Studio (VS),
+are all free IDEs for C/C++, with VS being the most popular one right
+now.

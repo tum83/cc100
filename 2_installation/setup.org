@@ -104,29 +104,17 @@
    To create interactive computing notebooks in Emacs, we use the
    [[https://orgmode.org/][Org-mode]] and [[https://orgmode.org/worg/org-contrib/babel/intro.html][Babel]] packages. Both are already installed in your
    version of Emacs, but you have to tell Babel, which languages you
-   want to work with.
+   want to work with. 
 
    Customization like this is done with a configuration file ~.emacs~,
    which is placed in your home directory (~~/~~). Where this folder
    is actually located on your computer depends on your operating
    system.
 
-   Create a file ~~/.emacs~ and put the following code into it[fn:3]:
+   Download the configuration file from GitHub.
+
+   You can also create the file from scratch[fn:3].
    
-   #+begin_src emacs-lisp
-     ;; active Babel languages
-     (org-babel-do-load-languages
-      'org-babel-load-languages
-      '((R . t)
-	(C . t)))
-
-     ;; stop asking for confirmation
-     (setq org-confirm-babel-evaluate nil)
-
-     ;; enable snippet expansion via org-structure-template-alist
-     (require 'org-tempo)
-   #+end_src
-
 ** Create sample notebook
 
    To create a notebook, create an ~.org~ file. Then type ~C-c C-,~
@@ -145,8 +133,23 @@ correct), and an anchor with the link name must be put into the file,
 in this case, the link is ~~/.babel.org~, and the anchor is
 ~<<babel.org>>~
 
-[fn:3]You should know from the tutorial (~C-h t~) that this can be
-done with the following key stroke sequence:
+[fn:3]To practice your Emacs keyboard skills, you can also create a
+file ~~/.emacs~ and put the following code into it:
+#+begin_src emacs-lisp
+  ;; active Babel languages
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((R . t)
+     (C . t)))
+
+  ;; stop asking for confirmation
+  (setq org-confirm-babel-evaluate nil)
+
+  ;; enable snippet expansion via org-structure-template-alist
+  (require 'org-tempo)
+   #+end_src
+You should know from the tutorial (~C-h t~) that this can be done with
+the following key stroke sequence:
 #+begin_example
 | Command          | Explanation                         |
 |------------------+-------------------------------------|
@@ -160,7 +163,8 @@ done with the following key stroke sequence:
 #+end_example
 
 [fn:2]The best way is to find the folder in the file explorer and copy
-the address as text: [[./img/address.png]]
+the address as text:
+[[./img/address.png]]
 
 [fn:1]The version number of R will change for new or different
 versions of the program.

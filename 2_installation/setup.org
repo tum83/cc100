@@ -352,11 +352,14 @@
     #+ATTR_HTML: :width 600px
     [[./img/trend.png]]
 
-    And here is the same image inserted as a URL:
+    And here is the same image inserted as a URL (in the markdown file
+    on GitHub, ~setup.md~, this link will be rendered as an image, but
+    not in the ~setup.org~ file):
 
     file:https://github.com/birkenkrahe/cc100/blob/main/2_installation/img/trend.png
 
-    And here is the link to the image:
+    And here is the link to the image - when viewing ~setup.org~ in
+    Emacs, you can open links with ~C-c C-o~ (~org-open-at-point~). 
     
     https://github.com/birkenkrahe/cc100/raw/main/2_installation/img/trend.png
 

@@ -1,39 +1,39 @@
 
 # Table of Contents
 
-1.  [Install R](#org33f99e3)
-    1.  [Windows](#orgc8b9817)
-    2.  [MacOS](#org3b2577a)
-2.  [Install a C compiler](#org5170d28)
-    1.  [Windows](#org358bfdc)
-    2.  [MacOS](#org893acac)
-3.  [Install SQLite](#org8ecdbe9)
-    1.  [Windows](#org10e4c08)
-    2.  [MacOS](#orgace26fa)
-4.  [Install Emacs](#orgcb96a7c)
-    1.  [Download and Installation for Windows](#orgda7350b)
-    2.  [Download and Installation for MacOS](#orgacf8d54)
-5.  [Customize Emacs](#org08ebd17)
-    1.  [Create configuration file](#orgda92779)
-    2.  [Create sample notebook](#orgfd0c86a)
-    3.  [Layout changes](#orgd5d0121)
-        1.  [Customize theme and font](#org3290f66)
-        2.  [Installing additional packages](#orgddd26a1)
-        3.  [Presenting in Emacs](#orgeedb5a1)
-        4.  [Definitions and functions](#org553b5dd)
-        5.  [Adding images and links to Org-mode files](#orgd563f8f)
+1.  [Install R](#org65e2691)
+    1.  [Windows](#org2a4faae)
+    2.  [MacOS](#orgcc94e3f)
+2.  [Install a C compiler](#orgeb43038)
+    1.  [Windows](#org529f74a)
+    2.  [MacOS](#org0fa8bef)
+3.  [Install SQLite](#org4849634)
+    1.  [Windows](#org091d62a)
+    2.  [MacOS](#org93aa7a0)
+4.  [Install Emacs](#orgba4e003)
+    1.  [Download and Installation for Windows](#orgd36c4e7)
+    2.  [Download and Installation for MacOS](#org4c969de)
+5.  [Customize Emacs](#org4c8dc58)
+    1.  [Create configuration file](#orged9791a)
+    2.  [Create sample notebook](#orgeddb23c)
+    3.  [Layout changes](#orgf5a6151)
+        1.  [Customize theme and font](#org6b6d279)
+        2.  [Installing additional packages](#orgb86f21a)
+        3.  [Presenting in Emacs](#org54c68d6)
+        4.  [Definitions and functions](#orgdd22891)
+        5.  [Adding images and links to Org-mode files](#org5e8502e)
 
 \#+options toc:nil
 
-<a id="org16b08d6"></a>
+<a id="orgce2849d"></a>
 
 
-<a id="org33f99e3"></a>
+<a id="org65e2691"></a>
 
 # Install R
 
 
-<a id="orgc8b9817"></a>
+<a id="org2a4faae"></a>
 
 ## Windows
 
@@ -63,7 +63,7 @@
         ![img](./img/histogram.png)
 
 
-<a id="org3b2577a"></a>
+<a id="orgcc94e3f"></a>
 
 ## MacOS
 
@@ -79,12 +79,12 @@
         inside the Emacs editor so that you can create notebooks.
 
 
-<a id="org5170d28"></a>
+<a id="orgeb43038"></a>
 
 # Install a C compiler
 
 
-<a id="org358bfdc"></a>
+<a id="org529f74a"></a>
 
 ## Windows
 
@@ -118,7 +118,7 @@
         ![img](./img/gcc.png)
 
 
-<a id="org893acac"></a>
+<a id="org0fa8bef"></a>
 
 ## MacOS
 
@@ -134,17 +134,17 @@ Clang compiler.
     ![img](./img/cc.png)
 
 
-<a id="org8ecdbe9"></a>
+<a id="org4849634"></a>
 
 # Install SQLite
 
 
-<a id="org10e4c08"></a>
+<a id="org091d62a"></a>
 
 ## Windows
 
 
-<a id="orgace26fa"></a>
+<a id="org93aa7a0"></a>
 
 ## MacOS
 
@@ -162,12 +162,12 @@ Clang compiler.
 -   You can also type `sqlite3` in a terminal to open the console.
 
 
-<a id="orgcb96a7c"></a>
+<a id="orgba4e003"></a>
 
 # Install Emacs
 
 
-<a id="orgda7350b"></a>
+<a id="orgd36c4e7"></a>
 
 ## Download and Installation for Windows
 
@@ -177,7 +177,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="orgacf8d54"></a>
+<a id="org4c969de"></a>
 
 ## Download and Installation for MacOS
 
@@ -187,7 +187,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="org08ebd17"></a>
+<a id="org4c8dc58"></a>
 
 # Customize Emacs
 
@@ -201,7 +201,7 @@ your computer, and you can share notebooks with anyone, who has
 Emacs.
 
 
-<a id="orgda92779"></a>
+<a id="orged9791a"></a>
 
 ## Create configuration file
 
@@ -253,7 +253,7 @@ case you want to copy and paste it from here.
     ((gnu . https://elpa.gnu.org/packages/) (melpa-stable . https://stable.melpa.org/packages/) (melpa . https://melpa.org/packages) (gnu . https://elpa.gnu.org/packages) (org . https://orgmode.org/elpa/))
 
 
-<a id="orgfd0c86a"></a>
+<a id="orgeddb23c"></a>
 
 ## Create sample notebook
 
@@ -265,7 +265,7 @@ Check out <./babel.md> for examples with both R and C code in the
 same file<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.
 
 
-<a id="orgd5d0121"></a>
+<a id="orgf5a6151"></a>
 
 ## Layout changes
 
@@ -283,7 +283,7 @@ non-programmers](https://www.gnu.org/software/emacs/manual/html_node/eintr/). Li
 language (like R).
 
 
-<a id="org3290f66"></a>
+<a id="org6b6d279"></a>
 
 ### Customize theme and font
 
@@ -303,7 +303,7 @@ the advantages of Emacs is that everything can be done with the
 keyboard (which is way faster than the mouse).
 
 
-<a id="orgddd26a1"></a>
+<a id="orgb86f21a"></a>
 
 ### Installing additional packages
 
@@ -323,7 +323,7 @@ To install a package
 -   enter `x` to install it.
 
 
-<a id="orgeedb5a1"></a>
+<a id="org54c68d6"></a>
 
 ### Presenting in Emacs
 
@@ -361,7 +361,7 @@ this:
     ;; (org-tree-slide-simple-profile) ;; no headers
 
 
-<a id="org553b5dd"></a>
+<a id="orgdd22891"></a>
 
 ### Definitions and functions
 
@@ -390,7 +390,7 @@ this code - now `C-M-Q` will invoke the function:
     (define-key global-map "\C-\M-Q" 'unfill-region)
 
 
-<a id="orgd563f8f"></a>
+<a id="org5e8502e"></a>
 
 ### Adding images and links to Org-mode files
 
@@ -399,7 +399,7 @@ links. It is easy to add image and links (internal to Emacs or
 Internet URLs) to an Org-mode file.
 
 Images can be named and given captions. Here is an example with
-figure [77](#org5d0f493) below. To show/hide images, use `C-c C-x C-v`
+figure [77](#org2397aef) below. To show/hide images, use `C-c C-x C-v`
 (`org-toggle-inline-images`).
 
     
@@ -410,11 +410,14 @@ figure [77](#org5d0f493) below. To show/hide images, use `C-c C-x C-v`
 
 ![img](./img/trend.png "Google search trends for popular editors")
 
-And here is the same image inserted as a URL:
+And here is the same image inserted as a URL (in the markdown file
+on GitHub, `setup.md`, this link will be rendered as an image, but
+not in the `setup.org` file):
 
 ![img](https://github.com/birkenkrahe/cc100/blob/main/2_installation/img/trend.png)
 
-And here is the link to the image:
+And here is the link to the image - when viewing `setup.org` in
+Emacs, you can open links with `C-c C-o` (`org-open-at-point`). 
 
 ![img](https://github.com/birkenkrahe/cc100/raw/main/2_installation/img/trend.png)
 

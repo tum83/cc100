@@ -1,6 +1,11 @@
 #+options toc:nil
 #+startup: hideblocks overview
 <<setup.org>>
+* Infrastructure Setup
+
+  The sections below cover most of the infrastructure used in my
+  courses. They are also available as FAQs on GitHub. 
+  
 * Install R
 ** Windows
    * Download the latest package from [[https://cran.r-project.org/][CRAN]].
@@ -138,6 +143,11 @@
   your computer, and you can share notebooks with anyone, who has
   Emacs.
 
+  The central package for many day to day tasks is ~Org-mode~. Here is
+  a set of [[https://orgmode.org/worg/org-tutorials/][Org-mode tutorials]] (with videos) covering many interesting
+  applications. Org-mode is especially popular among scientists, and
+  among these, physicists (my original tribe), who developed it.
+
 ** Create configuration file
 
    To create interactive computing notebooks in Emacs, we use the
@@ -188,7 +198,6 @@
 
    #+end_src
 
-   
 ** Create sample notebook
 
    To create a notebook, create an ~.org~ file. Then type ~C-c C-,~
@@ -363,6 +372,14 @@
     
     https://github.com/birkenkrahe/cc100/raw/main/2_installation/img/trend.png
 
+** Tables
+
+   Org-mode has powerful table manipulation capabilities. I don't use
+   Excel, I use active tables in Org-mode for my spreadsheet needs
+   (e.g. computation of grades). There is too much to learn here - I
+   suggest working through this short [[https://orgmode.org/worg/org-tutorials/tables.html][tutorial]]. For using tables as
+   spreadsheets, see this short [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]].
+   
 * Footnotes
 
 [fn:3]This link also shows you how to link notebooks. You can set a

@@ -1,39 +1,40 @@
 
 # Table of Contents
 
-1.  [Install R](#org65e2691)
-    1.  [Windows](#org2a4faae)
-    2.  [MacOS](#orgcc94e3f)
-2.  [Install a C compiler](#orgeb43038)
-    1.  [Windows](#org529f74a)
-    2.  [MacOS](#org0fa8bef)
-3.  [Install SQLite](#org4849634)
-    1.  [Windows](#org091d62a)
-    2.  [MacOS](#org93aa7a0)
-4.  [Install Emacs](#orgba4e003)
-    1.  [Download and Installation for Windows](#orgd36c4e7)
-    2.  [Download and Installation for MacOS](#org4c969de)
-5.  [Customize Emacs](#org4c8dc58)
-    1.  [Create configuration file](#orged9791a)
-    2.  [Create sample notebook](#orgeddb23c)
-    3.  [Layout changes](#orgf5a6151)
-        1.  [Customize theme and font](#org6b6d279)
-        2.  [Installing additional packages](#orgb86f21a)
-        3.  [Presenting in Emacs](#org54c68d6)
-        4.  [Definitions and functions](#orgdd22891)
-        5.  [Adding images and links to Org-mode files](#org5e8502e)
+1.  [Install R](#orgcb03550)
+    1.  [Windows](#org3bf5ee4)
+    2.  [MacOS](#orga168630)
+2.  [Install a C compiler](#orge7f906d)
+    1.  [Windows](#org76e5043)
+    2.  [MacOS](#orgb082ebf)
+3.  [Install SQLite](#org828e422)
+    1.  [Windows](#orgb803206)
+    2.  [MacOS](#org1cedb4b)
+4.  [Install Emacs](#orgc030313)
+    1.  [Download and Installation for Windows](#orgdc4cbdf)
+    2.  [Download and Installation for MacOS](#orgab76cbb)
+5.  [Customize Emacs](#org746059c)
+    1.  [Create configuration file](#orgf29d276)
+    2.  [Create sample notebook](#org18473a1)
+    3.  [Layout changes](#org2275fa1)
+        1.  [Customize theme and font](#orga8fe7cd)
+        2.  [Installing additional packages](#orgf638123)
+        3.  [Presenting in Emacs](#org45a0f4c)
+        4.  [Definitions and functions](#orgf92596d)
+        5.  [Adding images and links to Org-mode files](#org1ee514f)
+    4.  [Tables](#org757998a)
 
 \#+options toc:nil
 
-<a id="orgce2849d"></a>
+<a id="orgb206b08"></a>
 
 
-<a id="org65e2691"></a>
+<a id="orgcb03550"></a>
 
 # Install R
 
 
-<a id="org2a4faae"></a>
+<a id="org3bf5ee4"></a>
 
 ## Windows
 
@@ -63,7 +64,7 @@
         ![img](./img/histogram.png)
 
 
-<a id="orgcc94e3f"></a>
+<a id="orga168630"></a>
 
 ## MacOS
 
@@ -79,12 +80,12 @@
         inside the Emacs editor so that you can create notebooks.
 
 
-<a id="orgeb43038"></a>
+<a id="orge7f906d"></a>
 
 # Install a C compiler
 
 
-<a id="org529f74a"></a>
+<a id="org76e5043"></a>
 
 ## Windows
 
@@ -118,7 +119,7 @@
         ![img](./img/gcc.png)
 
 
-<a id="org0fa8bef"></a>
+<a id="orgb082ebf"></a>
 
 ## MacOS
 
@@ -134,17 +135,17 @@ Clang compiler.
     ![img](./img/cc.png)
 
 
-<a id="org4849634"></a>
+<a id="org828e422"></a>
 
 # Install SQLite
 
 
-<a id="org091d62a"></a>
+<a id="orgb803206"></a>
 
 ## Windows
 
 
-<a id="org93aa7a0"></a>
+<a id="org1cedb4b"></a>
 
 ## MacOS
 
@@ -162,12 +163,12 @@ Clang compiler.
 -   You can also type `sqlite3` in a terminal to open the console.
 
 
-<a id="orgba4e003"></a>
+<a id="orgc030313"></a>
 
 # Install Emacs
 
 
-<a id="orgd36c4e7"></a>
+<a id="orgdc4cbdf"></a>
 
 ## Download and Installation for Windows
 
@@ -177,7 +178,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="org4c969de"></a>
+<a id="orgab76cbb"></a>
 
 ## Download and Installation for MacOS
 
@@ -187,7 +188,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="org4c8dc58"></a>
+<a id="org746059c"></a>
 
 # Customize Emacs
 
@@ -200,8 +201,13 @@ This will give you the power of Jupyter notebooks or Colaboratory on
 your computer, and you can share notebooks with anyone, who has
 Emacs.
 
+The central package for many day to day tasks is `Org-mode`. Here is
+a set of [Org-mode tutorials](https://orgmode.org/worg/org-tutorials/) (with videos) covering many interesting
+applications. Org-mode is especially popular among scientists, and
+among these, physicists (my original tribe), who developed it.
 
-<a id="orged9791a"></a>
+
+<a id="orgf29d276"></a>
 
 ## Create configuration file
 
@@ -253,7 +259,7 @@ case you want to copy and paste it from here.
     ((gnu . https://elpa.gnu.org/packages/) (melpa-stable . https://stable.melpa.org/packages/) (melpa . https://melpa.org/packages) (gnu . https://elpa.gnu.org/packages) (org . https://orgmode.org/elpa/))
 
 
-<a id="orgeddb23c"></a>
+<a id="org18473a1"></a>
 
 ## Create sample notebook
 
@@ -265,7 +271,7 @@ Check out <./babel.md> for examples with both R and C code in the
 same file<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.
 
 
-<a id="orgf5a6151"></a>
+<a id="org2275fa1"></a>
 
 ## Layout changes
 
@@ -283,7 +289,7 @@ non-programmers](https://www.gnu.org/software/emacs/manual/html_node/eintr/). Li
 language (like R).
 
 
-<a id="org6b6d279"></a>
+<a id="orga8fe7cd"></a>
 
 ### Customize theme and font
 
@@ -303,7 +309,7 @@ the advantages of Emacs is that everything can be done with the
 keyboard (which is way faster than the mouse).
 
 
-<a id="orgb86f21a"></a>
+<a id="orgf638123"></a>
 
 ### Installing additional packages
 
@@ -323,7 +329,7 @@ To install a package
 -   enter `x` to install it.
 
 
-<a id="org54c68d6"></a>
+<a id="org45a0f4c"></a>
 
 ### Presenting in Emacs
 
@@ -361,7 +367,7 @@ this:
     ;; (org-tree-slide-simple-profile) ;; no headers
 
 
-<a id="orgdd22891"></a>
+<a id="orgf92596d"></a>
 
 ### Definitions and functions
 
@@ -390,7 +396,7 @@ this code - now `C-M-Q` will invoke the function:
     (define-key global-map "\C-\M-Q" 'unfill-region)
 
 
-<a id="org5e8502e"></a>
+<a id="org1ee514f"></a>
 
 ### Adding images and links to Org-mode files
 
@@ -399,7 +405,7 @@ links. It is easy to add image and links (internal to Emacs or
 Internet URLs) to an Org-mode file.
 
 Images can be named and given captions. Here is an example with
-figure [77](#org2397aef) below. To show/hide images, use `C-c C-x C-v`
+figure [78](#org9ce324d) below. To show/hide images, use `C-c C-x C-v`
 (`org-toggle-inline-images`).
 
     
@@ -420,6 +426,17 @@ And here is the link to the image - when viewing `setup.org` in
 Emacs, you can open links with `C-c C-o` (`org-open-at-point`). 
 
 ![img](https://github.com/birkenkrahe/cc100/raw/main/2_installation/img/trend.png)
+
+
+<a id="org757998a"></a>
+
+## Tables
+
+Org-mode has powerful table manipulation capabilities. I don't use
+Excel, I use active tables in Org-mode for my spreadsheet needs
+(e.g. computation of grades). There is too much to learn here - I
+suggest working through this short [tutorial](https://orgmode.org/worg/org-tutorials/tables.html). For using tables as
+spreadsheets, see this short [tutorial](https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html).
 
 
 # Footnotes

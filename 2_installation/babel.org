@@ -126,14 +126,36 @@
   
 ** Emacs Lisp
 
-  [[https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html][Emacs Lisp]] is the extension language for Emacs. It is a dialect of
-  Lisp, an established functional programming language. The first AI
-  applications were written in Lisp. 
+   [[https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html][Emacs Lisp]] is the extension language for Emacs. It is a dialect of
+   Lisp, an established functional programming language. The first AI
+   applications were written in Lisp. 
 
-  #+begin_src emacs-lisp
-(buffer-name)
-  #+end_src
+   The first example returns the name of this buffer.
+   
+   #+begin_src emacs-lisp :exports both
+     (buffer-name)
+     #+end_src
+
+   #+RESULTS:
+   : babel.org
   
+   The second example prints ~hello world~ first as a list, then
+   verbatim.
+
+      #+begin_src emacs-lisp :exports both :results list
+	'(hello world)
+     #+end_src
+
+     #+RESULTS:
+     - hello
+     - world
+
+       #+begin_src emacs-lisp :exports both :results verbatim
+	'(hello world)
+     #+end_src
+
+     #+RESULTS:
+     : (hello world)
 
 * Footnotes
 

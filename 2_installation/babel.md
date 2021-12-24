@@ -1,4 +1,4 @@
-<a id="org6e23398"></a>
+<a id="org87c8198"></a>
 
 
 # Babel test
@@ -102,6 +102,29 @@ working directory.
     .width 3 10
     .header ON
     SELECT * FROM tabelle;
+
+
+## Emacs Lisp
+
+[Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html) is the extension language for Emacs. It is a dialect of
+Lisp, an established functional programming language. The first AI
+applications were written in Lisp. 
+
+The first example returns the name of this buffer.
+
+    (buffer-name)
+
+    babel.org<2>
+
+The second example prints `hello world` first as a list, then
+verbatim.
+
+    '(hello world)
+
+-   hello
+-   world
+
+    (hello world)
 
 
 # Footnotes

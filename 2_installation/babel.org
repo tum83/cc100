@@ -98,7 +98,7 @@
     If you type your own code blocks, remember that you can apply
     proper identation to any marked region with ~C-M-\~. 
 
-* SQLite
+** SQLite
 
   #+begin_src sqlite :db test.db
     .database

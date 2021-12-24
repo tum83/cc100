@@ -37,7 +37,7 @@
   | Computer  |          |          |               |      |
   | Cow       |          |          |               |      |
   | Earth     |          |          |               |      |
-  | House     |          |          |               |      |
+  | Nation    |          |          |               |      |
   | Person    |          |          |               |      |
   | Phone     |          |          |               |      |
   | Schoology |          |          |               |      |
@@ -47,8 +47,14 @@
 * TODO Ways to describe and manipulate systems
 
 
+  In this section we take a look at four different ways to describe
+  and manipulate systems. As an example, we use systems of financial
+  markets (Sallans et al, 2003)[fn:1]. 
+  
 ** Models/abstractions
 
+   #+attr_html: :width 500px
+   [[./img/markets.jpg]]
    
 ** Stories/Narratives
 
@@ -65,5 +71,18 @@
   * Computers are a special case of information system
   * Attributes related to system properties are called "systemic"
 
+* References
+
+  Sallans, Pfister and Dorffner (December 15, 2003). A Simulation
+  Study of Managerial Compensation, OEFAI Neural Computation Group
+  Technical Report, Austrian Institute for Artificial Intelligence
+  [report]. URL: [[https://ofai.at/papers/oefai-tr-2003-33.pdf][ofai.at]].
+
 * Footnotes
+
+[fn:1]Why this source? There is nothing special about the paper used -
+  I found it while looking for a good (visual) model of financial
+  markets. It is, however, interesting that the report contains all
+  four ways of describing systems - as good scientific articles
+  should!
 

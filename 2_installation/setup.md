@@ -1,33 +1,33 @@
 
 # Table of Contents
 
-1.  [Install R](#org6f2c11b)
-    1.  [Windows](#org7589708)
-    2.  [MacOS](#orgcf75d3e)
-2.  [Install a C compiler](#org0401122)
-    1.  [Windows](#org66850e7)
-    2.  [MacOS](#orgf8842b9)
-3.  [Install SQLite](#orgab11d6e)
-    1.  [Windows](#org011095b)
-    2.  [MacOS](#org4a71009)
-4.  [Install Emacs](#org193b4f7)
-    1.  [Download and Installation for Windows](#orgaa0da31)
-    2.  [Download and Installation for MacOS](#org3444340)
-5.  [Customize Emacs](#orgbc10171)
-    1.  [Create configuration file](#org0bf2071)
-    2.  [Create sample notebook](#org73ab313)
+1.  [Install R](#orgfc32880)
+    1.  [Windows](#orgf503a83)
+    2.  [MacOS](#org2630525)
+2.  [Install a C compiler](#orgb5c85fb)
+    1.  [Windows](#org47c44bc)
+    2.  [MacOS](#org6db7ba3)
+3.  [Install SQLite](#org9762d0e)
+    1.  [Windows](#org1d65a7c)
+    2.  [MacOS](#org5116adb)
+4.  [Install Emacs](#org08a82a1)
+    1.  [Download and Installation for Windows](#orgc4fd84b)
+    2.  [Download and Installation for MacOS](#org268379d)
+5.  [Customize Emacs](#orgd115641)
+    1.  [Create configuration file](#orgc5db46d)
+    2.  [Create sample notebook](#org80ded40)
 
 \#+options toc:nil
 
-<a id="orgd40b46e"></a>
+<a id="orgd19a387"></a>
 
 
-<a id="org6f2c11b"></a>
+<a id="orgfc32880"></a>
 
 # Install R
 
 
-<a id="org7589708"></a>
+<a id="orgf503a83"></a>
 
 ## Windows
 
@@ -57,7 +57,7 @@
         ![img](./img/histogram.png)
 
 
-<a id="orgcf75d3e"></a>
+<a id="org2630525"></a>
 
 ## MacOS
 
@@ -73,12 +73,12 @@
         inside the Emacs editor so that you can create notebooks.
 
 
-<a id="org0401122"></a>
+<a id="orgb5c85fb"></a>
 
 # Install a C compiler
 
 
-<a id="org66850e7"></a>
+<a id="org47c44bc"></a>
 
 ## Windows
 
@@ -112,7 +112,7 @@
         ![img](./img/gcc.png)
 
 
-<a id="orgf8842b9"></a>
+<a id="org6db7ba3"></a>
 
 ## MacOS
 
@@ -128,17 +128,17 @@ Clang compiler.
     ![img](./img/cc.png)
 
 
-<a id="orgab11d6e"></a>
+<a id="org9762d0e"></a>
 
 # Install SQLite
 
 
-<a id="org011095b"></a>
+<a id="org1d65a7c"></a>
 
 ## Windows
 
 
-<a id="org4a71009"></a>
+<a id="org5116adb"></a>
 
 ## MacOS
 
@@ -156,12 +156,12 @@ Clang compiler.
 -   You can also type `sqlite3` in a terminal to open the console.
 
 
-<a id="org193b4f7"></a>
+<a id="org08a82a1"></a>
 
 # Install Emacs
 
 
-<a id="orgaa0da31"></a>
+<a id="orgc4fd84b"></a>
 
 ## Download and Installation for Windows
 
@@ -171,7 +171,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="org3444340"></a>
+<a id="org268379d"></a>
 
 ## Download and Installation for MacOS
 
@@ -181,7 +181,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="orgbc10171"></a>
+<a id="orgd115641"></a>
 
 # Customize Emacs
 
@@ -195,7 +195,7 @@ your computer, and you can share notebooks with anyone, who has
 Emacs.
 
 
-<a id="org0bf2071"></a>
+<a id="orgc5db46d"></a>
 
 ## Create configuration file
 
@@ -212,7 +212,7 @@ system.
 Download the configuration file [from GitHub](https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs).
 
 
-<a id="org73ab313"></a>
+<a id="org80ded40"></a>
 
 ## Create sample notebook
 

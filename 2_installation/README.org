@@ -426,6 +426,10 @@
   | Org-mode         | Emacs package for literate programming (and more) |
 
 * What's next
+
+  * First C program
+  * Getting used to Emacs
+  
 * References
 
   Biggs/Donovan (November 9, 2020). Modern IDEs are magic. Why are so

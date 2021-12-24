@@ -72,7 +72,6 @@
       explain below how to run gcc inside the Emacs editor so that you
       can create notebooks.
 
-
 * Install Emacs (Windows/MacOS)
 ** Download and Installation for Windows
 

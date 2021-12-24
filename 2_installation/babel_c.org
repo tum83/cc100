@@ -1,0 +1,51 @@
+#+options: toc:nil
+#+startup: hideblocks overview
+<<babel.org>>
+* Babel test
+
+  This file demonstrates [[https://orgmode.org/manual/Working-with-Source-Code.html][working with source code]] in Emacs for a
+  number of different languages.
+
+  1) To run a code chunk as a whole, type ~C-c C-c~. The result will
+     appear immediately below the chunk.[fn:1]
+  2) look at the code in a separate buffer and run them in parts. To
+     open a buffer with the code, type ~C-c '~.
+  3) To print an org-mode file, type ~C-c C-e~ and choose a print
+     format from the list.
+
+  Running chunks will only work if Emacs can find the respective
+  programs[fn:2], and if a compiler (for C), or an interpreter (for R
+  and SQLite) were installed.
+
+  The code block needs to be named as shown. If you want the result
+  and the code shown in the printout, you need to specify ~:exports
+  both~.
+
+  #+begin_src C :exports both
+    #include <stdio.h>
+
+    int main(void) {
+      puts("hello world");
+      return 0;
+    }
+  #+end_src
+
+  #+RESULTS:
+  : hello world
+
+  In the second version, both the header and the function definition
+  are preset so that you can see the inside of the function only.
+
+  #+begin_src C :exports both :includes <stdio.h> :main yes
+    puts("hello world");
+  #+end_src
+
+  #+RESULTS:
+  : hello world
+
+* Footnotes
+
+[fn:2]This is why we changed the Windows ~PATH~ variable during the
+installation of the programs ~R~ and ~GNU gcc~ ([[./setup.org][here]]).
+
+[fn:1]Provided the block has been formatted correctly.

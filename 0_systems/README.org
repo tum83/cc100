@@ -91,15 +91,11 @@
 
    Rational agents are designed to maximize utility functions. An
    example is the action-value or Q-function, which is "defined as the
-   expected discounted return conditioned on the current state and
-   action" (of the agent):
+   expected discounted return conditioned on the current state $s$ and
+   action $a$" (of the agent):
 
-   #+begin_quote
-   \begin{equation}
-    Q^\pi = E[\sum_{\tau=1}^{\infty}
-            \gamma^{\tau-1}r_\tau|s_t = s, a_t = 1]
-   \end{equation}
-   #+end_quote
+   #+attr_html: :width 400px
+   [[./img/function.png]]
    
 * Summary
 

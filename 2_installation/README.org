@@ -4,6 +4,7 @@
 #+STARTUP:overview
 #+OPTIONS: toc:1
 #+OPTIONS:hideblocks
+#+INFOJS_OPT: :view:info
 * What are you going to learn?
 
   * Why we don't just get coding
@@ -263,7 +264,7 @@
     the advantages of Emacs is that everything can be done with the
     keyboard (which is way faster than the mouse).
 
-*** Installing additional packages
+** Installing additional packages
 
     There are hundreds of useful packages available for instant
     installation. To see them, enter ~M-x package-list-packages~.
@@ -280,7 +281,7 @@
     * enter ~i~ to mark the package for installation
     * enter ~x~ to install it.
 
-*** Presenting in Emacs
+** Presenting in Emacs
 
     I often present in Emacs, especially when I use interactive
     notebooks. I use ~org-slide-tree-mode~ for that ([[https://github.com/takaxp/org-tree-slide][see
@@ -323,7 +324,7 @@
 
     #+end_src
     
-*** Definitions and functions
+** Definitions and functions
 
     You can use ~M-Q~ to fill a region (wrap the text and cut it off
     after 70 characters, a value set in ~fill-column~). Sometimes it
@@ -361,7 +362,7 @@
       #+RESULTS:
       : unfill-region
     
-*** Adding images and links to Org-mode files
+** Adding images and links to Org-mode files
 
     My lecture scripts and notebooks often contain images and
     links. It is easy to add image and links (internal to Emacs or
@@ -426,6 +427,19 @@
 
    #+attr_html: :width 500px
    [[./img/html.png]]
+
+   What works really well in HTML are mathematical formulae. This
+   LaTeX equation for example only renders well in HTML (see image):
+
+   #+begin_quote
+   \begin{equation}
+    Q^\pi = E[\sum_{\tau=1}^{\infty}
+            \gamma^{\tau-1}r_\tau|s_t = s, a_t = 1]
+   \end{equation}
+   #+end_quote
+
+   #+attr_html: :width 600px
+   [[./img/render.png]]
    
 * Summary
 

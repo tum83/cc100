@@ -56,7 +56,7 @@
 
    #+attr_html: :width 500px
    [[./img/emacs.png]]
-   /Image: GNU Emacs logo. Source: 
+   /Image: GNU Emacs logo. Source: [[https://www.gnu.org/software/emacs/][GNU Project]]/
    
    Emacs is an extensible editor written in C, with Emacs Lisp, a Lisp
    dialect, as an extenstion language. It was first released
@@ -72,13 +72,16 @@
 
 ** How will we use Emacs?
 
-   We'll use it as an editor to write source code, as a notebook to
-   write literate programs, and as a shell to build and run code.
+   We'll use it as:
+
+   * EDITOR to write source code,
+   * NOTEBOOK to write literate programs, and
+   * SHELL to build and run code.
 
 * Infrastructure Setup
 
   The sections below cover most of the infrastructure used in my
-  courses. They are also available as FAQs on GitHub.
+  courses. They are also available as [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#orga3d6f39][FAQs on GitHub]].
 
   If you look at this at GitHub, look at ~.org~ files for syntax
   highlighting.

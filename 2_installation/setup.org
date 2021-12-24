@@ -355,7 +355,11 @@
     And here is the same image inserted as a URL:
 
     file:https://github.com/birkenkrahe/cc100/blob/main/2_installation/img/trend.png
+
+    And here is the link to the image:
     
+    https://github.com/birkenkrahe/cc100/raw/main/2_installation/img/trend.png
+
 * Footnotes
 
 [fn:3]This link also shows you how to link notebooks. You can set a

@@ -169,11 +169,6 @@
   * [[https://youtu.be/48JlgiBpw_I][The Absolute Beginner's Guide to Emacs]] (System Crafters, 2021) -
     1hr30min.
 
-  And here is a (much shorter) video by a former user of the Vim
-  editor who switches to GNU Emacs:
-
-  * [[https://youtu.be/Y8koAgkBEnM][Switching to GNU Emacs]] (DistroTube, 2019) - 22 min.
-
 ** Create configuration file
 
    To create interactive computing notebooks in Emacs, we use the
@@ -405,30 +400,30 @@
    
 * Summary
 
-  * To program in C, we need a computer, a compiler, and an editor.
-  * You can use an IDE like ~Code::Blocks~, a Linux-like environment
-    like ~Cygwin~ , or ~Linux~ directly, or an editor like Emacs
-  * You'll have to download the compiler for your operating system:
-    ~MinGW~ (that's ~GNU gcc~) for Windows, ~XCode~ (that's ~Clang~)
-    for MacOS. Linux comes with ~gcc~ already.
-
+  * To program in C, we need a computer, a compiler, and an editor
+  * You'll have to download the compiler for Windows or MacOS
+  * You can download and install Emacs (ready for data science)
+  * Emacs is a highly customizable editor (using Emacs Lisp)
+  * Org-mode is a literate programming environment
+  
 * Jargon
 
-  | CONCEPT          | EXPLANATION                                      |
-  |------------------+--------------------------------------------------|
-  | Source code      | Human-readable program                           |
-  | Compiling        | Translating source                               |
-  | Linking          | Linking compiled program to libraries            |
-  | Library          | Bundle of reusable macros or functions           |
-  | Object code      | Code ready for execution by a machine            |
-  | Execution        | Running object code on a machine                 |
-  | Interpreter      | Machine that interprets and executes source code |
-  | Script           | Source code for an interpreter                   |
-  | Emacs            | Extensible text editor (via Emacs Lisp)          |
-  | Literate Program | Readable code - expands into doc + executable    |
-  | GNU              | "GNU's not UNIX"                                 |
-  | GNU/Linux        | Free, open source operating system               |
-  | Richard Stallman | Creator of the GNU project and Emacs             |
+  | CONCEPT          | EXPLANATION                                       |
+  |------------------+---------------------------------------------------|
+  | Source code      | Human-readable program                            |
+  | Compiling        | Translating source                                |
+  | Linking          | Linking compiled program to libraries             |
+  | Library          | Bundle of reusable macros or functions            |
+  | Object code      | Code ready for execution by a machine             |
+  | Execution        | Running object code on a machine                  |
+  | Interpreter      | Machine that interprets and executes source code  |
+  | Script           | Source code for an interpreter                    |
+  | Emacs            | Extensible text editor (via Emacs Lisp)           |
+  | Literate Program | Readable code - expands into doc + executable     |
+  | GNU              | "GNU's not UNIX"                                  |
+  | GNU/Linux        | Free, open source operating system                |
+  | Richard Stallman | Creator of the GNU project and Emacs              |
+  | Org-mode         | Emacs package for literate programming (and more) |
 
 * What's next
 * References

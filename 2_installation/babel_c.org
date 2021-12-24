@@ -28,7 +28,7 @@
       puts("hello world");
       return 0;
     }
-  #+end_src
+    #+end_src
 
   #+RESULTS:
   : hello world
@@ -37,8 +37,10 @@
   are preset so that you can see the inside of the function only.
 
   #+begin_src C :exports both :includes <stdio.h> :main yes
+
     puts("hello world");
-  #+end_src
+
+    #+end_src
 
   #+RESULTS:
   : hello world

@@ -1,7 +1,8 @@
 #+options toc:nil
 #+startup: hideblocks overview
 <<setup.org>>
-* Install R (Windows)
+* Install R
+** Windows  
   * Download the latest package from [[https://cran.r-project.org/][CRAN]].
   * Run the installer - accept all presets.
   * Add the location of the executable file ~R~ to the Windows ~PATH~
@@ -31,11 +32,21 @@
       #+attr_html: :width 300px
       [[./img/histogram.png]]
 
+** MacOS
+   * Download the latest package from [[https://cran.r-project.org/][CRAN]].
+   * Open the ~.pkg~ binary - accept all presets.
+   * To test, search for ~terminal~, open the app and enter ~R~. The R
+     program opens. At the ~>~ prompt, enter ~hist(Nile)~. The
+     histogram below should open in a new screen. Close the window.
+
+      #+attr_html: :width 300px
+      [[./img/histogram.png]]
+
     * You can now use the R console. I explain below how to run R
       inside the Emacs editor so that you can create notebooks.
 
-* Install GNU gcc (Windows)
-
+* Install a C compiler
+** Windows
   * Download the installer [[https://sourceforge.net/projects/mingw-w64/][from sourceforge]].
   * Run the installer - accept all presets.
   * Add the location of the executable file ~gcc~ to the Windows
@@ -68,11 +79,40 @@
       #+attr_html: :width 300px
       [[./img/gcc.png]]
 
-    * You can now use the GNU gcc compiler from the command line. I
-      explain below how to run gcc inside the Emacs editor so that you
-      can create notebooks.
+** MacOS
 
-* Install Emacs (Windows/MacOS)
+   Apple no longer allows GNU tools - instead, you can install the
+   Clang compiler.
+
+   * Check if you already have a C compiler: open a terminal (search
+     for ~terminal~ app) and enter ~cc -v~.
+   * If no compiler is found, download it by entering ~xcode-select
+     --install~
+   * Test it by typing ~cc -v~.
+
+     [[./img/cc.png]]
+     
+* Install SQLite
+** Windows
+
+** MacOS
+
+   * Go to the [[https://sqlite.org/download.html][download page]] and download the ~.zip~ bundle for MacOS
+     (x86).
+     
+     #+attr_html: :width 300px
+     [[./img/sqlite.png]]
+
+   * Double-click the ~.zip~ file to open it.
+   * Right-click on the executable file ~sqlite3~ and confirm that you
+     want to open it. Now SQLite will open in a new terminal window.
+
+     #+attr_html: :width 300px
+     [[./img/sqlite.png]]
+
+   * You can also type ~sqlite3~ in a terminal to open the console.
+     
+* Install Emacs
 ** Download and Installation for Windows
 
    * Download GNU Emacs + ESS as a modified version for [[https://vigou3.gitlab.io/emacs-modified-windows/][Windows]].

@@ -13,8 +13,8 @@
      format from the list.
 
   Running chunks will only work if Emacs can find the respective
-  programs. This is why we changed the Windows ~PATH~ variable during
-  the installation of the programs ~R~ and ~GNU gcc~ ([[./setup.org][here]]). 
+  programs[fn:2], and if a compiler (for C), or an interpreter (for R
+  and SQLite) were installed.
 
 ** C
 
@@ -100,14 +100,33 @@
 
 ** SQLite
 
-  #+begin_src sqlite :db test.db
-    .database
-	
+   SQLite is a relational database management system. For this code
+   block to work you need a database ~babel.db~. You can create an
+   empty file (with the command ~touch babel.db~) in the current
+   working directory. 
+   
+   #+begin_src sqlite :db babel.db
+     .database
+     DROP TABLE IF EXISTS tabelle;
+     CREATE TABLE tabelle (id INT, name TEXT);
+     .tables
+     INSERT INTO tabelle VALUES (1,"Marcus");
+     .mode column
+     .width 3 10
+     .header ON
+     SELECT * FROM tabelle;
   #+end_src
 
   #+RESULTS:
-  : main: c:\Users\birkenkrahe\Documents\GitHub\cc100\2_installation\test.db r/w
+  | main: /Users/carlyebirkenkrahe/babel.db |
+  | tabelle                                 |
+  | id   name                               |
+  | ---  ----------                         |
+  | 1    Marcus                             |
   
 * Footnotes
+
+[fn:2]This is why we changed the Windows ~PATH~ variable during the
+installation of the programs ~R~ and ~GNU gcc~ ([[./setup.org][here]]).
 
 [fn:1]Provided the block has been formatted correctly.

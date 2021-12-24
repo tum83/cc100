@@ -1,38 +1,39 @@
 
 # Table of Contents
 
-1.  [Install R](#org6d6ba60)
-    1.  [Windows](#org0a44643)
-    2.  [MacOS](#org4d6a7d9)
-2.  [Install a C compiler](#org0767315)
-    1.  [Windows](#org534a333)
-    2.  [MacOS](#org26342c5)
-3.  [Install SQLite](#org2dce468)
-    1.  [Windows](#orgee9e4a5)
-    2.  [MacOS](#org6e32669)
-4.  [Install Emacs](#org9922113)
-    1.  [Download and Installation for Windows](#org8c66cf9)
-    2.  [Download and Installation for MacOS](#org7154a4c)
-5.  [Customize Emacs](#org68e36d2)
-    1.  [Create configuration file](#orgcdae6c6)
-    2.  [Create sample notebook](#org4dd460c)
-    3.  [Layout changes](#org5da8dc5)
-        1.  [Customize theme and font](#org70a72be)
-        2.  [Installing additional packages](#org5f17477)
-        3.  [Presenting in Emacs](#orgef49ca8)
-        4.  [Definitions and functions](#org706fe8d)
+1.  [Install R](#org94776cd)
+    1.  [Windows](#org7a5d405)
+    2.  [MacOS](#org332433d)
+2.  [Install a C compiler](#org99cd929)
+    1.  [Windows](#org08e79f9)
+    2.  [MacOS](#org6bdd26f)
+3.  [Install SQLite](#org4df6c4a)
+    1.  [Windows](#org06336f9)
+    2.  [MacOS](#org63bf92e)
+4.  [Install Emacs](#orgd61c43b)
+    1.  [Download and Installation for Windows](#org0c922dd)
+    2.  [Download and Installation for MacOS](#org7dac497)
+5.  [Customize Emacs](#org9b0e543)
+    1.  [Create configuration file](#org6df707f)
+    2.  [Create sample notebook](#orgb934b51)
+    3.  [Layout changes](#org3a46d60)
+        1.  [Customize theme and font](#org72d0636)
+        2.  [Installing additional packages](#org1bba639)
+        3.  [Presenting in Emacs](#org717e13c)
+        4.  [Definitions and functions](#orgd177799)
+        5.  [Adding images and links to Org-mode files](#org79de40e)
 
 \#+options toc:nil
 
-<a id="org4486919"></a>
+<a id="orgdbc5d35"></a>
 
 
-<a id="org6d6ba60"></a>
+<a id="org94776cd"></a>
 
 # Install R
 
 
-<a id="org0a44643"></a>
+<a id="org7a5d405"></a>
 
 ## Windows
 
@@ -62,7 +63,7 @@
         ![img](./img/histogram.png)
 
 
-<a id="org4d6a7d9"></a>
+<a id="org332433d"></a>
 
 ## MacOS
 
@@ -78,12 +79,12 @@
         inside the Emacs editor so that you can create notebooks.
 
 
-<a id="org0767315"></a>
+<a id="org99cd929"></a>
 
 # Install a C compiler
 
 
-<a id="org534a333"></a>
+<a id="org08e79f9"></a>
 
 ## Windows
 
@@ -117,7 +118,7 @@
         ![img](./img/gcc.png)
 
 
-<a id="org26342c5"></a>
+<a id="org6bdd26f"></a>
 
 ## MacOS
 
@@ -133,17 +134,17 @@ Clang compiler.
     ![img](./img/cc.png)
 
 
-<a id="org2dce468"></a>
+<a id="org4df6c4a"></a>
 
 # Install SQLite
 
 
-<a id="orgee9e4a5"></a>
+<a id="org06336f9"></a>
 
 ## Windows
 
 
-<a id="org6e32669"></a>
+<a id="org63bf92e"></a>
 
 ## MacOS
 
@@ -161,12 +162,12 @@ Clang compiler.
 -   You can also type `sqlite3` in a terminal to open the console.
 
 
-<a id="org9922113"></a>
+<a id="orgd61c43b"></a>
 
 # Install Emacs
 
 
-<a id="org8c66cf9"></a>
+<a id="org0c922dd"></a>
 
 ## Download and Installation for Windows
 
@@ -176,7 +177,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="org7154a4c"></a>
+<a id="org7dac497"></a>
 
 ## Download and Installation for MacOS
 
@@ -186,7 +187,7 @@ Clang compiler.
 -   Open Emacs, type `CTRL-h t` (`C-h t`) and complete the tutorial.
 
 
-<a id="org68e36d2"></a>
+<a id="org9b0e543"></a>
 
 # Customize Emacs
 
@@ -200,7 +201,7 @@ your computer, and you can share notebooks with anyone, who has
 Emacs.
 
 
-<a id="orgcdae6c6"></a>
+<a id="org6df707f"></a>
 
 ## Create configuration file
 
@@ -214,10 +215,45 @@ which is placed in your home directory (`~/~`). Where this folder
 is actually located on your computer depends on your operating
 system.
 
-Download the configuration file [from GitHub](https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs).
+Download the configuration file [from GitHub](https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs). Here is the code, in
+case you want to copy and paste it from here.
+
+    
+    (put 'dired-find-alternate-file 'disabled nil)
+    
+    ;; require ob-sqlite and ob-sql (for compilation in org src blocks) & tangle
+    (require 'ob-sqlite)
+    (require 'ob-sql)
+    (require 'ob-emacs-lisp)
+    
+    ;; active Babel languages
+    (org-babel-do-load-languages
+     'org-babel-load-languages
+     '((R . t)
+       (sql . t)
+       (python . t)
+       (emacs-lisp . t)
+       (C . t)))
+    
+    ;; Syntax highlight code in your SRC blocks The last variable removes
+    ;; the annoying “Do you want to execute” your code when you type:
+    ;; C-c C-c
+    (setq org-confirm-babel-evaluate nil
+          org-src-fontify-natively t
+          org-src-tab-acts-natively t)
+    
+    ;; enable snippet expansion via org-structure-template-alist
+    (require 'org-tempo)
+    
+    ;; get packages from MELPA package manager
+    (require 'package)
+    (add-to-list 'package-archives
+    	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+
+    ((gnu . https://elpa.gnu.org/packages/) (melpa-stable . https://stable.melpa.org/packages/) (melpa . https://melpa.org/packages) (gnu . https://elpa.gnu.org/packages) (org . https://orgmode.org/elpa/))
 
 
-<a id="org4dd460c"></a>
+<a id="orgb934b51"></a>
 
 ## Create sample notebook
 
@@ -229,7 +265,7 @@ Check out <./babel.md> for examples with both R and C code in the
 same file<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.
 
 
-<a id="org5da8dc5"></a>
+<a id="org3a46d60"></a>
 
 ## Layout changes
 
@@ -243,10 +279,11 @@ If you change your `~/.emacs` file, you need to evaluate the file
 Emacs Lisp is a fun language to learn, because through Emacs you
 can play around with it and see what it does much more easily than
 with other languages. Here is a [complete tutorial for
-non-programmers](https://www.gnu.org/software/emacs/manual/html_node/eintr/).
+non-programmers](https://www.gnu.org/software/emacs/manual/html_node/eintr/). Lisp (and Emacs Lisp) is a functional programming
+language (like R).
 
 
-<a id="org70a72be"></a>
+<a id="org72d0636"></a>
 
 ### Customize theme and font
 
@@ -266,7 +303,7 @@ the advantages of Emacs is that everything can be done with the
 keyboard (which is way faster than the mouse).
 
 
-<a id="org5f17477"></a>
+<a id="org1bba639"></a>
 
 ### Installing additional packages
 
@@ -286,7 +323,7 @@ To install a package
 -   enter `x` to install it.
 
 
-<a id="orgef49ca8"></a>
+<a id="org717e13c"></a>
 
 ### Presenting in Emacs
 
@@ -312,6 +349,8 @@ and put the code below into your `/.emacs` file.
     (setq org-tree-slide-slide-effect t)
     (org-tree-slide-simple-profile) ;; no headers
 
+    simple profile: ON
+
 In the code, `<f9>` is used to switch the mode on or off (`SHIFT +
     <f9>`), and `<f8>` to move one slide forward or backward (`SHIFT +
     <f8>`). Slide headers have been removed. If you want slide
@@ -322,7 +361,7 @@ this:
     ;; (org-tree-slide-simple-profile) ;; no headers
 
 
-<a id="org706fe8d"></a>
+<a id="orgd177799"></a>
 
 ### Definitions and functions
 
@@ -346,8 +385,34 @@ that.
 If you like to bind the function to a key sequence, you can use
 this code - now `C-M-Q` will invoke the function:
 
+    
     ;; bind unfill-region to C-M-Q
     (define-key global-map "\C-\M-Q" 'unfill-region)
+
+
+<a id="org79de40e"></a>
+
+### Adding images and links to Org-mode files
+
+My lecture scripts and notebooks often contain images and
+links. It is easy to add image and links (internal to Emacs or
+Internet URLs) to an Org-mode file.
+
+Images can be named and given captions. Here is an example with
+figure [77](#orgf82ea0e) below. To show/hide images, use `C-c C-x C-v`
+(`org-toggle-inline-images`).
+
+    
+    #+CAPTION: Google search trends for popular editors
+    #+NAME: fig:trend
+    #+ATTR_HTML: :width 400px
+    [[./img/trend.png]]
+
+![img](./img/trend.png "Google search trends for popular editors")
+
+And here is the same image inserted as a URL:
+
+![img](https://github.com/birkenkrahe/cc100/blob/main/2_installation/img/trend.png)
 
 
 # Footnotes

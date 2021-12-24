@@ -150,8 +150,45 @@
    is actually located on your computer depends on your operating
    system.
 
-   Download the configuration file [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs][from GitHub]].
+   Download the configuration file [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs][from GitHub]]. Here is the code, in
+   case you want to copy and paste it from here.
 
+   #+begin_src emacs-lisp :exports both
+
+     (put 'dired-find-alternate-file 'disabled nil)
+
+     ;; require ob-sqlite and ob-sql (for compilation in org src blocks) & tangle
+     (require 'ob-sqlite)
+     (require 'ob-sql)
+     (require 'ob-emacs-lisp)
+
+     ;; active Babel languages
+     (org-babel-do-load-languages
+      'org-babel-load-languages
+      '((R . t)
+	(sql . t)
+	(python . t)
+	(emacs-lisp . t)
+	(C . t)))
+
+     ;; Syntax highlight code in your SRC blocks The last variable removes
+     ;; the annoying “Do you want to execute” your code when you type:
+     ;; C-c C-c
+     (setq org-confirm-babel-evaluate nil
+	   org-src-fontify-natively t
+	   org-src-tab-acts-natively t)
+
+     ;; enable snippet expansion via org-structure-template-alist
+     (require 'org-tempo)
+
+     ;; get packages from MELPA package manager
+     (require 'package)
+     (add-to-list 'package-archives
+		  '("melpa-stable" . "https://stable.melpa.org/packages/"))
+
+   #+end_src
+
+   
 ** Create sample notebook
 
    To create a notebook, create an ~.org~ file. Then type ~C-c C-,~
@@ -173,7 +210,8 @@
    Emacs Lisp is a fun language to learn, because through Emacs you
    can play around with it and see what it does much more easily than
    with other languages. Here is a [[https://www.gnu.org/software/emacs/manual/html_node/eintr/][complete tutorial for
-   non-programmers]].
+   non-programmers]]. Lisp (and Emacs Lisp) is a functional programming
+   language (like R).
 
 *** Customize theme and font
 
@@ -219,23 +257,26 @@
     #+attr_html: :width 400px
     [[./img/orgtreeslide.png]]
 
-    #+begin_src Emacs-lisp
+    #+begin_src emacs-lisp :exports both
 
-;; org-tree-slide: https://github.com/takaxp/org-tree-slide
-;; to activate: M-x org-tree-slide-mode or <f9> - stop S-<f9>
-(require 'org-tree-slide)
-(with-eval-after-load "org-tree-slide"
-  (global-set-key (kbd "<f9>") 'org-tree-slide-mode)
-  (global-set-key (kbd "S-<f9>") 'org-tree-slide-skip-done-toggle)
-  (define-key org-tree-slide-mode-map (kbd "<f8>") 'org-tree-slide-move-previous-tree) ;; move forwards
-  (define-key org-tree-slide-mode-map (kbd "S-<f8>") 'org-tree-slide-move-next-tree)  ;; move backwards
-  )
-(setq org-image-actual-width nil)
-(setq org-tree-slide-skip-outline-level 0)
-(setq org-tree-slide-slide-effect t)
-(org-tree-slide-simple-profile) ;; no headers
+      ;; org-tree-slide: https://github.com/takaxp/org-tree-slide
+      ;; to activate: M-x org-tree-slide-mode or <f9> - stop S-<f9>
+      (require 'org-tree-slide)
+      (with-eval-after-load "org-tree-slide"
+	(global-set-key (kbd "<f9>") 'org-tree-slide-mode)
+	(global-set-key (kbd "S-<f9>") 'org-tree-slide-skip-done-toggle)
+	(define-key org-tree-slide-mode-map (kbd "<f8>") 'org-tree-slide-move-previous-tree) ;; move forwards
+	(define-key org-tree-slide-mode-map (kbd "S-<f8>") 'org-tree-slide-move-next-tree)  ;; move backwards
+	)
+      (setq org-image-actual-width nil)
+      (setq org-tree-slide-skip-outline-level 0)
+      (setq org-tree-slide-slide-effect t)
+      (org-tree-slide-simple-profile) ;; no headers
 
     #+end_src
+
+    #+RESULTS:
+    : simple profile: ON
     
     In the code, ~<f9>~ is used to switch the mode on or off (~SHIFT +
     <f9>~), and ~<f8>~ to move one slide forward or backward (~SHIFT +
@@ -243,11 +284,11 @@
     headers, comment the last line by putting ~;;~ in front of it like
     this:
     
-    #+begin_example
+    #+begin_src emacs-lisp
 
-    ;; (org-tree-slide-simple-profile) ;; no headers
+      ;; (org-tree-slide-simple-profile) ;; no headers
 
-    #+end_example
+    #+end_src
     
 *** Definitions and functions
 
@@ -258,30 +299,62 @@
     your ~~/.emacs~ file, you can use ~M-x unfill-region~ to achieve
     that.
 
-    #+begin_src Emacs-lisp
+    #+begin_src emacs-lisp
 
-;; unfill region
-(defun unfill-region (beg end)
-  "Unfill the region, joining text paragraphs into a single
-    logical line.  This is useful, e.g., for use with
-    `visual-line-mode'."
-  (interactive "*r")
-  (let ((fill-column (point-max)))
-    (fill-region beg end)))
+      ;; unfill region
+      (defun unfill-region (beg end)
+	"Unfill the region, joining text paragraphs into a single
+	  logical line.  This is useful, e.g., for use with
+	  `visual-line-mode'."
+	(interactive "*r")
+	(let ((fill-column (point-max)))
+	  (fill-region beg end)))
 
     #+end_src
+
+    #+RESULTS:
+    : unfill-region
 
     If you like to bind the function to a key sequence, you can use
     this code - now ~C-M-Q~ will invoke the function:
 
-    #+begin_src Emacs-lisp
-;; bind unfill-region to C-M-Q
-(define-key global-map "\C-\M-Q" 'unfill-region)
-    #+end_src    
+    #+begin_src emacs-lisp
+
+      ;; bind unfill-region to C-M-Q
+      (define-key global-map "\C-\M-Q" 'unfill-region)
+
+      #+end_src    
+
+      #+RESULTS:
+      : unfill-region
     
 *** Adding images and links to Org-mode files
 
+    My lecture scripts and notebooks often contain images and
+    links. It is easy to add image and links (internal to Emacs or
+    Internet URLs) to an Org-mode file.
+
+    Images can be named and given captions. Here is an example with
+    figure [[fig:trend]] below. To show/hide images, use ~C-c C-x C-v~
+    (~org-toggle-inline-images~).
+
+    #+begin_example
+
+    #+CAPTION: Google search trends for popular editors
+    #+NAME: fig:trend
+    #+ATTR_HTML: :width 400px
+    [[./img/trend.png]]
     
+    #+end_example
+
+    #+CAPTION: Google search trends for popular editors
+    #+NAME: fig:trend
+    #+ATTR_HTML: :width 600px
+    [[./img/trend.png]]
+
+    And here is the same image inserted as a URL:
+
+    file:https://github.com/birkenkrahe/cc100/blob/main/2_installation/img/trend.png
     
 * Footnotes
 

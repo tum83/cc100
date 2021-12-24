@@ -5,7 +5,7 @@
 #+OPTIONS:hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
 #+INFOJS_OPT: :view:info
-* Interlude: systems
+* Prelude: systems
 
   |System = a whole made up of several parts|
 
@@ -29,7 +29,7 @@
 * Examples for systems
 
   Your turn: fill in the details of these systems!
-  
+
   | System    | Boundary | Elements | Relationships | Flow |
   |-----------+----------+----------+---------------+------|
   | Car       |          |          |               |      |
@@ -44,24 +44,63 @@
 
   Can you think of things that are not systems?
 
-* TODO Ways to describe and manipulate systems
-
+* Ways to describe and manipulate systems
 
   In this section we take a look at four different ways to describe
   and manipulate systems. As an example, we use systems of financial
-  markets (Sallans et al, 2003)[fn:1]. 
-  
+  markets (Sallans et al, 2003)[fn:1].
+
 ** Models/abstractions
+
+   The model below shows a system consisting of three elements (which
+   are systems themselves): a firm, a consumer market, and a financial
+   market.
 
    #+attr_html: :width 500px
    [[./img/markets.jpg]]
-   
+
 ** Stories/Narratives
+
+   This is the prose that explains the graphic model in more detail.
+
+   #+begin_quote
+   "The model consists of two markets: a consumer market and a
+   financial equities market. The consumer market simulates the
+   manufacture of a product by production firms, and the purchase of
+   the product by consumers. The financial market simulates trading of
+   shares. The shares are traded by financial traders. The two markets
+   are coupled: The financial traders buy and sell shares in the
+   production firms, and the managers of firms may be concerned with
+   their share price. The traders can use the performance of a firm in
+   the consumer market in order to make trading decisions. Similarly,
+   the production firms can potentially use positioning in product
+   space and pricing to influence the decisions of financial traders."
+   #+end_quote
 
 ** Computer algorithms
 
+   The article studies management compensation using a "discrete-time
+   agent-based economic model". The agent behavior is expressed
+   algorithmically as a sequence of possible actions. For example for
+   the production firm, the algorithm can be expressed as shown.
+
+   #+attr_html: :width 400px
+   [[./img/actions.png]]
+
 ** Mathematical functions
 
+   Rational agents are designed to maximize utility functions. An
+   example is the action-value or Q-function, which is "defined as the
+   expected discounted return conditioned on the current state and
+   action" (of the agent):
+
+   #+begin_quote
+   \begin{equation}
+    Q^\pi = E[\sum_{\tau=1}^{\infty}
+            \gamma^{\tau-1}r_\tau|s_t = s, a_t = 1]
+   \end{equation}
+   #+end_quote
+   
 * Summary
 
   * Systems are everywhere (but not everything is a system)
@@ -81,8 +120,7 @@
 * Footnotes
 
 [fn:1]Why this source? There is nothing special about the paper used -
-  I found it while looking for a good (visual) model of financial
-  markets. It is, however, interesting that the report contains all
-  four ways of describing systems - as good scientific articles
-  should!
-
+I found it while looking for a good (visual) model of financial
+markets. It is, however, interesting that the report contains all
+four ways of describing systems - as good scientific articles
+should!

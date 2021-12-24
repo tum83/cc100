@@ -97,7 +97,17 @@
 
     If you type your own code blocks, remember that you can apply
     proper identation to any marked region with ~C-M-\~. 
-    
+
+* SQLite
+
+  #+begin_src sqlite :db test.db
+    .database
+	
+  #+end_src
+
+  #+RESULTS:
+  : main: c:\Users\birkenkrahe\Documents\GitHub\cc100\2_installation\test.db r/w
+  
 * Footnotes
 
 [fn:1]Provided the block has been formatted correctly.

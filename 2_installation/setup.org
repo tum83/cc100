@@ -1,7 +1,7 @@
 #+options toc:nil
 #+startup: hideblocks overview
 <<setup.org>>
-* Install R
+* Install R (Windows)
   * Download the latest package from [[https://cran.r-project.org/][CRAN]].
   * Run the installer - accept all presets.
   * Add the location of the executable file ~R~ to the Windows ~PATH~
@@ -34,7 +34,7 @@
     * You can now use the R console. I explain below how to run R
       inside the Emacs editor so that you can create notebooks.
 
-* Install GNU gcc
+* Install GNU gcc (Windows)
 
   * Download the installer [[https://sourceforge.net/projects/mingw-w64/][from sourceforge]].
   * Run the installer - accept all presets.
@@ -44,7 +44,7 @@
 
     - Search for ~PATH~ and open the menu ~System Properties~
 
-      #+attr_org: : 300px
+      #+attr_html: :width 300px
       [[./img/systemproperties.png]]
 
     - Open the menu ~Environment Variables~, click on the ~PATH~
@@ -72,7 +72,8 @@
       explain below how to run gcc inside the Emacs editor so that you
       can create notebooks.
 
-* Install Emacs
+
+* Install Emacs (Windows/MacOS)
 ** Download and Installation for Windows
 
    * Download GNU Emacs + ESS as a modified version for [[https://vigou3.gitlab.io/emacs-modified-windows/][Windows]].

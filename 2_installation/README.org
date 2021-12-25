@@ -263,6 +263,9 @@
     the advantages of Emacs is that everything can be done with the
     keyboard (which is way faster than the mouse).
 
+    If you want to get into this for whatever reason, [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][check this out]]
+    (Zamboni, 2018).
+    
 ** Installing additional packages
 
    There are hundreds of useful packages available for instant
@@ -442,10 +445,15 @@
 
 * GitHub
 ** What is it?
+
+   
 ** Why are we using it?
+
+   
 ** What will you have to do?
 
 *** If you don't have a GitHub account yet
+
     * [[https://github.com][Sign up with GitHub]] - use Lyon Email
     * Username: first and last name, e.g. ~DonaldTrump~
     * Complete the "Hello World" exercise ([[https://docs.github.com/en/get-started/quickstart/hello-world][~Read the guide~]])
@@ -511,6 +519,9 @@
   System Crafters (March 8, 2021). The Absolute Beginner's Guide to
   Emacs [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
 
+  Zamboni (March 21, 2018). Beautifying Org Mode in Emacs [blog]. [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][URL:
+  zzamboni.org]].
+  
 * Footnotes
 
 [fn:3]This link also shows you how to link notebooks. You can set a

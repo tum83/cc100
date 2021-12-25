@@ -217,10 +217,6 @@
      (add-to-list 'package-archives
                   '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
-     ;; enable global line numbers display
-     ;; display-line-numbers-mode toggles on/off
-     (global-display-line-numbers-mode)
-
    #+end_src
 
 ** Create sample notebook
@@ -452,18 +448,29 @@
    
 ** What will you have to do?
 
-*** If you don't have a GitHub account yet
 
     * [[https://github.com][Sign up with GitHub]] - use Lyon Email
-    * Username: first and last name, e.g. ~DonaldTrump~
-    * Complete the "Hello World" exercise ([[https://docs.github.com/en/get-started/quickstart/hello-world][~Read the guide~]])
-
-    /Image: Google [[https://github.com/google/gif-for-cli][GIF-for-CLI]] (GitHub)/
-    [[./img/gif-for-cli.gif]]
-
-
-    UPLOAD TO THIS GITHUB REPO...
+    * Pick a username: first and last name, e.g. ~DonaldTrump~
+    * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] (FAQ)
+          UPLOAD TO THIS GITHUB REPO...
     https://github.com/birkenkrahe/cc100/tree/main/2_installation/github_assignment
+    
+    * You send me your GitHub username so that I can add you as a
+      collaborator to my private ~cc100~ repository
+
+      #+begin_quote
+    If you do have a GitHub account already, do the exercise anyway
+    using your existing account! Make sure you let me know what your
+    user name is.
+      #+end_quote
+    
+** What else can you do?
+
+   * You can fork the ~cc100~ repository
+   * You can watch the ~cc100~ repository
+   * You can submit issues to the repository
+   * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]]
+   * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]]
 * Summary
 
   * To program in C, we need a computer, a compiler, and an editor

@@ -461,7 +461,9 @@
     /Image: Google [[https://github.com/google/gif-for-cli][GIF-for-CLI]] (GitHub)/
     [[./img/gif-for-cli.gif]]
 
-    
+
+    UPLOAD TO THIS GITHUB REPO...
+    https://github.com/birkenkrahe/cc100/tree/main/2_installation/github_assignment
 * Summary
 
   * To program in C, we need a computer, a compiler, and an editor

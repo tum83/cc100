@@ -7,6 +7,19 @@
 #+INFOJS_OPT: :view:info
 * Prelude: systems
 
+  All of my spring 2022 courses are system-related:
+
+  | Course title                          | Number | Systemic                                          |
+  |---------------------------------------+--------+---------------------------------------------------|
+  | Intro to programming with C/C++       | CSC100 | C = system programming language                   |
+  | Advanced introduction to data science | DSC205 | Data Science = System Science[fn:2]               |
+  | Database Theory and Applications      | CSC330 | Database Management Systems = information systems |
+  | Operating systems                     | CSC420 | Operating systems = information systems           |
+
+  ...which is why I will give this lecture in every single course. I'm
+  sorry if you have to hear it twice or more!
+  
+* What is a system?
   |System = a whole made up of several parts|
 
   #+attr_html: :width 400px
@@ -97,14 +110,35 @@
    #+attr_html: :width 400px
    [[./img/function.png]]
    
+* Literate Programming - Org-Mode + GitHub
+
+  * High degree of abstraction = greatly concealed power
+  * Requires extra efforts to be transparent and manageable
+  * Literate Programming is a paradigm made for system programming
+
+  #+begin_quote
+  "Literate programming is a programming paradigm introduced by Donald
+  Knuth in which a computer program is given an explanation of its
+  logic in a natural language, such as English, interspersed with
+  snippets of macros and traditional source code, from which
+  compilable source code can be generated. The approach is used in
+  scientific computing and in data science routinely for reproducible
+  research and open access purposes. Literate programming tools are
+  used by millions of programmers today." (Source: [[https://en.wikipedia.org/wiki/Literate_programming][Wikipedia]])
+  #+end_quote
+
+  In this course, we use:
+  
+  * GNU Emacs Org-mode files as literate notebooks
+  * GitHub as collaborative platform that renders Org files
+  
 * Summary
 
   * Systems are everywhere (but not everything is a system)
   * Powerful concept with many applications ("[[https://en.wikipedia.org/wiki/System][System sciences]]")
   * Systems have: boundaries, elements, relationships, and flow
-  * Systems can be described through models or stories
-  * Computers are a special case of information system
-  * Attributes related to system properties are called "systemic"
+  * Systems can be described through models, stories, algorithms, and functions
+  * The literate programming paradigm meets system programming requirements
 
 * References
 
@@ -113,7 +147,18 @@
   Technical Report, Austrian Institute for Artificial Intelligence
   [report]. URL: [[https://ofai.at/papers/oefai-tr-2003-33.pdf][ofai.at]].
 
+  Wikipedia (Dec 15, 2021). Literate Programming [wiki]. [[https://en.wikipedia.org/wiki/Literate_programming][URL:
+  en.wikipedia.org]].
+
 * Footnotes
+
+[fn:2]System sciences are sciences for which the concept of a system
+is a defining characteristic. This includes sciences that are
+interdisciplinary by nature and/or that are especially interested in
+patterns, and/or that deal with machines as a special case of
+mechanical system linked to our organic system. Examples include: data
+science (esp. data exploration), psychology (especially human-computer
+interface research), and biology!
 
 [fn:1]Why this source? There is nothing special about the paper used -
 I found it while looking for a good (visual) model of financial

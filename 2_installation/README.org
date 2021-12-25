@@ -57,13 +57,16 @@
 ** What is Emacs ?
 
    #+attr_html: :width 500px
-   [[./img/emacs.png]]
-   /Image: GNU Emacs logo. Source: [[https://www.gnu.org/software/emacs/][GNU Project]]/
+   [[./img/panels.png]]
+   /Image: Emacs 27.1 showing Org, Magit and Dired
+   buffers with the modus-operandi theme, without window titlebar or
+   borders. Source: [[https://en.wikipedia.org/wiki/Emacs#/media/File:Emacs27_showing_Org,_Magit,_and_Dired_with_the_modus-operandi_theme.png][Wikipedia]]/
 
    Emacs is an extensible editor written in C, with Emacs Lisp, a Lisp
    dialect, as an extenstion language. It was first released
    in 1985. Its extensibility and a large, active, passionate
-   community of developers and users made sure that it still evolves.
+   community of developers and users made sure that it still evolves
+   in 2021[fn:4].
 
 ** How do you use Emacs?
 
@@ -80,6 +83,37 @@
    * NOTEBOOK to write literate programs, and
    * SHELL to build and run code.
 
+** Does it really have to be Emacs? 
+
+   You'll handle it. Keep calm and carry on coding.
+   
+   If you look around, you'll see a lot of discussion on different
+   source code editors and IDEs. Currently Microsoft's VS Code seems
+   to be the most popular contender. However, as one developer said:
+
+   #+begin_quote
+   "One thing that cannot be replaced by any extension in VS code, VIM or
+   any other editor: Emacs' Org mode Org mode is for sure one of the most
+   amazing pieces of software I have ever seen or worked with. It does
+   things that no other text-based word processor can do, even if you are
+   writing complex scientific reports. VS code has an extension which
+   brings less than 5% of Org mode functionality, tops and that is mostly
+   the code highlighting." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
+   #+end_quote
+
+      
+** What about Emacs' famously "steep learning curve" ?
+
+   #+begin_quote
+   "Emacs can be a challenge if you are used to using mouse
+   pointer. One should be willing to leave the mouse and stick with
+   the keyboard." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
+   #+end_quote
+
+   Also, computer science, and IT, are largely about mastering, and
+   creating new digital tools. Therefore, almost any effort is
+   justified that goes into improving your meta skills[fn:5] in this area.
+   
 * Infrastructure Setup
 
   The sections below cover most of the infrastructure used in my
@@ -134,6 +168,9 @@
      [[./img/cc.png]]
 
 * Install Emacs
+  #+attr_html: :width 500px
+  [[./img/emacs.png]]
+  /Image: GNU Emacs logo. Source: [[https://www.gnu.org/software/emacs/][GNU Project]]/
 ** Download and Installation for Windows
 
    * Download GNU Emacs + ESS as a modified version for [[https://vigou3.gitlab.io/emacs-modified-windows/][Windows]].
@@ -261,7 +298,7 @@
 
     If you want to get into this for whatever reason, [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][check this out]]
     (Zamboni, 2018).
-    
+
 ** Installing additional packages
 
    There are hundreds of useful packages available for instant
@@ -442,28 +479,31 @@
 * GitHub
 ** What is it?
 
-   
+
+
 ** Why are we using it?
 
-   
+   * Gain access to the course materials
+   * Upload assignments
+   *
+
 ** What will you have to do?
 
+   * [[https://github.com][Sign up with GitHub]] - use Lyon Email
+   * Pick a username: first and last name, e.g. ~DonaldTrump~
+   * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] (FAQ)
+     UPLOAD TO THIS GITHUB REPO...
+     https://github.com/birkenkrahe/cc100/tree/main/2_installation/github_assignment
 
-    * [[https://github.com][Sign up with GitHub]] - use Lyon Email
-    * Pick a username: first and last name, e.g. ~DonaldTrump~
-    * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] (FAQ)
-          UPLOAD TO THIS GITHUB REPO...
-    https://github.com/birkenkrahe/cc100/tree/main/2_installation/github_assignment
-    
-    * You send me your GitHub username so that I can add you as a
-      collaborator to my private ~cc100~ repository
+     * You send me your GitHub username so that I can add you as a
+       collaborator to my private ~cc100~ repository
 
-      #+begin_quote
-    If you do have a GitHub account already, do the exercise anyway
-    using your existing account! Make sure you let me know what your
-    user name is.
-      #+end_quote
-    
+       #+begin_quote
+       If you do have a GitHub account already, do the exercise anyway
+       using your existing account! Make sure you let me know what your
+       user name is.
+       #+end_quote
+
 ** What else can you do?
 
    * You can fork the ~cc100~ repository
@@ -471,6 +511,7 @@
    * You can submit issues to the repository
    * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]]
    * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]]
+
 * Summary
 
   * To program in C, we need a computer, a compiler, and an editor
@@ -521,6 +562,9 @@
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
 
+  Timachi (Dec 7, 2019). Why I switched from VScode to Emacs | Why I
+  switched from VScode to Emacs [blog]. [[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][URL: hadi.timachi.com]].
+  
   Wilson (November 28, 2021). M-x Forever: Why Emacs will outlast text
   editor trends. Emacs conference 2021 [video]. [[https://youtu.be/9ahR5K_wkNQ][URL:
   youtu.be/9ahR5K_wkNQ]].
@@ -530,8 +574,18 @@
 
   Zamboni (March 21, 2018). Beautifying Org Mode in Emacs [blog]. [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][URL:
   zzamboni.org]].
-  
+
 * Footnotes
+
+[fn:5]"Meta skills" are transferable skills that you learn, or
+improve, while you learn something specific (like Emacs or
+Org-mode). While the special skills might become obsolete or less
+important to you over time (because of a change of job, interest, or
+the market), meta skills stay important and fresh forever, because you
+can use them for every new special skill learning project.
+
+[fn:4]It is also one of the two contenders, along with ~vi~, of the
+famous editor wars of the UNIX culture. 
 
 [fn:3]This link also shows you how to link notebooks. You can set a
 link anywhere (inside Emacs or Internet) with ~C-c C-l~. If the target

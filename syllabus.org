@@ -58,13 +58,13 @@
 
 ** Grading system
 
-   | WHEN[fn:1]    | DESCRIPTION            | IMPACT |
-   |---------------+------------------------+--------|
-   | Every session | Homework/Participation |    10% |
-   | Weekly        | Quizzes                |    10% |
-   | Monthly       | Tests                  |    30% |
-   | Biweekly      | Lab projects           |    30% |
-   | End of term   | Final exam             |    20% |
+   | WHEN[fn:1]    | DESCRIPTION       | IMPACT |
+   |---------------+-------------------+--------|
+   | Every session | Class assignments |    10% |
+   | Weekly        | Quizzes           |    10% |
+   | Monthly       | Tests             |    30% |
+   | Biweekly      | Lab projects      |    30% |
+   | End of term   | Final exam        |    20% |
 
    You should be able to see your current grade at any time using the
    Schoology gradebook for the course.

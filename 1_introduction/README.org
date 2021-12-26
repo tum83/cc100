@@ -226,7 +226,7 @@
 * What's next?
 
   - Getting started: Infrastructure (Lab)
-  - MinGW + Emacs + GitHub
+  - MinGW (compiler) + Emacs (editor) + GitHub (collaboration)
   - First program: "hello world" (Lecture + Lab)
 
   [[./img/river.gif]]

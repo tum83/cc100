@@ -7,7 +7,8 @@
    1) A headline with the text ~My first Org-mode file~.
 
    2) A short text that explains what the following code block does
-      (including the block header).
+      (including the block header), and any other observations or
+      thoughts you might have.
 
    3) A C source code block. The block should contain one line of
       code only. It should print the sentence ~My first program~.
@@ -53,12 +54,14 @@
       of 11 variables.
     * The code block header exports both source code and result,
       starts an R session, and prints the result to ~stdout~.
+    * The syntax is not highlighted (language keywords and data are
+      not distinguished visually)
     
    #+begin_src R :exports both :session :results output
-   
-   str(mtcars)
 
-   #+end_src
+      str(mtcars)
+
+      #+end_src
 
    #+RESULTS:
    #+begin_example

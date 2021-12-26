@@ -8,10 +8,12 @@
     of 11 variables.
   * The code block header exports both source code and result,
     starts an R session, and prints the result to ~stdout~.
+  * The syntax is not highlighted (language keywords and data are not
+    distinguished visually)
     
  #+begin_src R :exports both :session :results output
-   
- str(mtcars)
+
+   str(mtcars)
 
  #+end_src
 

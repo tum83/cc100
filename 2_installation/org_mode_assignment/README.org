@@ -50,7 +50,9 @@
     * In the code block, ~str()~ is applied to the built-in data frame
       ~mtcars~.
     * The result shows that ~mtcars~ contains 32 rows (observations)
-      of 11 variables. 
+      of 11 variables.
+    * The code block header exports both source code and result,
+      starts an R session, and prints the result to ~stdout~.
     
    #+begin_src R :exports both :session :results output
    

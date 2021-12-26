@@ -161,6 +161,18 @@
   - Bjarne Stroustrup (2011): "[[https://youtu.be/KlPC3O1DVcg][C is obsolete]]"[fn:6]
   - Linus Torvalds (2007): "[[http://harmful.cat-v.org/software/c++/linus][C++ is a horrible language]]"[fn:7].
 
+  Also, there's this:
+  
+  #+begin_quote
+  "Languages are tools. Memorizing them no more makes you a computer
+  scientist than studying hammers makes you a carpenter." ([[https://qr.ae/pGzZ9z][Charles
+  Neilsen]])
+  #+end_quote
+
+  * Easy to pick up additional languages
+  * Data structures and algorithms are key to understanding
+  * First language could be anything[fn:8]
+  
 * Why am I teaching C/C++?
 
   It's personal.
@@ -214,6 +226,7 @@
 * What's next?
 
   - Getting started: Infrastructure (Lab)
+  - MinGW + Emacs + GitHub
   - First program: "hello world" (Lecture + Lab)
 
   [[./img/river.gif]]
@@ -247,6 +260,8 @@
   Lemonaki, Dionysia (November 4, 2021). C vs. C++ -
   What's The Difference [blog]. URL: [[https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/][freecodecamp.org.]]
 
+  Neilsen (Aug 14, 2020). Quora. URL: [[https://qr.ae/pGzZ9z][qr.ae/pGzZ9z]].
+  
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
 
@@ -254,6 +269,11 @@
   harmful.cat-v.org]].
 
 * Footnotes
+
+[fn:8]My first real programming language was FORTRAN (specialized on
+scientific computing), then C++. Recently, I picked up R (for data
+science). In between I've sampled (not mastered) many others,
+including: Python, Lisp, PROLOG, C, PHP, SQL, SQLite etc.
 
 [fn:7]Torvalds (who wrote the Linux kernel in C) argues here in favor
 of writing his hugely successful version control program ~git~ in C

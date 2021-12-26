@@ -479,13 +479,27 @@
 * GitHub
 ** What is it?
 
-
+   #+attr_html: :width 300px
+   [[./img/github.png]]
+   /Image: GitHub logo/
+   
+   * Software development platform
+   * Built around Git by Linus Torvalds
+   * Bought by Microsoft in 2018
+   * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
 
 ** Why are we using it?
 
-   * Gain access to the course materials
-   * Upload assignments
-   *
+   #+attr_html: :width 500px
+   [[./img/org.png]]
+   /Image: Org-mode file in GitHub/
+   
+   * It's free
+   * To host course materials
+   * Upload assignments (esp. Org-files)
+   * Discussion 
+   * Wiki for collaboration
+   * Complements Schoology[fn:7]
 
 ** What will you have to do?
 
@@ -508,9 +522,13 @@
 
    * You can fork the ~cc100~ repository
    * You can watch the ~cc100~ repository
-   * You can submit issues to the repository
-   * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]]
-   * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]]
+   * You can submit issues to the repository (e.g. if you notice
+     mistakes or if you want extra information)
+   * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]] (sometimes I will make you)
+   * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]] (e.g. comments and links to interesting
+     resources)
+   * You can install the app on your smartphone[fn:6]
+   * You can use it as a platform for projects
 
 * Summary
 
@@ -576,6 +594,19 @@
   zzamboni.org]].
 
 * Footnotes
+
+[fn:7] Last term when I began to use GitHub, some students were
+complaining about the extra platform - however, it should be clear
+by now, that Schoology cannot substitute for GitHub. The latter is
+a software engineering platform, well suited for computer science
+teaching and code development, the former is a learning management
+system focused on distributing material, creating tests and
+computing grades. 
+
+[fn:6] Only Markdown (~.md~) files are rendering in the mobile
+app. Org-mode files (~.org~) do not. Since you have Emacs, feel free
+to add a Markdown version of an Org file if you want one because you
+use the mobile version a lot.
 
 [fn:5]"Meta skills" are transferable skills that you learn, or
 improve, while you learn something specific (like Emacs or

@@ -20,21 +20,3 @@
     5) Save the file as ~YourName.org~ (e.g. ~MarcusBirkenkrahe.org~)
 
     6) Upload the file to [[https://github.com/birkenkrahe/cc100/tree/main/2_installation/org_mode_assignment][this GitHub repo]].
-
-    7) CHANGE NOTIFICATION
-
-*** Sample solution
-      
-**** My first Org-mode file
-
-     I've written a function called ~main~ 
-     
-     #+begin_src C :exports both :main yes :includes stdio.h
-
-       puts("My first printout.");
-
-       #+end_src
-
-     #+RESULTS:
-     : My first printout.
-

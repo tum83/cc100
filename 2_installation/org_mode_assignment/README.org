@@ -4,9 +4,9 @@
   terms, and a sample solution in the programming language R instead
   of C.
 
-  The main challenge is not to know C but to manage the complexity of
-  writing a "literate" program, which includes layout, documentation,
-  source code and result elements.
+  The main challenge is not the programming language but managing the
+  complexity of writing a "literate" program, which includes layout,
+  documentation, source code and result elements.
 
   Note that the sample solution also lists relevant references. 
   

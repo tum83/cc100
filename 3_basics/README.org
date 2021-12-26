@@ -1,0 +1,23 @@
+#+TITLE:C Basics
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:CSC100 Introduction to programming in C/C++
+#+STARTUP:overview
+#+OPTIONS: toc:1
+#+OPTIONS:hideblocks
+#+INFOJS_OPT: :view:info
+* What are you going to learn?
+
+  * 
+
+* Summary
+
+  * 
+
+* Jargon
+
+  | CONCEPT          | EXPLANATION                                       |
+  |------------------+---------------------------------------------------|
+
+* What's next
+
+

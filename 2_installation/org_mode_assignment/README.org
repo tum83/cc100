@@ -8,7 +8,7 @@
   complexity of writing a "literate" program, which includes layout,
   documentation, source code and result elements.
 
-  Note that the sample solution also lists relevant references. 
+  Note that the sample solution also lists relevant [[References][references]]. 
   
 ** Assignment
 
@@ -90,8 +90,8 @@
     $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
    #+end_example
 
-*** References
-
+*** <<References>>
+    
     ~mtcars~: Motor Trend Car Road Tests. [[https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars][URL: rdocumentation.org]].
 
     R Core Team (2021). R: A language and environment for statistical

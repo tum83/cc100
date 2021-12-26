@@ -3,6 +3,8 @@
 ;; require ob-sqlite and ob-sql (for compilation in org src blocks) & tangle
 (require 'ob-sqlite)
 (require 'ob-sql)
+(require 'ob-emacs-lisp)
+(require 'ob-R)
 
 ;; active Babel languages
 (org-babel-do-load-languages
@@ -20,13 +22,7 @@
       org-src-fontify-natively t
       org-src-tab-acts-natively t)
 
-;; enable snippet expansion via org-structure-template-alist
-(require 'org-tempo)
-
 ;; get packages from MELPA
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
-
-;; enable global line numbers display
-(global-display-line-numbers-mode)

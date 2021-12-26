@@ -1,4 +1,14 @@
 * Org-mode assignment
+
+  This file contains the first ~Org-mode~ assignment, a glossary of
+  terms, and a sample solution in the programming language R instead
+  of C.
+
+  The main challenge is not to know C but to manage the complexity of
+  writing a "literate" program, which includes layout, documentation,
+  source code and result elements.
+
+  Note that the sample solution also lists relevant references. 
   
 ** Assignment
 
@@ -42,7 +52,7 @@
    | File                       | Storage unit in a computer                       |
    | Uploading                  | Sending so that file exists locally and remotely |
 
-** Example solution in R (not C)
+** [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/org_mode_assignment/MarcusBirkenkrahe.org][Example solution in R (not C)]]
 
 *** My first Org-mode file
 

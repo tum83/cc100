@@ -1,0 +1,40 @@
+* Org-mode assignment
+  
+*** Assignment
+
+    Create an Org-mode file with the following characteristics:
+
+    1) A headline with the text ~My first Org-mode file~.
+
+    2) A short text that explains what the following code block does
+       (including the block header).
+
+    3) A C source code block. The block should contain one line of
+       code only. It should print the sentence ~My first program~.
+
+    4) For the source code block header, use the settings:
+       - ~:main yes~
+       - ~:includes: stdio.h~
+       - ~:exports both~
+
+    5) Save the file as ~YourName.org~ (e.g. ~MarcusBirkenkrahe.org~)
+
+    6) Upload the file to [[https://github.com/birkenkrahe/cc100/tree/main/2_installation/org_mode_assignment][this GitHub repo]].
+
+    7) CHANGE NOTIFICATION
+
+*** Sample solution
+      
+**** My first Org-mode file
+
+     I've written a function called ~main~ 
+     
+     #+begin_src C :exports both :main yes :includes stdio.h
+
+       puts("My first printout.");
+
+       #+end_src
+
+     #+RESULTS:
+     : My first printout.
+

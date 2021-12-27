@@ -68,13 +68,7 @@
   If you look at this at GitHub, look at ~*.org~ files for syntax
   highlighting. The Markdown (~*.md~) files do not have it.
 
-  ┌─────────────────┐
-  │ GitHub/Git 	    │
-  ├─────────────────┤
-  │ MinGW/GCC       │
-  ├─────────────────┤
-  │ GNU Emacs       │
-  └─────────────────┘
+  [[./img/infra.png]]
   
 * GitHub
 ** What is it?

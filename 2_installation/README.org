@@ -68,7 +68,11 @@
   If you look at this at GitHub, look at ~*.org~ files for syntax
   highlighting. The Markdown (~*.md~) files do not have it.
 
-  [[./img/infra.png]]
+  | PLATFORM | SOFTWARE | PURPOSE  |
+  |----------+----------+----------|
+  | GitHub   | Git      | Hosting  |
+  | MinGW    | GCC      | Compiler |
+  | GNU      | Emacs    | Editor   |
   
 * GitHub
 ** What is it?

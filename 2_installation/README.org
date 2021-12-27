@@ -60,83 +60,99 @@
   and any time spent on learning the IDE is wasted unless you keep
   working with it. IDEs do not teach you transferable skills.
 
-* Emacs for C programming
-** What is Emacs ?
-
-   | PROPERTY                     | WHAT THIS MEANS                      |
-   |------------------------------+--------------------------------------|
-   | Extensible editor            | You can adapt it to your needs[fn:8] |
-   | Written in C with Emacs Lisp | It's fast and smart (via Lisp[fn:9]) |
-   | Ancient software             | First released in 1985[fn:4]         |
-
-   #+attr_html: :width 500px
-   [[./img/panels.png]]
-   /Image: "Emacs 27.1 showing Org, Magit and Dired
-   buffers with the modus-operandi theme, without window titlebar or
-   borders." Source: [[https://en.wikipedia.org/wiki/Emacs#/media/File:Emacs27_showing_Org,_Magit,_and_Dired_with_the_modus-operandi_theme.png][Wikipedia]]/
-
-** How do you use Emacs?
-
-   See [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][FAQ]]. I use Emacs for most of my computing needs:
-    
-   * Writing (teaching, research)
-   * Planning (Calendar, ToDo)
-   * Organizing (Files)
-   * Email
-
-   See also: "[[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs"]] (Kenlon, 2020).
-
-   #+attr_html: :width 400px
-   [[./img/desy.jpg]]
-   /Image: DESY APE research group (1994)/
-   
-** How will we use Emacs?
-
-   We'll use it as:
-
-   * EDITOR to write source code,
-   * NOTEBOOK to write literate programs, and
-   * SHELL to build and run code.
-
-** Does it really have to be Emacs? 
-
-   You'll handle it. Keep calm and carry on coding.
-   
-   If you look around, you'll see a lot of discussion on different
-   source code editors and IDEs. Currently Microsoft's VS Code seems
-   to be the most popular contender. However, as one developer said:
-
-   #+begin_quote
-   "One thing that cannot be replaced by any extension in VS code, VIM or
-   any other editor: Emacs' Org mode Org mode is for sure one of the most
-   amazing pieces of software I have ever seen or worked with. It does
-   things that no other text-based word processor can do, even if you are
-   writing complex scientific reports. VS code has an extension which
-   brings less than 5% of Org mode functionality, tops and that is mostly
-   the code highlighting." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
-   #+end_quote
-
-** What about Emacs' famously "steep learning curve" ?
-
-   #+begin_quote
-   "Emacs can be a challenge if you are used to using mouse
-   pointer. One should be willing to leave the mouse and stick with
-   the keyboard." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
-   #+end_quote
-
-   Also, computer science, and IT, are largely about mastering, and
-   creating new digital tools. Therefore, almost any effort is
-   justified that goes into improving your meta skills[fn:5] in this area.
-   
 * Infrastructure Setup
 
   The sections below cover most of the infrastructure used in my
   courses. They are also available as [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#orga3d6f39][FAQs on GitHub]].
 
-  If you look at this at GitHub, look at ~.org~ files for syntax
-  highlighting.
+  If you look at this at GitHub, look at ~*.org~ files for syntax
+  highlighting. The Markdown (~*.md~) files do not have it.
 
+  ┌─────────────────┐
+  │ GitHub/Git 	    │
+  ├─────────────────┤
+  │ MinGW/GCC       │
+  ├─────────────────┤
+  │ GNU Emacs       │
+  └─────────────────┘
+  
+* GitHub
+** What is it?
+
+   #+attr_html: :width 300px
+   [[./img/github.png]]
+   /Image: GitHub logo/
+   
+   * Software development platform
+   * Built around Git by Linus Torvalds
+   * Bought by Microsoft in 2018
+   * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
+
+** Why are we using it?
+   
+   #+attr_html: :width 500px
+   [[./img/org.png]]
+   /Image: Org-mode file in GitHub/
+   
+   * It's free
+   * To host course materials
+   * Upload assignments (esp. Org-files)
+   * Discussion 
+   * Wiki for collaboration
+   * Complements Schoology[fn:7]
+
+** What will you have to do?
+
+   * [[https://github.com][Sign up with GitHub]] - use Lyon Email
+   * Pick an available username: first and last name,
+     e.g. ~MarcusBirkenkrahe~, or ~DonaldTrump1~
+   * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] (FAQ)
+   * Give me your GitHub username so that I can add you as a
+     collaborator to my private ~cc100~ repository
+   * [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][Create an issue]] from the [[https://github.com/birkenkrahe/cc100/issues][~cc100~ repository]] like in the example
+     below (except from your account instead of mine).
+
+   #+attr_html: :width 500px
+   [[./img/issue.png]]
+   /Image: Issue "Assignment completed"/
+   
+       #+begin_quote
+       If you do have a GitHub account already, do the exercise anyway
+       using your existing account! Make sure you let me know what your
+       user name is.
+       #+end_quote
+       
+** What else can you do?
+
+   * You can fork the ~cc100~ repository
+   * You can watch the ~cc100~ repository - and set ~Notifications~ to
+     ~Participating and @mentions~ so that you see my comments
+
+   #+attr_html: :width 300px
+   [[./img/watch.png]]
+   /Gif: Notifications settings when watching a repository/
+     
+     
+   * You can submit issues to the repository (e.g. if you notice
+     mistakes or if you want extra information)
+   * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]] (sometimes I will make you)
+   * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]] (e.g. comments and links to interesting
+     resources)
+   * You can install the app on your smartphone[fn:6]
+   * You can use it as a platform for projects
+
+
+   #+attr_html: :width 500px
+   [[./img/github.gif]]
+   /Gif: "So long binder of requirements" Source: GitHub/
+     
 * Install a C compiler (Windows + MacOS)
+
+  * Compiler & linker are usually bundled
+  * [[https://gcc.gnu.org/][~GCC~]] ("GNU cc") is a popular C/C++ compiler
+  * [[https://www.mingw-w64.org/][~MinGW~]] ("Minimalist GNU for Windows") is a port of ~GNU gcc~ to
+    Windows
+  
 ** Windows
    * Download the installer [[https://sourceforge.net/projects/mingw-w64/][from sourceforge]].
    * Run the installer - accept all presets.
@@ -181,6 +197,80 @@
 
      [[./img/cc.png]]
 
+* Emacs for C programming
+** What is Emacs ?
+
+   | PROPERTY                     | WHAT THIS MEANS                      |
+   |------------------------------+--------------------------------------|
+   | Extensible editor            | You can adapt it to your needs[fn:8] |
+   | Written in C with Emacs Lisp | It's fast and smart (via Lisp[fn:9]) |
+   | Ancient software             | First released in 1985[fn:4]         |
+
+   #+attr_html: :width 500px
+   [[./img/panels.png]]
+   /Image: "Emacs 27.1 showing Org, Magit and Dired
+   buffers with the modus-operandi theme, without window titlebar or
+   borders." Source: [[https://en.wikipedia.org/wiki/Emacs#/media/File:Emacs27_showing_Org,_Magit,_and_Dired_with_the_modus-operandi_theme.png][Wikipedia]]/
+
+** How do you use Emacs?
+
+   See [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][FAQ]]. I use Emacs for most of my computing needs:
+    
+   * Writing (teaching, research)
+   * Planning (Calendar, ToDo)
+   * Organizing (Files)
+
+   See also the article "[[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs"]] (Kenlon, 2020),
+   and the video "[[https://youtu.be/48JlgiBpw_I][The Absolute Beginner's Guide to Emacs]]" (System
+   Crafters, 2020).
+
+   #+attr_html: :width 400px
+   [[./img/desy.jpg]]
+   /Image: DESY APE research group (1994)/
+
+   Other uses:
+   * As [[https://youtu.be/Wcjmx_U5alY][Window Manager]] (only under Linux)
+   * Email client
+   * Remote access (with Tramp)
+        
+** How will we use Emacs?
+
+   We'll use it as:
+
+   * EDITOR to write source code,
+   * NOTEBOOK to write literate programs, and
+   * SHELL to build and run code.
+
+** Does it really have to be Emacs? 
+
+   You'll handle it. Keep calm and carry on coding.
+   
+   If you look around, you'll see a lot of discussion on different
+   source code editors and IDEs. Currently Microsoft's VS Code seems
+   to be the most popular contender. However, as one developer said:
+
+   #+begin_quote
+   "One thing that cannot be replaced by any extension in VS code, VIM or
+   any other editor: Emacs' Org mode Org mode is for sure one of the most
+   amazing pieces of software I have ever seen or worked with. It does
+   things that no other text-based word processor can do, even if you are
+   writing complex scientific reports. VS code has an extension which
+   brings less than 5% of Org mode functionality, tops and that is mostly
+   the code highlighting." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
+   #+end_quote
+
+** What about Emacs' famously "steep learning curve" ?
+
+   #+begin_quote
+   "Emacs can be a challenge if you are used to using mouse
+   pointer. One should be willing to leave the mouse and stick with
+   the keyboard." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
+   #+end_quote
+
+   Also, computer science, and IT, are largely about mastering, and
+   creating new digital tools. Therefore, almost any effort is
+   justified that goes into improving your meta skills[fn:5] in this area.
+   
 * Install Emacs
   #+attr_html: :width 500px
   [[./img/emacs.png]]
@@ -218,7 +308,7 @@
   getting started with Emacs for the first time like you:
 
   * [[https://youtu.be/48JlgiBpw_I][The Absolute Beginner's Guide to Emacs]] (System Crafters, 2021) -
-    1hr30min.
+    1hr11min.
 
 ** Create configuration file
 
@@ -486,76 +576,6 @@
    #+attr_html: :width 600px
    [[./img/render.png]]
 
-* GitHub
-** What is it?
-
-   #+attr_html: :width 300px
-   [[./img/github.png]]
-   /Image: GitHub logo/
-   
-   * Software development platform
-   * Built around Git by Linus Torvalds
-   * Bought by Microsoft in 2018
-   * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
-
-** Why are we using it?
-
-   #+attr_html: :width 500px
-   [[./img/org.png]]
-   /Image: Org-mode file in GitHub/
-   
-   * It's free
-   * To host course materials
-   * Upload assignments (esp. Org-files)
-   * Discussion 
-   * Wiki for collaboration
-   * Complements Schoology[fn:7]
-
-** What will you have to do?
-
-   * [[https://github.com][Sign up with GitHub]] - use Lyon Email
-   * Pick an available username: first and last name,
-     e.g. ~MarcusBirkenkrahe~, or ~DonaldTrump1~
-   * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] (FAQ)
-   * Give me your GitHub username so that I can add you as a
-     collaborator to my private ~cc100~ repository
-   * [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][Create an issue]] from the [[https://github.com/birkenkrahe/cc100/issues][~cc100~ repository]] like in the example
-     below (except from your account instead of mine).
-
-   #+attr_html: :width 500px
-   [[./img/issue.png]]
-   /Image: Issue "Assignment completed"/
-   
-       #+begin_quote
-       If you do have a GitHub account already, do the exercise anyway
-       using your existing account! Make sure you let me know what your
-       user name is.
-       #+end_quote
-       
-** What else can you do?
-
-   * You can fork the ~cc100~ repository
-   * You can watch the ~cc100~ repository - and set ~Notifications~ to
-     ~Participating and @mentions~ so that you see my comments
-
-   #+attr_html: :width 300px
-   [[./img/watch.png]]
-   /Gif: Notifications settings when watching a repository/
-     
-     
-   * You can submit issues to the repository (e.g. if you notice
-     mistakes or if you want extra information)
-   * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]] (sometimes I will make you)
-   * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]] (e.g. comments and links to interesting
-     resources)
-   * You can install the app on your smartphone[fn:6]
-   * You can use it as a platform for projects
-
-
-   #+attr_html: :width 500px
-   [[./img/github.gif]]
-   /Gif: "So long binder of requirements" Source: GitHub/
-     
 * Summary
 
   * To program in C, we need a computer, a compiler, and an editor
@@ -600,9 +620,17 @@
   Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
   Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
 
+  GNU Emacs, an extensible, customizable, free/libre text editor. [[https://gnu.org/software/emacs][URL:
+  gnu.org/software/emacs.]].
+
+  GCC, the GNU Compiler Collection. [[https://gcc.gnu.org][URL: gcc.gnu.org.]]
+
   Kenlon (March 10, 2020). Getting started with Emacs [blog]. [[https://opensource.com/article/20/3/getting-started-emacs][URL:
   opensource.com.]]
 
+  MinGW-w64 - Minimal GCC for Windows. A complete runtime environment
+  for GCC & LLVM for 32 and 64 bit Windows. [[https://mingw-w64.org][URL: mingw-w64.org]].
+  
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
 

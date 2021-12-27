@@ -198,11 +198,12 @@
 * Emacs for C programming
 ** What is Emacs ?
 
-   | PROPERTY                     | WHAT THIS MEANS                      |
-   |------------------------------+--------------------------------------|
-   | Extensible editor            | You can adapt it to your needs[fn:8] |
-   | Written in C with Emacs Lisp | It's fast and smart (via Lisp[fn:9]) |
-   | Ancient software             | First released in 1985[fn:4]         |
+   | PROPERTY                     | WHAT THIS MEANS                        |
+   |------------------------------+----------------------------------------|
+   | Extensible editor            | You can adapt it to your needs[fn:8]   |
+   | Written in C with Emacs Lisp | It's fast and smart (via Lisp[fn:9])   |
+   | Ancient software             | First released in 1985[fn:4]           |
+   | Ca. 1.5M lines of code       | Windows: ca. 50M/Linux kernel: ca. 30M |
 
    #+attr_html: :width 500px
    [[./img/panels.png]]

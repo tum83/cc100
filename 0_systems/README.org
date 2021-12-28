@@ -32,6 +32,11 @@
   | Relationships | yes     | no      |
   | Flow          | input   | output  |
 
+  An example: *database management systems* have a *boundary* (data
+  can be put in or retrieved), have data as *elements*, and
+  *relationships* between the data (e.g. in Schoology: grade data
+  belong to a student).
+  
 * System activities
 
   * Move elements

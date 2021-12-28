@@ -77,9 +77,9 @@
 * GitHub
 ** What is it?
 
-   #+attr_html: :width 300px
-   [[./img/github.png]]
-   /Image: GitHub logo/
+   #+attr_html: :width 500px
+   [[./img/github.gif]]
+   /Gif: "So long binder of requirements" Source: GitHub/
    
    * Software development platform
    * Built around Git by Linus Torvalds
@@ -128,8 +128,7 @@
 
    #+attr_html: :width 300px
    [[./img/watch.png]]
-   /Gif: Notifications settings when watching a repository/
-     
+   /Gif: Notifications settings when watching a repository/     
      
    * You can submit issues to the repository (e.g. if you notice
      mistakes or if you want extra information)
@@ -139,11 +138,10 @@
    * You can install the app on your smartphone[fn:6]
    * You can use it as a platform for projects
 
-
-   #+attr_html: :width 500px
-   [[./img/github.gif]]
-   /Gif: "So long binder of requirements" Source: GitHub/
-     
+   /Image: GitHub desktop client commit/
+   #+attr_html: :width 600px
+   [[./img/gh.png]]
+          
 * Install a C compiler (Windows + MacOS)
 
   * Compiler & linker are usually bundled

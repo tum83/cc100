@@ -77,14 +77,14 @@
 * GitHub
 ** What is it?
 
-   #+attr_html: :width 500px
-   [[./img/github.gif]]
-   /Gif: "So long binder of requirements" Source: GitHub/
-   
    * Software development platform
    * Built around Git by Linus Torvalds
    * Bought by Microsoft in 2018
    * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
+
+   #+attr_html: :width 500px
+   [[./img/github.gif]]
+   /Gif: "So long binder of requirements" Source: GitHub/
 
 ** Why are we using it?
 
@@ -109,11 +109,11 @@
      collaborator to my private ~cc100~ repository
    * [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][Create an issue]] from the [[https://github.com/birkenkrahe/cc100/issues][~cc100~ repository]] like in the example
      below (except from your account instead of mine).
-
-   #+attr_html: :width 500px
-   [[./img/issue.png]]
+   -----
    /Image: Issue "Assignment completed"/
-   
+   #+attr_html: :width 500px
+   [[./img/issue.png]]  
+   -----   
        #+begin_quote
        If you do have a GitHub account already, do the exercise anyway
        using your existing account! Make sure you let me know what your

@@ -20,10 +20,10 @@
 
   There are two BIG reasons - one is philosophical, the other is
   technical.
-
-  #+attr_html: :width :500px
-  [[./img/automation.png]]
   
+  #+attr_html: :width 500px
+  [[./img/automation.png]]
+  /Image: automation. Source: [[https://xkcd.com/1319/][xkcd]]/
 ** Philosophy  
   
   #+begin_quote
@@ -644,6 +644,9 @@
   Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
   nostarch.com.]]
 
+  System Crafters (March 8, 2021). The Absolute Beginner's Guide to
+  Emacs [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
+
   Timachi (Dec 7, 2019). Why I switched from VScode to Emacs | Why I
   switched from VScode to Emacs [blog]. [[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][URL: hadi.timachi.com]].
   
@@ -651,8 +654,8 @@
   editor trends. Emacs conference 2021 [video]. [[https://youtu.be/9ahR5K_wkNQ][URL:
   youtu.be/9ahR5K_wkNQ]].
 
-  System Crafters (March 8, 2021). The Absolute Beginner's Guide to
-  Emacs [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
+  xkcd (n.d.). A webcomic of romance, sarcasm, math, and language
+  [website]. [[https://xkcd.com][URL: xkcd.com]].
 
   Zamboni (March 21, 2018). Beautifying Org Mode in Emacs [blog]. [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][URL:
   zzamboni.org]].

@@ -1,3 +1,5 @@
+#+options: toc:nil
+#+options: num:nil
 * Org-mode assignment
 
   This file contains the first ~Org-mode~ assignment, a glossary of

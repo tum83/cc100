@@ -234,11 +234,21 @@
         
 ** How will we use Emacs?
 
+   #+attr_html: :width 500px
+   [[./img/neal.jpg]]
+
    We'll use it as:
 
    * EDITOR to write source code,
    * NOTEBOOK to write literate programs, and
    * SHELL to build and run code.
+
+      #+begin_quote
+   "Emacs outshines all other editing software in approximately the same
+   way that the noonday sun does the stars. It is not just bigger and
+   brighter; it simply makes everything else vanish." – Neal Stephenson,
+   In the Beginning was the Command Line (1998)[fn:10]
+   #+end_quote     
 
 ** Does it really have to be Emacs? 
 
@@ -647,6 +657,10 @@
   zzamboni.org]].
 
 * Footnotes
+
+[fn:10]Neal Stephenson is a sci-fi author who also coined the term
+"cyberspace", and developed a spacecraft and launch system for Bezos'
+Blue Origin.
 
 [fn:9]Emacs Lisp is a Lisp dialect. Lisp was one of the first
 languages used for Artificial Intelligence research (cp. [[https://hci.stanford.edu/~winograd/shrdlu/][SHRDLU]], an

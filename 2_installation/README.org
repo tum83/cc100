@@ -295,17 +295,18 @@
    You'll handle it. Keep calm and carry on coding.
    
    If you look around, you'll see a lot of discussion on different
-   source code editors and IDEs. Currently Microsoft's VS Code seems
-   to be the most popular contender. However, as one developer said:
+   source code editors and IDEs. Currently [[https://code.visualstudio.com/][Microsoft's Visual Studio
+   (VS) Code]] seems to be the most popular contender. However, as one
+   developer said:
 
    #+begin_quote
-   "One thing that cannot be replaced by any extension in VS code, VIM or
-   any other editor: Emacs' Org mode Org mode is for sure one of the most
-   amazing pieces of software I have ever seen or worked with. It does
-   things that no other text-based word processor can do, even if you are
-   writing complex scientific reports. VS code has an extension which
-   brings less than 5% of Org mode functionality, tops and that is mostly
-   the code highlighting." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
+   "One thing that cannot be replaced by any extension in VS code, VIM
+   or any other editor: Emacs' Org mode. Org mode is for sure one of
+   the most amazing pieces of software I have ever seen or worked
+   with. It does things that no other text-based word processor can
+   do, even if you are writing complex scientific reports. VS code has
+   an extension which brings less than 5% of Org mode functionality,
+   tops and that is mostly the code highlighting." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
    #+end_quote
 
 ** What about Emacs' famously "steep learning curve" ?
@@ -316,9 +317,22 @@
    the keyboard." ([[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][Timachi, 2019]])
    #+end_quote
 
-   Also, computer science, and IT, are largely about mastering, and
-   creating new digital tools. Therefore, almost any effort is
-   justified that goes into improving your meta skills[fn:8] in this area.
+   Using the keyboard for everything is much faster (than mouse-only,
+   or mouse + keyboard) but takes getting used to. During the writing
+   of this paragraph, I used the following keystrokes (with the
+   command behind the keys):
+   #+begin_quote
+   <q RET (~org-self-insert-command~)
+   C-M-\ (~indent-region~)
+   M-q (~org-fill-paragraph~)
+   C-a (~org-beginning of line~)
+   C-e (~org-end-of-line~)
+   C-x C-s (~save-buffer~)
+   #+end_quote
+   
+   Computer science, and IT, are largely about mastering, and creating
+   new tools. Therefore, almost any effort is justified that goes into
+   improving your *meta skills*[fn:8] in this area.
    
 * Install Emacs
   #+attr_html: :width 500px

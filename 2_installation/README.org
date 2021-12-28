@@ -388,7 +388,7 @@
    want to work with.
 
    Customization like this is done with a configuration file ~.emacs~,
-   which is placed in your home directory (~/.~). Where this folder
+   which is placed in your home directory (~\~/.~). Where this folder
    is actually located on your computer depends on your operating
    system.
 

@@ -322,12 +322,12 @@
    of this paragraph, I used the following keystrokes (with the
    command behind the keys):
    #+begin_quote
-   <q RET (~org-self-insert-command~)
-   C-M-\ (~indent-region~)
-   M-q (~org-fill-paragraph~)
-   C-a (~org-beginning of line~)
-   C-e (~org-end-of-line~)
-   C-x C-s (~save-buffer~)
+| <q RET  | ~org-self-insert-command~ |
+| C-M-\   | ~indent-region~           |
+| M-q     | ~org-fill-paragraph~      |
+| C-a     | ~org-beginning of line~   |
+| C-e     | ~org-end-of-line~         |
+| C-x C-s | ~save-buffer~             |
    #+end_quote
    
    Computer science, and IT, are largely about mastering, and creating

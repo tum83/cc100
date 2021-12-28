@@ -392,8 +392,8 @@
    is actually located on your computer depends on your operating
    system[fn:10].
 
-   Download the configuration file [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs][from GitHub]]. Here is the code, in
-   case you want to copy and paste it from here.
+   Download the configuration file [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs][from GitHub]]. Here is the code: you
+   can also copy and paste it into a ~.emacs~ file. 
 
    #+begin_src emacs-lisp :exports both
      (put 'dired-find-alternate-file 'disabled nil)
@@ -426,6 +426,12 @@
 		  '("melpa-stable" . "https://stable.melpa.org/packages/"))
    #+end_src
 
+   Once you've created the ~.emacs~ file, you can start
+   Emacs. Everything that follows is optional. I will bring one
+   interesting Emacs package per week to class for you to try if you
+   like. But even just by using Emacs as your editor for assignments,
+   you'll become quite an expert, [[https://hackernoon.com/8-reasons-why-emacs-is-the-best-text-editor-for-programming-0w4o37ld][almost a "hacker"]] (Wulff, 2021).
+   
 ** Create sample notebook
 
    To create a notebook using Org-mode, create an ~.org~ file. Then
@@ -713,6 +719,9 @@
   Wilson (November 28, 2021). M-x Forever: Why Emacs will outlast text
   editor trends. Emacs conference 2021 [video]. [[https://youtu.be/9ahR5K_wkNQ][URL:
   youtu.be/9ahR5K_wkNQ]].
+
+  Wulff (Jul 27, 2021). 8 Reasons Why Emacs is the Best Text Editor
+  for Programming [blog]. [[https://hackernoon.com/8-reasons-why-emacs-is-the-best-text-editor-for-programming-0w4o37ld][URL: hackernoon.com]].
 
   xkcd (n.d.). A webcomic of romance, sarcasm, math, and language
   [website]. [[https://xkcd.com][URL: xkcd.com]].

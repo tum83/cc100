@@ -21,6 +21,9 @@
   There are two BIG reasons - one is philosophical, the other is
   technical.
 
+  #+attr_html: :width :500px
+  [[./img/automation.png]]
+  
 ** Philosophy  
   
   #+begin_quote

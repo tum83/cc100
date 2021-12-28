@@ -45,11 +45,11 @@
 
    The other reason has to do with C itself:
 
-  | TASK                                                    | SOFTWARE |
-  |---------------------------------------------------------+----------|
-  | C source code needs to be written and edited            | editor   |
-  | C source code needs to be compiled, linked and debugged | compiler |
-  | C object code needs to be run                           | shell    |
+  | TASK                                                    | SOFTWARE | EXAMPLE   |
+  |---------------------------------------------------------+----------+-----------|
+  | C source code needs to be written and edited            | editor   | Emacs, vi |
+  | C source code needs to be compiled, linked and debugged | compiler | GCC, Clang |
+  | C object code needs to be run                           | shell    | Bash,     |
 
   #+attr_html: :width 600px
   [[./img/workflow.png]]

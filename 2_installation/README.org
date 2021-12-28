@@ -242,7 +242,7 @@
    buffers with the modus-operandi theme, without window titlebar or
    borders." Source: [[https://en.wikipedia.org/wiki/Emacs#/media/File:Emacs27_showing_Org,_Magit,_and_Dired_with_the_modus-operandi_theme.png][Wikipedia]]/
 
-   |Challenge: which Emacs properties can you deduce from this image alone?[fn:11] |
+   |Challenge: which Emacs properties can you deduce from this image alone?[fn:7] |
    
 ** How do you use Emacs?
 
@@ -280,7 +280,7 @@
    "Emacs outshines all other editing software in approximately the same
    way that the noonday sun does the stars. It is not just bigger and
    brighter; it simply makes everything else vanish." – Neal Stephenson,
-   In the Beginning was the Command Line (1998)[fn:7]
+   In the Beginning was the Command Line (1998)[fn:8]
    #+end_quote           
    
    We will not use Emacs as a substitute for religion even though
@@ -333,7 +333,7 @@
    
    Computer science, and IT, are largely about mastering, and creating
    new tools. Therefore, almost any effort is justified that goes into
-   improving your *meta skills*[fn:8] in this area.
+   improving your *meta skills*[fn:9] in this area.
    
 * Assignment: install Emacs
   #+attr_html: :width 500px
@@ -390,7 +390,7 @@
    Customization like this is done with a configuration file ~.emacs~,
    which is placed in your home directory (~$HOME~). Where this folder
    is actually located on your computer depends on your operating
-   system[fn:12].
+   system[fn:10].
 
    Download the configuration file [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs][from GitHub]]. Here is the code, in
    case you want to copy and paste it from here.
@@ -432,7 +432,7 @@
    type ~C-c C-,~ and select your chunk from the list. You can also
    abbreviate this by entering ~<s~ on any line.
 
-   Check out [[./babel_c.org]] for examples with C code blocks[fn:9].
+   Check out [[./babel_c.org]] for examples with C code blocks[fn:11].
 
 ** Layout changes
 
@@ -722,17 +722,17 @@
 
 * Footnotes
 
-[fn:12]On my Windows machine, ~$HOME~ is ~C:\Users\birkenkrahe\~. On
+[fn:10]On my Windows machine, ~$HOME~ is ~C:\Users\birkenkrahe\~. On
 my Linux box, it is ~/home/marcus/~. 
 
-[fn:11](1) Emacs has versions (at the time the screenshot was taken:
+[fn:7](1) Emacs has versions (at the time the screenshot was taken:
 27.1); (2) Emacs has named "buffers", and you can open several
 simultaneously [the names correspond to Emacs plugins or packages for
 organization (org), Git (magit) and file management (dired); (3) Emacs
 has layout themes with title and borders. (4) Each buffer is
 accompanied by a status line at the bottom [modeline].
 
-[fn:7]Neal Stephenson is a sci-fi author who also coined the term
+[fn:8]Neal Stephenson is a sci-fi author who also coined the term
 "cyberspace", and developed a spacecraft and launch system for Bezos'
 Blue Origin.
 
@@ -769,7 +769,7 @@ app. Org-mode files (~.org~) do not. Since you have Emacs, feel free
 to add a Markdown version of an Org file if you want one because you
 use the mobile version a lot.
 
-[fn:8]"Meta skills" are transferable skills that you learn, or
+[fn:9]"Meta skills" are transferable skills that you learn, or
 improve, while you learn something specific (like Emacs or
 Org-mode). While the special skills might become obsolete or less
 important to you over time (because of a change of job, interest, or
@@ -782,14 +782,14 @@ contenders, along with ~vi~, of the famous editor wars of the UNIX
 culture. UNIX is the "mother" of all operating systems, the systems
 that make computer run and do stuff.
 
-[fn:9]This link also shows you how to link notebooks. You can set a
+[fn:11]This link also shows you how to link notebooks. You can set a
 link anywhere (inside Emacs or Internet) with ~C-c C-l~. If the target
 is another file, that file needs to be found (the path must be
 correct), and an anchor with the link name must be put into the file,
 in this case, the link is ~~/.babel.org~, and the anchor is
 ~<<babel.org>>~
 
-[fn:10]The best way is to find the folder in the file explorer and copy
+[fn:12]The best way is to find the folder in the file explorer and copy
 the address as text:
 [[./img/address.png]]
 

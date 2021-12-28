@@ -100,7 +100,7 @@
    * Upload assignments (esp. Org-files)
    * Discussion 
    * Wiki for collaboration
-   * Complements Schoology[fn:7]
+   * Complements Schoology[fn:2]
 
 ** What will you have to do?
 
@@ -140,7 +140,7 @@
    * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]] (sometimes I will make you)
    * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]] (e.g. comments and links to interesting
      resources)
-   * You can install the [[https://github.com/mobile][mobile app]] on your smartphone[fn:6]
+   * You can install the [[https://github.com/mobile][mobile app]] on your smartphone[fn:3]
    * You can use it as a platform for [[https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects][projects]] or [[https://github.com/features/codespaces][coding]]
    * You can download the [[https://desktop.github.com/][desktop client]] to manage repos on your PC
      (see image below). 
@@ -220,26 +220,29 @@
   interactively (live code) with C - akin to Python or R. Org-mode
   inside Emacs works like a REPL (Read-Evaluate-Print-Loop).
 
-  A great, relatively new resource to look at (for free, at first)
-  that uses the REPL concept, is [[https://repl.it][repl.it]]. See image below.
+  A resource to look at, and use (for free, at first) that uses the
+  REPL concept, is [[https://repl.it][repl.it]]. See image below for the "hello world"
+  program in C.
 
   #+attr_html: :width 600px
   [[./img/replit.png]]
 
 ** What is Emacs ?
 
-   | PROPERTY                     | WHAT THIS MEANS                        |
-   |------------------------------+----------------------------------------|
-   | Extensible editor            | You can adapt it to your needs[fn:8]   |
-   | Written in C with Emacs Lisp | It's fast and smart (via Lisp[fn:9])   |
-   | Ancient software             | Written 1976, released in 1985[fn:4]   |
-   | Ca. 1.5M lines of code       | Windows: ca. 50M/Linux kernel: ca. 30M |
+   | PROPERTY                     | WHAT THIS MEANS                                      |
+   |------------------------------+------------------------------------------------------|
+   | Extensible editor            | You can adapt it to your needs[fn:4]                 |
+   | Written in C with Emacs Lisp | It's fast and smart (via Lisp[fn:5])                 |
+   | Ancient software             | Written 1976, released in 1985[fn:6]                 |
+   | Ca. 1.5M lines of code       | By comparison: Windows ca. 50M; Linux kernel ca. 30M |
 
    #+attr_html: :width 500px
    [[./img/panels.png]]
    /Image: "Emacs 27.1 showing Org, Magit and Dired
    buffers with the modus-operandi theme, without window titlebar or
    borders." Source: [[https://en.wikipedia.org/wiki/Emacs#/media/File:Emacs27_showing_Org,_Magit,_and_Dired_with_the_modus-operandi_theme.png][Wikipedia]]/
+
+   |Challenge: which Emacs properties can you deduce from this image alone?[fn:11] |
    
 ** How do you use Emacs?
 
@@ -251,16 +254,16 @@
 
    See also the article "[[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs"]] (Kenlon, 2020),
    and the video "[[https://youtu.be/48JlgiBpw_I][The Absolute Beginner's Guide to Emacs]]" (System
-   Crafters, 2020).
+   Crafters, 2020) with [[https://github.com/birkenkrahe/org/blob/master/emacs_beginner.org][my notes]].
 
    #+attr_html: :width 400px
    [[./img/desy.jpg]]
-   /Image: DESY APE research group (1994)/
+   /Image: DESY APE research group (1994). Can you find me?/
 
    Other uses:
-   * As [[https://youtu.be/Wcjmx_U5alY][Window Manager]] (only under Linux)
-   * Email client
-   * Remote access (with Tramp)
+   * As [[https://youtu.be/Wcjmx_U5alY][window manager]] (only under Linux)
+   * As [[http://www.mycpu.org/read-email-in-emacs/][email client]]
+   * Remote access (with [[https://www.gnu.org/software/tramp/][GNU Tramp]])
         
 ** How will we use Emacs?
 
@@ -277,9 +280,16 @@
    "Emacs outshines all other editing software in approximately the same
    way that the noonday sun does the stars. It is not just bigger and
    brighter; it simply makes everything else vanish." – Neal Stephenson,
-   In the Beginning was the Command Line (1998)[fn:10]
-   #+end_quote     
+   In the Beginning was the Command Line (1998)[fn:7]
+   #+end_quote           
+   
+   We will not use Emacs as a substitute for religion even though
+   there is a [[https://www.emacswiki.org/emacs/ChurchOfEmacs]["Church of Emacs"]] (EmacsWiki)! Huh?! What?!
 
+   /Image: Notre Dame de Paris. Source: Wikipedia./
+   #+attr_html: :width 500px
+   [[./img/notredame.png]]
+   
 ** Does it really have to be Emacs? 
 
    You'll handle it. Keep calm and carry on coding.
@@ -308,7 +318,7 @@
 
    Also, computer science, and IT, are largely about mastering, and
    creating new digital tools. Therefore, almost any effort is
-   justified that goes into improving your meta skills[fn:5] in this area.
+   justified that goes into improving your meta skills[fn:8] in this area.
    
 * Install Emacs
   #+attr_html: :width 500px
@@ -401,7 +411,7 @@
    and select your chunk from the list. You can also abbreviate this
    by entering ~<s~ on any line.
 
-   Check out [[./babel_c.org]] for examples with C code blocks[fn:3].
+   Check out [[./babel_c.org]] for examples with C code blocks[fn:9].
 
 ** Layout changes
 
@@ -691,15 +701,22 @@
 
 * Footnotes
 
-[fn:10]Neal Stephenson is a sci-fi author who also coined the term
+[fn:11](1) Emacs has versions (at the time the screenshot was taken:
+27.1); (2) Emacs has named "buffers", and you can open several
+simultaneously [the names correspond to Emacs plugins or packages for
+organization (org), Git (magit) and file management (dired); (3) Emacs
+has layout themes with title and borders. (4) Each buffer is
+accompanied by a status line at the bottom [modeline].
+
+[fn:7]Neal Stephenson is a sci-fi author who also coined the term
 "cyberspace", and developed a spacecraft and launch system for Bezos'
 Blue Origin.
 
-[fn:9]Emacs Lisp is a Lisp dialect. Lisp was one of the first
+[fn:5]Emacs Lisp is a Lisp dialect. Lisp was one of the first
 languages used for Artificial Intelligence research (cp. [[https://hci.stanford.edu/~winograd/shrdlu/][SHRDLU]], an
 early natural language processing system).
 
-[fn:8]Here is an example from my ~/.emacs~ file: I defined the
+[fn:4]Here is an example from my ~/.emacs~ file: I defined the
 function ~iwb~ to indent a whole buffer according to the buffer's
 mode - something that can also be done with the key sequence ~C-x h
 C-M-\~ (~mark-whole-buffer + indent-region~).
@@ -715,7 +732,7 @@ C-M-\~ (~mark-whole-buffer + indent-region~).
   )
 #+end_src
 
-[fn:7] Last term when I began to use GitHub, some students were
+[fn:2] Last term when I began to use GitHub, some students were
 complaining about the extra platform - however, it should be clear
 by now, that Schoology cannot substitute for GitHub. The latter is
 a software engineering platform, well suited for computer science
@@ -723,32 +740,32 @@ teaching and code development, the former is a learning management
 system focused on distributing material, creating tests and
 computing grades. 
 
-[fn:6] Only Markdown (~.md~) files are rendering in the mobile
+[fn:3] Only Markdown (~.md~) files are rendering in the mobile
 app. Org-mode files (~.org~) do not. Since you have Emacs, feel free
 to add a Markdown version of an Org file if you want one because you
 use the mobile version a lot.
 
-[fn:5]"Meta skills" are transferable skills that you learn, or
+[fn:8]"Meta skills" are transferable skills that you learn, or
 improve, while you learn something specific (like Emacs or
 Org-mode). While the special skills might become obsolete or less
 important to you over time (because of a change of job, interest, or
 the market), meta skills stay important and fresh forever, because you
 can use them for every new special skill learning project.
 
-[fn:4]Written in 1976 by Richard Stallman, who then tinkered with it
+[fn:6]Written in 1976 by Richard Stallman, who then tinkered with it
 for ten years before releasing it. Emacs is also one of the two
 contenders, along with ~vi~, of the famous editor wars of the UNIX
 culture. UNIX is the "mother" of all operating systems, the systems
 that make computer run and do stuff.
 
-[fn:3]This link also shows you how to link notebooks. You can set a
+[fn:9]This link also shows you how to link notebooks. You can set a
 link anywhere (inside Emacs or Internet) with ~C-c C-l~. If the target
 is another file, that file needs to be found (the path must be
 correct), and an anchor with the link name must be put into the file,
 in this case, the link is ~~/.babel.org~, and the anchor is
 ~<<babel.org>>~
 
-[fn:2]The best way is to find the folder in the file explorer and copy
+[fn:10]The best way is to find the folder in the file explorer and copy
 the address as text:
 [[./img/address.png]]
 

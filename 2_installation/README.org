@@ -320,7 +320,7 @@
    Using the keyboard for everything is much faster (than mouse-only,
    or mouse + keyboard) but takes getting used to. During the writing
    of this paragraph, I used the following keystrokes (with the
-   command behind the keys - you only need to learn these):
+   command behind the keys, which your fingers will learn):
 
    | KEY     | COMMAND                   |
    |---------+---------------------------|

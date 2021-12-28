@@ -165,7 +165,7 @@
    * Download the installer [[https://sourceforge.net/projects/mingw-w64/][from sourceforge]].
    * Run the installer - accept all presets.
    * Add the location of the executable file ~gcc~ to the Windows
-     ~PATH~ (you can find it in ~C:\Program Files(x86)\mingw-w64\~)
+     ~PATH~ (you can find it in ~C:\Program Files(x86)\mingw-w64\~):
 
      - Search for ~PATH~ and open the menu ~System Properties~
 
@@ -186,8 +186,8 @@
      [[./img/environmentvariable.png]]
 
      - To test, search for ~CMD~, open a terminal and enter ~gcc
-       --version~ - you should get the output shown below. Close the
-       window.
+       --version~ - you should get the output shown below (or
+       similar). Close the window.
 
        #+attr_html: :width 300px
        [[./img/gcc.png]]
@@ -195,7 +195,7 @@
 ** MacOS
 
    Apple no longer allows GNU tools - instead, you can install the
-   Clang compiler.
+   free [[https://clang.llvm.org/][Clang]] compiler as part of the [[https://developer.apple.com/documentation/xcode][~Xcode~]] development suite.
 
    * Check if you already have a C compiler: open a terminal (search
      for ~terminal~ app) and enter ~cc -v~.
@@ -217,8 +217,15 @@
 * Emacs for C programming
 
   With the Emacs editor + Org-mode, you can almost program
-  interactively with C.
-  
+  interactively (live code) with C - akin to Python or R. Org-mode
+  inside Emacs works like a REPL (Read-Evaluate-Print-Loop).
+
+  A great, relatively new resource to look at (for free, at first)
+  that uses the REPL concept, is [[https://repl.it][repl.it]]. See image below.
+
+  #+attr_html: :width 600px
+  [[./img/replit.png]]
+
 ** What is Emacs ?
 
    | PROPERTY                     | WHAT THIS MEANS                        |

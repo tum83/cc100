@@ -197,13 +197,17 @@
      [[./img/cc.png]]
 
 * Emacs for C programming
+
+  With the Emacs editor + Org-mode, you can almost program
+  interactively with C.
+  
 ** What is Emacs ?
 
    | PROPERTY                     | WHAT THIS MEANS                        |
    |------------------------------+----------------------------------------|
    | Extensible editor            | You can adapt it to your needs[fn:8]   |
    | Written in C with Emacs Lisp | It's fast and smart (via Lisp[fn:9])   |
-   | Ancient software             | First released in 1985[fn:4]           |
+   | Ancient software             | Written 1976, released in 1985[fn:4]   |
    | Ca. 1.5M lines of code       | Windows: ca. 50M/Linux kernel: ca. 30M |
 
    #+attr_html: :width 500px
@@ -706,8 +710,8 @@ important to you over time (because of a change of job, interest, or
 the market), meta skills stay important and fresh forever, because you
 can use them for every new special skill learning project.
 
-[fn:4]Actually written in 1976 by Richard Stallman, who then tinkered
-with it for ten years before releasing it. Emacs is also one of the two
+[fn:4]Written in 1976 by Richard Stallman, who then tinkered with it
+for ten years before releasing it. Emacs is also one of the two
 contenders, along with ~vi~, of the famous editor wars of the UNIX
 culture. UNIX is the "mother" of all operating systems, the systems
 that make computer run and do stuff.

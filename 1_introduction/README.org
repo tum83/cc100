@@ -45,8 +45,8 @@
    * Machine code?
    * Algorithm?
 
-   [[./img/standards.png]]
-   /Image source: [[https://xkcd.com/927/][xkcd]]/
+   #+attr_html: :width 700px
+   [[./img/real_programmers.png]]
 
 * Where does C come from?
 
@@ -62,6 +62,10 @@
 
   | Challenge: what does "8K words of main memory" mean? | [fn:4]) |
 
+  Since we're talking about "standardization":
+  [[./img/standards.png]]
+  /Image source: [[https://xkcd.com/927/][xkcd]]/
+  
 ** Looks matter
 
    #+attr_html: :width 500px

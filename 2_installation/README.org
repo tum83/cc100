@@ -45,11 +45,11 @@
 
    The other reason has to do with C itself:
 
-  | TASK                                                    | SOFTWARE | EXAMPLE   |
-  |---------------------------------------------------------+----------+-----------|
-  | C source code needs to be written and edited            | editor   | Emacs, vi |
-  | C source code needs to be compiled, linked and debugged | compiler | GCC, Clang |
-  | C object code needs to be run                           | shell    | Bash,     |
+  | TASK                                                    | SOFTWARE | EXAMPLE        |
+  |---------------------------------------------------------+----------+----------------|
+  | C source code needs to be written and edited            | editor   | [[https://www.gnu.org/software/emacs/][GNU Emacs]], vi  |
+  | C source code needs to be compiled, linked and debugged | compiler | [[https://gcc.gnu.org/][GCC]], Clang     |
+  | C object code needs to be run                           | shell    | [[https://www.gnu.org/software/bash/][GNU bash]], [[https://fishshell.com/][fish]] |
 
   #+attr_html: :width 600px
   [[./img/workflow.png]]

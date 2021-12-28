@@ -388,9 +388,9 @@
    want to work with.
 
    Customization like this is done with a configuration file ~.emacs~,
-   which is placed in your home directory (~\~/.~). Where this folder
+   which is placed in your home directory (~$HOME~). Where this folder
    is actually located on your computer depends on your operating
-   system.
+   system[fn:12].
 
    Download the configuration file [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs][from GitHub]]. Here is the code, in
    case you want to copy and paste it from here.
@@ -721,6 +721,9 @@
   zzamboni.org]].
 
 * Footnotes
+
+[fn:12]On my Windows machine, ~$HOME~ is ~C:\Users\birkenkrahe\~. On
+my Linux box, it is ~/home/marcus/~. 
 
 [fn:11](1) Emacs has versions (at the time the screenshot was taken:
 27.1); (2) Emacs has named "buffers", and you can open several

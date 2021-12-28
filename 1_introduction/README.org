@@ -15,7 +15,7 @@
   * Why are you learning C from me?
   * What's next in the course?
 
-  Source: King (2008) ch.1[fn:1]
+  Source: King (2008) ch.1[fn:1] - see also [[https://docs.google.com/presentation/d/16jVt1LYw_an7na_Ex0bz8l2uySJtydBK/edit?usp=sharing&ouid=102963037093118135110&rtpof=true&sd=true][slides (GDrive)]]
   -----
 * What is C?
 

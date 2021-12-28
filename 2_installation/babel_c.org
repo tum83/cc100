@@ -1,5 +1,6 @@
 #+options: toc:nil
-#+startup: hideblocks overview
+#+startup: overview
+#+startup: hideblocks 
 <<babel.org>>
 * Babel test
 

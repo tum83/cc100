@@ -37,7 +37,7 @@
   * Understanding technologies makes them safer
   * Knowing low-level tools helps asking the right questions
   * Learning low-level tools helps you build new tools
-  * Learnin about computers enables you to craft better code
+  * Learning about computers enables you to craft better code
 ** Technology  
 
    The other reason has to do with C itself:

@@ -149,13 +149,18 @@
    #+attr_html: :width 600px
    [[./img/gh.png]]
           
-* Install a C compiler (Windows + MacOS)
+* Install a C compiler
 
   * Compiler & linker are usually bundled
   * [[https://gcc.gnu.org/][~GCC~]] ("GNU cc") is a popular C/C++ compiler
   * [[https://www.mingw-w64.org/][~MinGW~]] ("Minimalist GNU for Windows") is a port of ~GNU gcc~ to
     Windows
-  
+
+    /Image: Shameless plug for the Free Software Foundation - Source:
+    [[https://www.fsf.org/][fsf.org]]/
+    #+attr_html: :width 400px
+    [[./img/fsf.png]]
+    
 ** Windows
    * Download the installer [[https://sourceforge.net/projects/mingw-w64/][from sourceforge]].
    * Run the installer - accept all presets.
@@ -199,6 +204,15 @@
    * Test it by typing ~cc -v~.
 
      [[./img/cc.png]]
+
+** Linux
+
+   Under Linux, the installation of a binary (executable) for that
+   distribution and computer architecture, is done with a simple
+   command from the command line, usually using the package manager,
+   e.g. ~apt~ for Ubuntu 20.04: ~sudo apt install
+   build-essential~. This will install ~gcc~, ~g++~, and the powerful
+   [[https://www.gnu.org/software/make/][GNU ~make~ program]].
 
 * Emacs for C programming
 

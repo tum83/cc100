@@ -335,7 +335,7 @@
    new tools. Therefore, almost any effort is justified that goes into
    improving your *meta skills*[fn:8] in this area.
    
-* Install Emacs
+* Assignment: install Emacs
   #+attr_html: :width 500px
   [[./img/emacs.png]]
   /Image: GNU Emacs logo. Source: [[https://www.gnu.org/software/emacs/][GNU Project]]/
@@ -346,13 +346,14 @@
    * Check out the [[https://www.gnu.org/software/emacs/tour/][guided tour]].
    * Open Emacs, type ~CTRL-h t~ (~C-h t~) and complete the tutorial.
 
+   | Note: the next quiz will include material from the Emacs tutorial! |
+     
 ** Download and Installation for MacOS
 
    * Download GNU Emacs + ESS as a modified version for [[https://vigou3.gitlab.io/emacs-modified-macos/][MacOS]].
    * Run the installer - accept all presets.
    * Check out the [[https://www.gnu.org/software/emacs/tour/][guided tour]].
    * Open Emacs, type ~CTRL-h t~ (~C-h t~) and complete the tutorial.
-
 
    | Note: the next quiz will include material from the Emacs tutorial! |
    
@@ -363,9 +364,10 @@
   things that Emacs is capable of, we only need one for this class:
   the ability to create and run interactive notebooks.
 
-  This will give you the power of Jupyter notebooks or Colaboratory on
-  your computer, and you can share notebooks with anyone, who has
-  Emacs.
+  This will give you the power of [[https://jupyter.org/][Jupyter notebooks]] or [[https://colab.research.google.com/][Colaboratory]] on
+  your computer, without language limitations, and you can share
+  notebooks with anyone, who has Emacs (or Markdown, for reading
+  only).
 
   The central package for many day to day tasks is ~Org-mode~. Here is
   a set of [[https://orgmode.org/worg/org-tutorials/][Org-mode tutorials]] (with videos) covering many interesting
@@ -376,7 +378,7 @@
   getting started with Emacs for the first time like you:
 
   * [[https://youtu.be/48JlgiBpw_I][The Absolute Beginner's Guide to Emacs]] (System Crafters, 2021) -
-    1hr11min.
+    1hr11min long - time well invested ([[https://github.com/birkenkrahe/org/blob/master/emacs_beginner.org][I made some notes]]).
 
 ** Create configuration file
 
@@ -386,7 +388,7 @@
    want to work with.
 
    Customization like this is done with a configuration file ~.emacs~,
-   which is placed in your home directory (~~/~~). Where this folder
+   which is placed in your home directory (~~/.~). Where this folder
    is actually located on your computer depends on your operating
    system.
 
@@ -426,9 +428,9 @@
 
 ** Create sample notebook
 
-   To create a notebook, create an ~.org~ file. Then type ~C-c C-,~
-   and select your chunk from the list. You can also abbreviate this
-   by entering ~<s~ on any line.
+   To create a notebook using Org-mode, create an ~.org~ file. Then
+   type ~C-c C-,~ and select your chunk from the list. You can also
+   abbreviate this by entering ~<s~ on any line.
 
    Check out [[./babel_c.org]] for examples with C code blocks[fn:9].
 

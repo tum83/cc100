@@ -320,15 +320,16 @@
    Using the keyboard for everything is much faster (than mouse-only,
    or mouse + keyboard) but takes getting used to. During the writing
    of this paragraph, I used the following keystrokes (with the
-   command behind the keys):
-   #+begin_quote
-| <q RET  | ~org-self-insert-command~ |
-| C-M-\   | ~indent-region~           |
-| M-q     | ~org-fill-paragraph~      |
-| C-a     | ~org-beginning of line~   |
-| C-e     | ~org-end-of-line~         |
-| C-x C-s | ~save-buffer~             |
-   #+end_quote
+   command behind the keys - you only need to learn these):
+
+   | KEY     | COMMAND                   |
+   |---------+---------------------------|
+   | <q RET  | ~org-self-insert-command~ |
+   | C-M-\   | ~indent-region~           |
+   | M-q     | ~org-fill-paragraph~      |
+   | C-a     | ~org-beginning of line~   |
+   | C-e     | ~org-end-of-line~         |
+   | C-x C-s | ~save-buffer~             |
    
    Computer science, and IT, are largely about mastering, and creating
    new tools. Therefore, almost any effort is justified that goes into

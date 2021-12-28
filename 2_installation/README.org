@@ -105,8 +105,8 @@
 ** What will you have to do?
 
    * [[https://github.com][Sign up with GitHub]] - use Lyon Email
-   * Pick an available username: first and last name,
-     e.g. ~MarcusBirkenkrahe~, or ~DonaldTrump1~
+   * Pick an available username *using your own first and last name*,
+     e.g. ~MarcusBirkenkrahe~, or ~DonaldTrump~
    * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] (FAQ)
    * Give me your GitHub username so that I can add you as a
      collaborator to my private ~cc100~ repository
@@ -119,27 +119,31 @@
    -----   
        #+begin_quote
        If you do have a GitHub account already, do the exercise anyway
-       using your existing account! Make sure you let me know what your
-       user name is.
+       using your existing account (it takes 10 min)! Make sure you
+       let me know what your user name is so that I can add you to my
+       repo.
        #+end_quote
        
 ** What else can you do?
 
-   * You can fork the ~cc100~ repository
-   * You can watch the ~cc100~ repository - and set ~Notifications~ to
-     ~Participating and @mentions~ so that you see my comments
+   * You can [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][fork]] the [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][~cc100~]] repository
+   * You can [[https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/managing-subscriptions-for-activity-on-github/viewing-your-subscriptions][watch]] the [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][~cc100~]] repository - and set [[https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications][~Notifications~]] to
+     ~Participating and @mentions~ so that you see my comments (see
+     image below).
 
    #+attr_html: :width 300px
    [[./img/watch.png]]
-   /Gif: Notifications settings when watching a repository/     
+   /Image: Notifications settings when watching a repository/     
      
-   * You can submit issues to the repository (e.g. if you notice
-     mistakes or if you want extra information)
+   * You can [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][submit issues]] from the repository (e.g. if you notice
+     mistakes or if you want extra information, or to share a link)
    * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]] (sometimes I will make you)
    * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]] (e.g. comments and links to interesting
      resources)
-   * You can install the app on your smartphone[fn:6]
-   * You can use it as a platform for projects
+   * You can install the [[https://github.com/mobile][mobile app]] on your smartphone[fn:6]
+   * You can use it as a platform for [[https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects][projects]] or [[https://github.com/features/codespaces][coding]]
+   * You can download the [[https://desktop.github.com/][desktop client]] to manage repos on your PC
+     (see image below). 
 
    /Image: GitHub desktop client commit/
    #+attr_html: :width 600px

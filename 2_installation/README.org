@@ -87,10 +87,10 @@
    * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
 
 ** Why are we using it?
-   
+
+   /Image: Org-mode file in GitHub/
    #+attr_html: :width 500px
    [[./img/org.png]]
-   /Image: Org-mode file in GitHub/
    
    * It's free
    * To host course materials

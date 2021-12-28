@@ -722,23 +722,22 @@
 
 * Footnotes
 
-[fn:10]On my Windows machine, ~$HOME~ is ~C:\Users\birkenkrahe\~. On
-my Linux box, it is ~/home/marcus/~. 
+[fn:1]Code::Blocks, CodeLite, Netbeans, Microsoft Visual Studio (VS),
+are all free IDEs for C/C++, with VS being the most popular one right
+now.
 
-[fn:7](1) Emacs has versions (at the time the screenshot was taken:
-27.1); (2) Emacs has named "buffers", and you can open several
-simultaneously [the names correspond to Emacs plugins or packages for
-organization (org), Git (magit) and file management (dired); (3) Emacs
-has layout themes with title and borders. (4) Each buffer is
-accompanied by a status line at the bottom [modeline].
+[fn:2] Last term when I began to use GitHub, some students were
+complaining about the extra platform - however, it should be clear
+by now, that Schoology cannot substitute for GitHub. The latter is
+a software engineering platform, well suited for computer science
+teaching and code development, the former is a learning management
+system focused on distributing material, creating tests and
+computing grades.
 
-[fn:8]Neal Stephenson is a sci-fi author who also coined the term
-"cyberspace", and developed a spacecraft and launch system for Bezos'
-Blue Origin.
-
-[fn:5]Emacs Lisp is a Lisp dialect. Lisp was one of the first
-languages used for Artificial Intelligence research (cp. [[https://hci.stanford.edu/~winograd/shrdlu/][SHRDLU]], an
-early natural language processing system).
+[fn:3] Only Markdown (~.md~) files are rendering in the mobile
+app. Org-mode files (~.org~) do not. Since you have Emacs, feel free
+to add a Markdown version of an Org file if you want one because you
+use the mobile version a lot.
 
 [fn:4]Here is an example from my ~/.emacs~ file: I defined the
 function ~iwb~ to indent a whole buffer according to the buffer's
@@ -756,18 +755,26 @@ C-M-\~ (~mark-whole-buffer + indent-region~).
   )
 #+end_src
 
-[fn:2] Last term when I began to use GitHub, some students were
-complaining about the extra platform - however, it should be clear
-by now, that Schoology cannot substitute for GitHub. The latter is
-a software engineering platform, well suited for computer science
-teaching and code development, the former is a learning management
-system focused on distributing material, creating tests and
-computing grades. 
+[fn:5]Emacs Lisp is a Lisp dialect. Lisp was one of the first
+languages used for Artificial Intelligence research (cp. [[https://hci.stanford.edu/~winograd/shrdlu/][SHRDLU]], an
+early natural language processing system).
 
-[fn:3] Only Markdown (~.md~) files are rendering in the mobile
-app. Org-mode files (~.org~) do not. Since you have Emacs, feel free
-to add a Markdown version of an Org file if you want one because you
-use the mobile version a lot.
+[fn:6]Written in 1976 by Richard Stallman, who then tinkered with it
+for ten years before releasing it. Emacs is also one of the two
+contenders, along with ~vi~, of the famous editor wars of the UNIX
+culture. UNIX is the "mother" of all operating systems, the systems
+that make computer run and do stuff.
+
+[fn:7](1) Emacs has versions (at the time the screenshot was taken:
+27.1); (2) Emacs has named "buffers", and you can open several
+simultaneously [the names correspond to Emacs plugins or packages for
+organization (org), Git (magit) and file management (dired); (3) Emacs
+has layout themes with title and borders. (4) Each buffer is
+accompanied by a status line at the bottom [modeline].
+
+[fn:8]Neal Stephenson is a sci-fi author who also coined the term
+"cyberspace", and developed a spacecraft and launch system for Bezos'
+Blue Origin.
 
 [fn:9]"Meta skills" are transferable skills that you learn, or
 improve, while you learn something specific (like Emacs or
@@ -776,11 +783,8 @@ important to you over time (because of a change of job, interest, or
 the market), meta skills stay important and fresh forever, because you
 can use them for every new special skill learning project.
 
-[fn:6]Written in 1976 by Richard Stallman, who then tinkered with it
-for ten years before releasing it. Emacs is also one of the two
-contenders, along with ~vi~, of the famous editor wars of the UNIX
-culture. UNIX is the "mother" of all operating systems, the systems
-that make computer run and do stuff.
+[fn:10]On my Windows machine, ~$HOME~ is ~C:\Users\birkenkrahe\~. On
+my Linux box, it is ~/home/marcus/~.
 
 [fn:11]This link also shows you how to link notebooks. You can set a
 link anywhere (inside Emacs or Internet) with ~C-c C-l~. If the target
@@ -792,7 +796,3 @@ in this case, the link is ~~/.babel.org~, and the anchor is
 [fn:12]The best way is to find the folder in the file explorer and copy
 the address as text:
 [[./img/address.png]]
-
-[fn:1]Code::Blocks, CodeLite, Netbeans, Microsoft Visual Studio (VS),
-are all free IDEs for C/C++, with VS being the most popular one right
-now.

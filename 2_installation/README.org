@@ -624,7 +624,8 @@
    However, if an export is successful depends on the availability of
    programs in the background. For example, you need some extras to
    generate a PDF file straight from a LaTeX file. ~.odt~ files are
-   OpenOffice files (XML formatted) that can be opened with WORD.
+   Apache [[https://www.openoffice.org/][OpenOffice]] files (XML formatted) that can also be opened in
+   Google Docs[fn:13].
 
    What always works is HTML (~.html~) export, and Markdown (~.md~)
    export. Markdown is the standard format for GitHub text
@@ -730,6 +731,10 @@
   zzamboni.org]].
 
 * Footnotes
+
+[fn:13]However, on my Windows 10 PC, WORD refuses to open OpenOffice
+files (perhaps because the package is only available as a 32-bit
+version from [[https://www.openoffice.org/][Apache OpenOffice]]?).  
 
 [fn:1]Code::Blocks, CodeLite, Netbeans, Microsoft Visual Studio (VS),
 are all free IDEs for C/C++, with VS being the most popular one right

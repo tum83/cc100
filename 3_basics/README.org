@@ -7,7 +7,10 @@
 #+INFOJS_OPT: :view:info
 * What are you going to learn?
 
-  * 
+  *
+
+  Source: King (2008) ch. 2 C Fundamentals - see also [[https://docs.google.com/presentation/d/14qvh00aVb_R09_hrQY0EDEK_JLAkgZ0S/edit?usp=sharing&ouid=102963037093118135110&rtpof=true&sd=true][slides (GDrive)]]
+  -----    
 
 * Summary
 
@@ -19,5 +22,3 @@
   |------------------+---------------------------------------------------|
 
 * What's next
-
-

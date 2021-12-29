@@ -2,27 +2,25 @@
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview
-#+OPTIONS: toc:1
+#+OPTIONS: toc:nil
 #+OPTIONS:hideblocks
 #+INFOJS_OPT: :view:info
 * What are you going to learn?
 
-  * First program
-  * Program structure
-    - Directives
-    - Functions
-    - Statements
-    - Delimiters
-  * Functions
-  * Variables
-  * Statements
+  This script summarizes and adds to the treatment by King (2008),
+  chapter 2, C Fundamentals - see also [[https://docs.google.com/presentation/d/14qvh00aVb_R09_hrQY0EDEK_JLAkgZ0S/edit?usp=sharing&ouid=102963037093118135110&rtpof=true&sd=true][slides (GDrive)]]
 
-  Source: King (2008) ch. 2 C Fundamentals - see also [[https://docs.google.com/presentation/d/14qvh00aVb_R09_hrQY0EDEK_JLAkgZ0S/edit?usp=sharing&ouid=102963037093118135110&rtpof=true&sd=true][slides (GDrive)]]
+  * Program structure
+  * Program: Printing a Pun
+  * 
+
   -----
 * Program structure
 
   #+attr_html: :width 600px
   [[./img/structure.png]]
+
+  (Image source: Collingbourne, 2017)
   
 * Program: Printing a Pun
 
@@ -33,13 +31,13 @@
      - A string is printed out
      - If successful, the program returns ~0~ 
     
-  #+begin_src C
+  #+begin_src C :exports both
 
     #include <stdio.h>
 
     int main(void)
     {
-      printf("To C, or not to C: that is the question.\n");
+      printf("To C or not to C: that is the question.\n");
       return 0;
     }
 
@@ -48,6 +46,26 @@
   #+RESULTS:
   : To C or not to C: that is the question.
 
+  The function could have been written as ~int main(int argc, char **argv)~
+  as well - indicating the possibility of passing two arguments to its
+  body for further processing.
+
+  The program could also have been written like this:
+
+  #+begin_src C :exports both
+
+	#include <stdio.h>
+
+	main()
+	{
+	  printf("hello world\n");
+	}
+
+  #+end_src
+
+  Alas, in Org-mode, this program will not compile, though outside of
+  Org-mode, it will (with a warning). Try it!
+  
 ** Compiler workflow
 
    The machine cannot process ~pun.c~ without help. It must
@@ -95,25 +113,49 @@
 
   * C programs must be compiled and linked
   * Programs consist of directives, functions, and statements
-  * 
+  * C directives begin with a hash mark (~#~)
+  * C statements end with a semicolon (~;~)
+  * C functions begin and end with parentheses ~{~ and ~}~
+    
 * Code summary
 
-  | CODE       | EXPLANATION                         |
-  |------------+-------------------------------------|
-  | ~#include~ | directive to include other programs |
-  | ~stdio.h~  | standard input/output header file   |
-  | ~main()~     | main function                       |
+  | CODE                          | EXPLANATION                         |
+  |-------------------------------+-------------------------------------|
+  | ~#include~                    | directive to include other programs |
+  | ~stdio.h~                     | standard input/output header file   |
+  | ~main(void)~                  | main function without argument      |
+  | ~main(int argc, char **argv)~ | main function with two arguments    |
+  | ~return~                      | statement (successful completion)   |
+  | ~void~                        | empty argument - no value           |
+  | ~printf~                      | printing function                   |
+  | ~\n~                          | escape character (new-line)         |
   
 * Jargon
 
-  | CONCEPT          | EXPLANATION                                       |
-  |------------------+---------------------------------------------------|
+  | CONCEPT      | EXPLANATION                                  |
+  |--------------+----------------------------------------------|
+  | Compiler     | translates source code to object code        |
+  | Linker       | translates object code to machine code       |
+  | Syntax       | language rules                               |
+  | Debugger     | checks syntax                                |
+  | Directive    | starts with ~#~, one line only, no delimiter |
+  | Preprocessor | processes directives                         |
+  | Statement    | command to be executed, e.g. ~return~        |
+  | Delimiter    | ends a statement (in C: semicolon - ;)       |
+  | Function     | a rule to compute something with arguments   |
 
 * What's next
 
+* References
+
+  Collingbourne (2019). The Little Book of C (Rev. 1.2). Dark Neon.
+
+  King (2008). C Programming - A Modern Approach. Norton. [[http://knking.com/books/c2/index.html][Online:
+  knking.com]].
+  
 * Footnotes
 
-[fn:1]You can find nice themes for GNU Emacs here, and install them
+[fn:1]You can find [[https://emacsthemes.com/][themes for GNU Emacs]] here, and install them
 using ~M-x package-list-packages~.
 
 [fn:2]If you always want to have line numbers and highlight the line

@@ -274,32 +274,19 @@
 
 * Footnotes
 
-[fn:8]My first real programming language was FORTRAN (specialized on
-scientific computing), then C++. Recently, I picked up R (for data
-science). In between I've sampled (not mastered) many others,
-including: Python, Lisp, PROLOG, C, PHP, SQL, SQLite etc.
-
-[fn:7]Torvalds (who wrote the Linux kernel in C) argues here in favor
-of writing his hugely successful version control program ~git~ in C
-instead of C++. He highlights sme of the strengths of C: efficient,
-system-level, portable code.
-
-[fn:6]However, he is biased, since he is the creator of C++. The title
-of the video is misleading: Stroustrup believes that every C program
-should rather be a proper C++ program. However, he also concedes that
-C++ is still too complex for many ("We have to clean it up").
-
-[fn:3]The motivation to create Unix, according to [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Wikipedia]], was to
-port Thompson's space travel video game to the PDP-7 mainframe
-computer. So in a way we owe modern computing to gaming.
+[fn:1]All sources are referenced at the end of the script, followed by
+the footnotes, which do unfortunately not render as links [[https://github.com/birkenkrahe/cc100/tree/main/history_of_c][on
+GitHub]]. The book by King (2008) does not cover a few recent updates to
+the ANSI standard for C, like C11, and the current standard C17. The
+next major C standard revision (C23) is expected for 2023. Gustedt
+(2019) is a good book on "modern C".
 
 [fn:2]Since 2000, C has consistently ranked among the top two
 languages in the TIOBE index (based on searches).
 
-[fn:5]Answer: no. By 1966, there were already ca. 700 programming
-languages (Chatley et al, 2019), today there are almost 9,000. C
-descends from ALGOL60, other important languages are Lisp (functional
-language), SIMULA (first OOP language), and PROLOG (logic language).
+[fn:3]The motivation to create Unix, according to [[https://en.wikipedia.org/wiki/Space_Travel_(video_game)][Wikipedia]], was to
+port Thompson's space travel video game to the PDP-7 mainframe
+computer. So in a way we owe modern computing to gaming.
 
 [fn:4]How many bits can be stored in memory of 8K words depends on the
 bit length of a word (or byte). One byte holds 8 = 2^3 bits (binary
@@ -309,9 +296,22 @@ main memory of my laptop is 16GB = 16 * 2^30 = 3.2E+31 bits. It
 follows that UNIX (and C) had to be designed to be very small, or
 space effective.
 
-[fn:1]All sources are referenced at the end of the script, followed by
-the footnotes, which do unfortunately not render as links [[https://github.com/birkenkrahe/cc100/tree/main/history_of_c][on
-GitHub]]. The book by King (2008) does not cover a few recent updates to
-the ANSI standard for C, like C11, and the current standard C17. The
-next major C standard revision (C23) is expected for 2023. Gustedt
-(2019) is a good book on "modern C".
+[fn:5]Answer: no. By 1966, there were already ca. 700 programming
+languages (Chatley et al, 2019), today there are almost 9,000. C
+descends from ALGOL60, other important languages are Lisp (functional
+language), SIMULA (first OOP language), and PROLOG (logic language).
+
+[fn:6]However, he is biased, since he is the creator of C++. The title
+of the video is misleading: Stroustrup believes that every C program
+should rather be a proper C++ program. However, he also concedes that
+C++ is still too complex for many ("We have to clean it up").
+
+[fn:7]Torvalds (who wrote the Linux kernel in C) argues here in favor
+of writing his hugely successful version control program ~git~ in C
+instead of C++. He highlights sme of the strengths of C: efficient,
+system-level, portable code.
+
+[fn:8]My first real programming language was FORTRAN (specialized on
+scientific computing), then C++. Recently, I picked up R (for data
+science). In between I've sampled (not mastered) many others,
+including: Python, Lisp, PROLOG, C, PHP, SQL, SQLite etc.

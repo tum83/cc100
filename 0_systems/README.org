@@ -146,14 +146,12 @@
   * The literate programming paradigm meets system programming requirements
 
 * References
-
-  Sallans, Pfister and Dorffner (December 15, 2003). A Simulation
-  Study of Managerial Compensation, OEFAI Neural Computation Group
-  Technical Report, Austrian Institute for Artificial Intelligence
-  [report]. URL: [[https://ofai.at/papers/oefai-tr-2003-33.pdf][ofai.at]].
-
-  Wikipedia (Dec 15, 2021). Literate Programming [wiki]. [[https://en.wikipedia.org/wiki/Literate_programming][URL:
-  en.wikipedia.org]].
+  * Sallans, Pfister and Dorffner (December 15, 2003). A Simulation
+    Study of Managerial Compensation, OEFAI Neural Computation Group
+    Technical Report, Austrian Institute for Artificial Intelligence
+    [report]. URL: [[https://ofai.at/papers/oefai-tr-2003-33.pdf][ofai.at]].
+  * Wikipedia (Dec 15, 2021). Literate Programming [wiki]. [[https://en.wikipedia.org/wiki/Literate_programming][URL:
+    en.wikipedia.org]].
 
 * Footnotes
 

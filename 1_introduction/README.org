@@ -236,41 +236,30 @@
   [[./img/river.gif]]
 
 * References
-
-  Big Think (Jun 13, 2011). Bjarne Stroustrup: Why the Programming
-  Language C Is Obsolete | Big Think [video]. [[https://youtu.be/KlPC3O1DVcg][URL:
-  youtu.be/KlPC3O1DVcg]].
-
-  Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
-  Source Code Release [Blog]. URL: [[https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/][computerhistory.org]].
-
-  Chatley R., Donaldson A., Mycroft A. (2019) The Next 7000
-  Programming Languages. In: Steffen B., Woeginger G. (eds) Computing
-  and Software Science. Lecture Notes in Computer Science,
-  vol 10000. Springer,
-  Cham. https://doi.org/10.1007/978-3-319-91908-9_15
-
-  Data Flair (n.d.). Applications of C Programming That Will Make You
-  Fall In Love With C [Tutorial]. URL: d[[https://data-flair.training/blogs/applications-of-c/][ata-flair.training.]]
-
-  Gustedt (2019). Modern C. Manning.
-
-  King (2008). C Programming - A Modern
-  Approach. Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]].
-
-  Kernighan/Ritchie (1978). The C Programming
-  Language. Prentice Hall. [[https://en.wikipedia.org/wiki/The_C_Programming_Language][Online: wikipedia.org]].
-
-  Lemonaki, Dionysia (November 4, 2021). C vs. C++ -
-  What's The Difference [blog]. URL: [[https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/][freecodecamp.org.]]
-
-  Neilsen (Aug 14, 2020). Quora. URL: [[https://qr.ae/pGzZ9z][qr.ae/pGzZ9z]].
-  
-  Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
-  nostarch.com.]]
-
-  Torvalds (6 Sep 2007). Linus Torvalds on C++ [blog]. [[http://harmful.cat-v.org/software/c++/linus][URL:
-  harmful.cat-v.org]].
+  * Big Think (Jun 13, 2011). Bjarne Stroustrup: Why the Programming
+    Language C Is Obsolete | Big Think [video]. [[https://youtu.be/KlPC3O1DVcg][URL:
+    youtu.be/KlPC3O1DVcg]].
+  * Brock (October 17, 2019). The Earliest Unix Code: An Anniversary
+    Source Code Release [Blog]. URL: [[https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/][computerhistory.org]].
+  * Chatley R., Donaldson A., Mycroft A. (2019) The Next 7000
+    Programming Languages. In: Steffen B., Woeginger G. (eds)
+    Computing and Software Science. Lecture Notes in Computer Science,
+    vol 10000. Springer,
+    Cham. https://doi.org/10.1007/978-3-319-91908-9_15
+  * Data Flair (n.d.). Applications of C Programming That Will Make
+    You Fall In Love With C [Tutorial]. URL: d[[https://data-flair.training/blogs/applications-of-c/][ata-flair.training.]]
+  * Gustedt (2019). Modern C. Manning.
+  * King (2008). C Programming - A Modern Approach. Norton. [[http://knking.com/books/c2/index.html][Online:
+    knking.com]].
+  * Kernighan/Ritchie (1978). The C Programming Language. Prentice
+    Hall. [[https://en.wikipedia.org/wiki/The_C_Programming_Language][Online: wikipedia.org]].
+  * Lemonaki, Dionysia (November 4, 2021). C vs. C++ - What's The
+    Difference [blog]. URL: [[https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/][freecodecamp.org.]]
+  * Neilsen (Aug 14, 2020). Quora. URL: [[https://qr.ae/pGzZ9z][qr.ae/pGzZ9z]].
+  * Steinhart (2019). The Secret Life of Programs. NoStarch
+    Press. [[https://nostarch.com/foundationsofcomp][URL: nostarch.com.]]
+  * Torvalds (6 Sep 2007). Linus Torvalds on C++ [blog]. [[http://harmful.cat-v.org/software/c++/linus][URL:
+    harmful.cat-v.org]].
 
 * Footnotes
 

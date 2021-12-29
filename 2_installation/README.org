@@ -20,48 +20,48 @@
 
   There are two BIG reasons - one is philosophical, the other is
   technical.
-  
+
   #+attr_html: :width 500px
   [[./img/automation.png]]
   /Image: automation. Source: [[https://xkcd.com/1319/][xkcd]]/
-** Philosophy  
-  
-  #+begin_quote
-  "Understanding underlying technologies helps you develop a sense of
-  what can go wrong. Knowing just high-level tools makes it easy to ask
-  the wrong questions. It's worth learning to use a hammer before
-  graduating to a nail gun. Learning underlying systems and tools gives
-  you the power to build new tools, which is important because there
-  will always be a need for tool builders, even if tool users are more
-  common. Learning about computers so that the behavior of programs
-  isn't a mystery enables you to craft better code." (Steinhart, 2019)
-  #+end_quote
+** Philosophy
 
-  * Understanding technologies makes them safer
-  * Knowing low-level tools helps asking the right questions
-  * Learning low-level tools helps you build new tools
-  * Learning about computers enables you to craft better code
-** Technology  
+   #+begin_quote
+   "Understanding underlying technologies helps you develop a sense of
+   what can go wrong. Knowing just high-level tools makes it easy to ask
+   the wrong questions. It's worth learning to use a hammer before
+   graduating to a nail gun. Learning underlying systems and tools gives
+   you the power to build new tools, which is important because there
+   will always be a need for tool builders, even if tool users are more
+   common. Learning about computers so that the behavior of programs
+   isn't a mystery enables you to craft better code." (Steinhart, 2019)
+   #+end_quote
+
+   * Understanding technologies makes them safer
+   * Knowing low-level tools helps asking the right questions
+   * Learning low-level tools helps you build new tools
+   * Learning about computers enables you to craft better code
+** Technology
 
    The other reason has to do with C itself:
 
-  | TASK                                                    | SOFTWARE | EXAMPLE   |
-  |---------------------------------------------------------+----------+-----------|
-  | C source code needs to be written and edited            | editor   | [[https://www.gnu.org/software/emacs/][GNU Emacs]] |
-  | C source code needs to be compiled, linked and debugged | compiler | [[https://gcc.gnu.org/][GNU CC]]    |
-  | C object code needs to be run                           | shell    | [[https://www.gnu.org/software/bash/][GNU bash]]  |
+   | TASK                                                    | SOFTWARE | EXAMPLE   |
+   |---------------------------------------------------------+----------+-----------|
+   | C source code needs to be written and edited            | editor   | [[https://www.gnu.org/software/emacs/][GNU Emacs]] |
+   | C source code needs to be compiled, linked and debugged | compiler | [[https://gcc.gnu.org/][GNU CC]]    |
+   | C object code needs to be run                           | shell    | [[https://www.gnu.org/software/bash/][GNU bash]]  |
 
-  #+attr_html: :width 600px
-  [[./img/workflow.png]]
-  /Image: C programming workflow (BPMN model)/
+   #+attr_html: :width 600px
+   [[./img/workflow.png]]
+   /Image: C programming workflow (BPMN model)/
 
-  There are different routes to get C running on your computer,
-  depending on your operating system (Linux, MacOS or Windows)[fn:1].
+   There are different routes to get C running on your computer,
+   depending on your operating system (Linux, MacOS or Windows)[fn:1].
 
-  The problem with most IDEs is that they're clunky. They take some
-  time getting used to, have many functions that you'll never need,
-  and any time spent on learning the IDE is wasted unless you keep
-  working with it. IDEs do not teach you transferable skills.
+   The problem with most IDEs is that they're clunky. They take some
+   time getting used to, have many functions that you'll never need,
+   and any time spent on learning the IDE is wasted unless you keep
+   working with it. IDEs do not teach you transferable skills.
 
 * Infrastructure Setup
 
@@ -76,7 +76,7 @@
   | GitHub   | Git      | Hosting  |
   | MinGW    | GCC      | Compiler |
   | GNU      | Emacs    | Editor   |
-  
+
 * GitHub
 ** What is it?
 
@@ -84,6 +84,8 @@
    * Built around Git by Linus Torvalds
    * Bought by Microsoft in 2018
    * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
+
+   Watch: "[[https://youtu.be/w3jLJU7DT5E][What is GitHub?]]" (GitHub, 2016)
 
    #+attr_html: :width 500px
    [[./img/github.gif]]
@@ -94,11 +96,11 @@
    /Image: Org-mode file in GitHub/
    #+attr_html: :width 500px
    [[./img/org.png]]
-   
+
    * It's free
    * To host course materials
    * Upload assignments (esp. Org-files)
-   * Discussion 
+   * Discussion
    * Wiki for collaboration
    * Complements Schoology[fn:2]
 
@@ -115,15 +117,15 @@
    -----
    /Image: Issue "Assignment completed"/
    #+attr_html: :width 500px
-   [[./img/issue.png]]  
-   -----   
-       #+begin_quote
-       If you do have a GitHub account already, do the exercise anyway
-       using your existing account (it takes 10 min)! Make sure you
-       let me know what your user name is so that I can add you to my
-       repo.
-       #+end_quote
-       
+   [[./img/issue.png]]
+   -----
+   #+begin_quote
+   If you do have a GitHub account already, do the exercise anyway
+   using your existing account (it takes 10 min)! Make sure you
+   let me know what your user name is so that I can add you to my
+   repo.
+   #+end_quote
+
 ** What else can you do?
 
    * You can [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][fork]] the [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][~cc100~]] repository
@@ -133,8 +135,8 @@
 
    #+attr_html: :width 300px
    [[./img/watch.png]]
-   /Image: Notifications settings when watching a repository/     
-     
+   /Image: Notifications settings when watching a repository/
+
    * You can [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][submit issues]] from the repository (e.g. if you notice
      mistakes or if you want extra information, or to share a link)
    * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]] (sometimes I will make you)
@@ -143,12 +145,12 @@
    * You can install the [[https://github.com/mobile][mobile app]] on your smartphone[fn:3]
    * You can use it as a platform for [[https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects][projects]] or [[https://github.com/features/codespaces][coding]]
    * You can download the [[https://desktop.github.com/][desktop client]] to manage repos on your PC
-     (see image below). 
+     (see image below).
 
    /Image: GitHub desktop client commit/
    #+attr_html: :width 600px
    [[./img/gh.png]]
-          
+
 * Install a C compiler
 
   * Compiler & linker are usually bundled
@@ -160,7 +162,7 @@
     [[https://www.fsf.org/][fsf.org]]/
     #+attr_html: :width 400px
     [[./img/fsf.png]]
-    
+
 ** Windows
    * Download the installer [[https://sourceforge.net/projects/mingw-w64/][from sourceforge]].
    * Run the installer - accept all presets.
@@ -243,11 +245,11 @@
    borders." Source: [[https://en.wikipedia.org/wiki/Emacs#/media/File:Emacs27_showing_Org,_Magit,_and_Dired_with_the_modus-operandi_theme.png][Wikipedia]]/
 
    |Challenge: which Emacs properties can you deduce from this image alone?[fn:7] |
-   
+
 ** How do you use Emacs?
 
    See [[https://github.com/birkenkrahe/org/blob/master/FAQ.md#which-editor-and-ide-do-you-use][FAQ]]. I use Emacs for most of my computing needs:
-    
+
    * Writing (teaching, research)
    * Planning (Calendar, ToDo)
    * Organizing (Files)
@@ -264,7 +266,7 @@
    * As [[https://youtu.be/Wcjmx_U5alY][window manager]] (only under Linux)
    * As [[http://www.mycpu.org/read-email-in-emacs/][email client]]
    * Remote access (with [[https://www.gnu.org/software/tramp/][GNU Tramp]])
-        
+
 ** How will we use Emacs?
 
    #+attr_html: :width 500px
@@ -281,19 +283,19 @@
    way that the noonday sun does the stars. It is not just bigger and
    brighter; it simply makes everything else vanish." – Neal Stephenson,
    In the Beginning was the Command Line (1998)[fn:8]
-   #+end_quote           
-   
+   #+end_quote
+
    We will not use Emacs as a substitute for religion even though
    there is a [[https://www.emacswiki.org/emacs/ChurchOfEmacs]["Church of Emacs"]] (EmacsWiki)! Huh?! What?!
 
    /Image: Notre Dame de Paris. Source: Wikipedia./
    #+attr_html: :width 500px
    [[./img/notredame.png]]
-   
-** Does it really have to be Emacs? 
+
+** Does it really have to be Emacs?
 
    You'll handle it. Keep calm and carry on coding.
-   
+
    If you look around, you'll see a lot of discussion on different
    source code editors and IDEs. Currently [[https://code.visualstudio.com/][Microsoft's Visual Studio
    (VS) Code]] seems to be the most popular contender. However, as one
@@ -330,11 +332,11 @@
    | C-a     | ~org-beginning of line~   |
    | C-e     | ~org-end-of-line~         |
    | C-x C-s | ~save-buffer~             |
-   
+
    Computer science, and IT, are largely about mastering, and creating
    new tools. Therefore, almost any effort is justified that goes into
    improving your *meta skills*[fn:9] in this area.
-   
+
 * Assignment: install Emacs
   #+attr_html: :width 500px
   [[./img/emacs.png]]
@@ -347,7 +349,7 @@
    * Open Emacs, type ~CTRL-h t~ (~C-h t~) and complete the tutorial.
 
    | Note: the next quiz will include material from the Emacs tutorial! |
-     
+
 ** Download and Installation for MacOS
 
    * Download GNU Emacs + ESS as a modified version for [[https://vigou3.gitlab.io/emacs-modified-macos/][MacOS]].
@@ -356,7 +358,7 @@
    * Open Emacs, type ~CTRL-h t~ (~C-h t~) and complete the tutorial.
 
    | Note: the next quiz will include material from the Emacs tutorial! |
-   
+
 * Customize Emacs
 
   GNU Emacs is much more than a text editor and an IDE. It's more like
@@ -393,7 +395,7 @@
    system[fn:10].
 
    Download the configuration file [[https://github.com/birkenkrahe/cc100/blob/main/2_installation/.emacs][from GitHub]]. Here is the code: you
-   can also copy and paste it into a ~.emacs~ file. 
+   can also copy and paste it into a ~.emacs~ file.
 
    #+begin_src emacs-lisp :exports both
      (put 'dired-find-alternate-file 'disabled nil)
@@ -408,22 +410,22 @@
      (org-babel-do-load-languages
       'org-babel-load-languages
       '((R . t)
-	(sql . t)
+        (sql . t)
         (shell . t)
-	(emacs-lisp . t)
-	(C . t)))
+        (emacs-lisp . t)
+        (C . t)))
 
      ;; Syntax highlight code in your SRC blocks The last variable removes
      ;; the annoying “Do you want to execute” your code when you type:
      ;; C-c C-c
      (setq org-confirm-babel-evaluate nil
-	   org-src-fontify-natively t
-	   org-src-tab-acts-natively t)
+           org-src-fontify-natively t
+           org-src-tab-acts-natively t)
 
      ;; get packages from MELPA package manager
      (require 'package)
      (add-to-list 'package-archives
-		  '("melpa-stable" . "https://stable.melpa.org/packages/"))
+                  '("melpa-stable" . "https://stable.melpa.org/packages/"))
    #+end_src
 
    Once you've created the ~.emacs~ file, you can start
@@ -431,7 +433,7 @@
    interesting Emacs package per week to class for you to try if you
    like. But even just by using Emacs as your editor for assignments,
    you'll become quite an expert, [[https://hackernoon.com/8-reasons-why-emacs-is-the-best-text-editor-for-programming-0w4o37ld][almost a "hacker"]] (Wulff, 2021).
-   
+
 ** Create sample notebook
 
    To create a notebook using Org-mode, create an ~.org~ file. Then
@@ -686,49 +688,38 @@
   * Getting used to Emacs
 
 * References
-
-  Biggs/Donovan (November 9, 2020). Modern IDEs are magic. Why are so
-  many coders still using Vim and Emacs? [Blog]. URL:
-  [[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][stackoverflow.org]].
-
-  DistroTube (October 4, 2019). Switching to GNU Emacs [video]. [[https://youtu.be/Y8koAgkBEnM][URL:
-  youtu.be/Y8koAgkBEnM]].
-
-  Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
-  Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
-
-  GNU Emacs, an extensible, customizable, free/libre text editor. [[https://gnu.org/software/emacs][URL:
-  gnu.org/software/emacs.]].
-
-  GCC, the GNU Compiler Collection. [[https://gcc.gnu.org][URL: gcc.gnu.org.]]
-
-  Kenlon (March 10, 2020). Getting started with Emacs [blog]. [[https://opensource.com/article/20/3/getting-started-emacs][URL:
-  opensource.com.]]
-
-  MinGW-w64 - Minimal GCC for Windows. A complete runtime environment
-  for GCC & LLVM for 32 and 64 bit Windows. [[https://mingw-w64.org][URL: mingw-w64.org]].
-  
-  Steinhart (2019). The Secret Life of Programs. NoStarch Press. [[https://nostarch.com/foundationsofcomp][URL:
-  nostarch.com.]]
-
-  System Crafters (March 8, 2021). The Absolute Beginner's Guide to
-  Emacs [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
-
-  Timachi (Dec 7, 2019). Why I switched from VScode to Emacs | Why I
-  switched from VScode to Emacs [blog]. [[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][URL: hadi.timachi.com]].
-  
-  Wilson (November 28, 2021). M-x Forever: Why Emacs will outlast text
-  editor trends. Emacs conference 2021 [video]. [[https://youtu.be/9ahR5K_wkNQ][URL:
-  youtu.be/9ahR5K_wkNQ]].
-
-  Wulff (Jul 27, 2021). 8 Reasons Why Emacs is the Best Text Editor
-  for Programming [blog]. [[https://hackernoon.com/8-reasons-why-emacs-is-the-best-text-editor-for-programming-0w4o37ld][URL: hackernoon.com]].
-
-  xkcd (n.d.). A webcomic of romance, sarcasm, math, and language
-  [website]. [[https://xkcd.com][URL: xkcd.com]].
-
-  Zamboni (March 21, 2018). Beautifying Org Mode in Emacs [blog]. [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][URL:
-  zzamboni.org]].
+  * Biggs/Donovan (November 9, 2020). Modern IDEs are magic. Why are
+    so many coders still using Vim and Emacs? [Blog]. URL:
+    [[https://stackoverflow.blog/2020/11/09/modern-ide-vs-vim-emacs/][stackoverflow.org]].
+  * DistroTube (October 4, 2019). Switching to GNU Emacs [video]. [[https://youtu.be/Y8koAgkBEnM][URL:
+    youtu.be/Y8koAgkBEnM]].
+  * Galov (August 9, 2021). 111+ Linux Statistics and Facts - Linux
+    Rocks! [blog]. [[https://hostingtribunal.com/blog/linux-statistics/#gref][URL: hostingtribunal.com]].
+  * GCC, the GNU Compiler Collection. [[https://gcc.gnu.org][URL: gcc.gnu.org.]]
+  * GitHub (Dec 19, 2016). What is GitHub? [video]. [[https://youtu.be/w3jLJU7DT5E][URL:
+    youtu.be/w3jLJU7DT5E]].
+  * GNU Emacs, an extensible, customizable, free/libre text
+    editor. [[https://gnu.org/software/emacs][URL: gnu.org/software/emacs.]]
+  * Kenlon (March 10, 2020). Getting started with Emacs [blog]. [[https://opensource.com/article/20/3/getting-started-emacs][URL:
+    opensource.com.]]
+  * MinGW-w64 - Minimal GCC for Windows. A complete runtime
+    environment for GCC & LLVM for 32 and 64 bit Windows. [[https://mingw-w64.org][URL:
+    mingw-w64.org]].
+  * Steinhart (2019). The Secret Life of Programs. NoStarch
+    Press. [[https://nostarch.com/foundationsofcomp][URL: nostarch.com.]]
+  * System Crafters (March 8, 2021). The Absolute Beginner's Guide to
+    Emacs [video]. [[https://youtu.be/48JlgiBpw_I][URL: youtu.be/48JlgiBpw_I]].
+  * System Crafters (November 28, 2021). M-x Forever: Why Emacs will
+    outlast text editor trends. Emacs conference 2021 [video]. [[https://youtu.be/9ahR5K_wkNQ][URL:
+    youtu.be/9ahR5K_wkNQ]].
+  * Timachi (Dec 7, 2019). Why I switched from VScode to Emacs | Why I
+    switched from VScode to Emacs [blog]. [[https://hadi.timachi.com/2019/12/07/Why_I_switched_from_VScode_to_Emacs][URL: hadi.timachi.com]].
+  * Wulff (Jul 27, 2021). 8 Reasons Why Emacs is the Best Text Editor
+    for Programming [blog]. [[https://hackernoon.com/8-reasons-why-emacs-is-the-best-text-editor-for-programming-0w4o37ld][URL: hackernoon.com]].
+  * xkcd (n.d.). A webcomic of romance, sarcasm, math, and language
+    [website]. [[https://xkcd.com][URL: xkcd.com]].
+  * Zamboni (March 21, 2018). Beautifying Org Mode in Emacs
+    [blog]. [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][URL: zzamboni.org]].
 
 * Footnotes
 
@@ -755,14 +746,14 @@ mode - something that can also be done with the key sequence ~C-x h
 C-M-\~ (~mark-whole-buffer + indent-region~).
 
 #+begin_src emacs-lisp
-;; re-indenting of whole buffer according to mode
-(defun iwb ()
-  "indent whole buffer"
-  (interactive)
-  (delete-trailing-whitespace)
-  (indent-region (point-min) (point-max) nil)
-  (untabify (point-min) (point-max))
-  )
+  ;; re-indenting of whole buffer according to mode
+  (defun iwb ()
+    "indent whole buffer"
+    (interactive)
+    (delete-trailing-whitespace)
+    (indent-region (point-min) (point-max) nil)
+    (untabify (point-min) (point-max))
+    )
 #+end_src
 
 [fn:5]Emacs Lisp is a Lisp dialect. Lisp was one of the first

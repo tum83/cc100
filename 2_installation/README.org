@@ -107,7 +107,7 @@
    * [[https://github.com][Sign up with GitHub]] - use Lyon Email
    * Pick an available username *using your own first and last name*,
      e.g. ~MarcusBirkenkrahe~, or ~DonaldTrump~
-   * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] (FAQ)
+   * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] ([[https://github.com/birkenkrahe/org/blob/master/FAQ.md#completing-the-github-hello-world-exercise][FAQ]])
    * Give me your GitHub username so that I can add you as a
      collaborator to my private ~cc100~ repository
    * [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][Create an issue]] from the [[https://github.com/birkenkrahe/cc100/issues][~cc100~ repository]] like in the example

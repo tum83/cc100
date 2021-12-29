@@ -3,7 +3,7 @@
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
 #+STARTUP:overview
 #+OPTIONS: toc:nil
-#+OPTIONS:hideblocks
+#+STARTUP: hideblocks
 #+INFOJS_OPT: :view:info
 * What are you going to learn?
 
@@ -15,8 +15,6 @@
   * Compiler workflow
   * Shell execution
   * Syntax highlighting
-
-    
   -----
 * Program structure
 
@@ -25,46 +23,43 @@
 
   (Image source: Collingbourne, 2017)
 
-* Program: Printing a Pun
+* Hello world program
 
   * You can run the code block below ([[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-C.html][more on C code blocks]])
   * What happens here:
-    - The standard input/output library is included
-    - A function without arguments is defined
-    - A string is printed out
-    - If successful, the program returns ~0~
+    
+    * A header file (~stdio.h~) is included for input/output    
+    * A function (~main~) without arguments (~void~) is defined 
+    * A string (~"..."~) is printed out                         
+    * A new-line is added at the end (~\n~)                     
+    * If successful, the program returns the value ~0~          
 
   #+begin_src C :exports both
-
     #include <stdio.h>
-
-    int main(void)
+    int main(void) 
     {
-      printf("To C or not to C: that is the question.\n");
+      printf("Hello world\n");
       return 0;
     }
-
-  #+end_src
+    #+end_src
 
   #+RESULTS:
-  : To C or not to C: that is the question.
+  : Hello world
 
   The function could have been written as ~int main(int argc, char **argv)~
   as well - indicating the possibility of passing two arguments to its
   body for further processing.
 
-  The program could also have been written like this:
+  The program could also have been written much simpler:
 
   #+begin_src C :exports both
-
     #include <stdio.h>
-
-    main()
-    {
-      printf("hello world\n");
+    main() {
+      printf("Hello world\n");
     }
-
   #+end_src
+
+  #+RESULTS:
 
   Alas, in Org-mode, this program will not compile, though outside of
   Org-mode, it will (with a warning). Try it!
@@ -79,6 +74,14 @@
   | Run        | The final ~*.exe~ program is a binary (machine) program       |   |
   | Debug      | The debugger controls rule violations along the way           |   |
 
+  I compiled the ~hello.c~ program on a Linux box - the executable is
+  called ~hello.out~. Compare the two executables - what do you
+  notice?
+  
+  [[./img/files.png]]  
+
+  | Challenge: are these executables portable?[fn:3] |
+  
 * Shell execution
 
   * You can also save the code in a program ~pun.c~
@@ -154,32 +157,40 @@
 
 * Code summary
 
-  | CODE                          | EXPLANATION                         |
-  |-------------------------------+-------------------------------------|
-  | ~#include~                    | directive to include other programs |
-  | ~stdio.h~                     | standard input/output header file   |
-  | ~main(void)~                  | main function without argument      |
-  | ~main(int argc, char **argv)~ | main function with two arguments    |
-  | ~return~                      | statement (successful completion)   |
-  | ~void~                        | empty argument - no value           |
-  | ~printf~                      | printing function                   |
-  | ~\n~                          | escape character (new-line)         |
-  | ~/* ... */~  ~//...~          | comments                            |
+  | CODE                          | EXPLANATION                              |
+  |-------------------------------+------------------------------------------|
+  | ~#include~                    | directive to include other programs      |
+  | ~stdio.h~                     | standard input/output header file ([[https://www.tutorialspoint.com/c_standard_library/stdio_h.htm][more]]) |
+  | ~main(void)~                  | main function without argument           |
+  | ~main(int argc, char **argv)~ | main function with two arguments         |
+  | ~return~                      | statement (successful completion)        |
+  | ~void~                        | empty argument - no value                |
+  | ~printf~                      | printing function                        |
+  | ~\n~                          | escape character (new-line)              |
+  | ~/* ... */~  ~//...~          | comments                                 |
 
 * Jargon
 
   | CONCEPT      | EXPLANATION                                  |
   |--------------+----------------------------------------------|
   | Compiler     | translates source code to object code        |
+  |--------------+----------------------------------------------|
   | Linker       | translates object code to machine code       |
+  |--------------+----------------------------------------------|
   | Syntax       | language rules                               |
+  |--------------+----------------------------------------------|
   | Debugger     | checks syntax                                |
+  |--------------+----------------------------------------------|
   | Directive    | starts with ~#~, one line only, no delimiter |
+  |--------------+----------------------------------------------|
   | Preprocessor | processes directives                         |
+  |--------------+----------------------------------------------|
   | Statement    | command to be executed, e.g. ~return~        |
+  |--------------+----------------------------------------------|
   | Delimiter    | ends a statement (in C: semicolon - ;)       |
+  |--------------+----------------------------------------------|
   | Function     | a rule to compute something with arguments   |
-
+  |--------------+----------------------------------------------|
 * What's next
 
 * References
@@ -189,7 +200,15 @@
   King (2008). C Programming - A Modern Approach. Norton. [[http://knking.com/books/c2/index.html][Online:
   knking.com]].
 
+  tutorialspoint.com (n.d.). C Library - <stdio.h> [website]. [[https://www.tutorialspoint.com/c_standard_library/stdio_h.htm][URL:
+  tutorialspoint.com]].
+  
 * Footnotes
+
+[fn:3]Executables are the result of compilation for a specific
+computer architecture and OS. The ~.exe~ program was compiled for
+Windows, the ~.out~ program was compiled for Linux. They will only run
+on these OS.
 
 [fn:1]You can find [[https://emacsthemes.com/][themes for GNU Emacs]] here, and install them
 using ~M-x package-list-packages~.

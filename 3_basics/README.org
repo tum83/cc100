@@ -68,11 +68,17 @@
 
   The machine cannot process ~pun.c~ without help. It must
 
-  | Preprocess | The preprocessor acts on lines beginning with ~#~             |   |
-  | Compile    | The compiler translates instructions into object code         |   |
-  | Link       | The linker combines object code and functions like ~printf()~ |   |
-  | Run        | The final ~*.exe~ program is a binary (machine) program       |   |
-  | Debug      | The debugger controls rule violations along the way           |   |
+  |------------+---------------------------------------------------------------|
+  | Preprocess | The preprocessor acts on lines beginning with ~#~             |
+  |------------+---------------------------------------------------------------|
+  | Compile    | The compiler translates instructions into object code         |
+  |------------+---------------------------------------------------------------|
+  | Link       | The linker combines object code and functions like ~printf()~ |
+  |------------+---------------------------------------------------------------|
+  | Run        | The final ~*.exe~ program is a binary (machine) program       |
+  |------------+---------------------------------------------------------------|
+  | Debug      | The debugger controls rule violations along the way           |
+  |------------+---------------------------------------------------------------|
 
   I compiled the ~hello.c~ program on a Linux box - the executable is
   called ~hello.out~. Compare the two executables - what do you

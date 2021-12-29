@@ -12,8 +12,11 @@
 
   * Program structure
   * Program: Printing a Pun
-  * 
+  * Compiler workflow
+  * Shell execution
+  * Syntax highlighting
 
+    
   -----
 * Program structure
 
@@ -21,16 +24,16 @@
   [[./img/structure.png]]
 
   (Image source: Collingbourne, 2017)
-  
+
 * Program: Printing a Pun
 
-   * You can run the code block below
-   * What happens here:
-     - The standard input/output library is included
-     - A function without arguments is defined
-     - A string is printed out
-     - If successful, the program returns ~0~ 
-    
+  * You can run the code block below ([[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-C.html][more on C code blocks]])
+  * What happens here:
+    - The standard input/output library is included
+    - A function without arguments is defined
+    - A string is printed out
+    - If successful, the program returns ~0~
+
   #+begin_src C :exports both
 
     #include <stdio.h>
@@ -54,29 +57,29 @@
 
   #+begin_src C :exports both
 
-	#include <stdio.h>
+    #include <stdio.h>
 
-	main()
-	{
-	  printf("hello world\n");
-	}
+    main()
+    {
+      printf("hello world\n");
+    }
 
   #+end_src
 
   Alas, in Org-mode, this program will not compile, though outside of
   Org-mode, it will (with a warning). Try it!
-  
-** Compiler workflow
 
-   The machine cannot process ~pun.c~ without help. It must
+* Compiler workflow
 
-   | Preprocess | The preprocessor acts on lines beginning with ~#~             |   |
-   | Compile    | The compiler translates instructions into object code         |   |
-   | Link       | The linker combines object code and functions like ~printf()~ |   |
-   | Run        | The final ~*.exe~ program is a binary (machine) program       |   |
-   | Debug      | The debugger controls rule violations along the way           |   |
+  The machine cannot process ~pun.c~ without help. It must
 
-** Shell execution
+  | Preprocess | The preprocessor acts on lines beginning with ~#~             |   |
+  | Compile    | The compiler translates instructions into object code         |   |
+  | Link       | The linker combines object code and functions like ~printf()~ |   |
+  | Run        | The final ~*.exe~ program is a binary (machine) program       |   |
+  | Debug      | The debugger controls rule violations along the way           |   |
+
+* Shell execution
 
   * You can also save the code in a program ~pun.c~
   * Compile it on the Windows command line or in the Emacs shell:
@@ -93,22 +96,54 @@
 
     * The shell is an Emacs Lisp simulation of a Linux shell (~bash~)
     * Windows ~PowerShell~ would also work (run with ~./pun[.exe]~)
-    
-** Syntax highlighting
 
-   * Notice the slight syntax highlighting difference to ~repl.it~
+* Syntax highlighting
 
-     #+attr_html: :width 330px
-     [[./img/replit.png]]
+  * Notice the slight syntax highlighting difference to ~repl.it~
 
-   * There is no highlighting standard - you should experiment with
-     different themes[fn:1]
-   * Display line numbers with ~display-line-numbers-mode~, and
-     highlight lines with ~hl-line-mode~[fn:2]: 
+    #+attr_html: :width 330px
+    [[./img/replit.png]]
 
-     #+attr_html: :width 600px
-     [[./img/pun.png]]
-     
+  * There is no highlighting standard - you should experiment with
+    different themes[fn:1]
+  * Display line numbers with ~display-line-numbers-mode~, and
+    highlight lines with ~hl-line-mode~[fn:2]:
+
+    #+attr_html: :width 600px
+    [[./img/pun.png]]
+
+* Comments
+
+  Forgetting to terminate a comment may cause the compiler to ignore
+  part of your program - but both syntax highlighting and auto-indent
+  in the editor will tip you off:
+
+  #+begin_src C :exports both :main yes :includes stdio.h
+
+    printf("My "); /* forgot to close this comment ...
+                      printf("cat ");
+                      printf("has ");  /* so it ends here */
+    printf("fleas");
+
+  #+end_src
+
+  #+RESULTS:
+  : My fleas
+
+  Let's fix this:
+
+  #+begin_src C :exports both :main yes :includes stdio.h
+
+    printf("My "); /* forgot to close this comment */
+    printf("cat ");
+    printf("has ");  /* so it ends here */
+    printf("fleas");
+
+  #+end_src
+
+  #+RESULTS:
+  : My cat has fleas
+
 * Concept summary
 
   * C programs must be compiled and linked
@@ -116,7 +151,7 @@
   * C directives begin with a hash mark (~#~)
   * C statements end with a semicolon (~;~)
   * C functions begin and end with parentheses ~{~ and ~}~
-    
+
 * Code summary
 
   | CODE                          | EXPLANATION                         |
@@ -129,7 +164,8 @@
   | ~void~                        | empty argument - no value           |
   | ~printf~                      | printing function                   |
   | ~\n~                          | escape character (new-line)         |
-  
+  | ~/* ... */~  ~//...~          | comments                            |
+
 * Jargon
 
   | CONCEPT      | EXPLANATION                                  |
@@ -152,7 +188,7 @@
 
   King (2008). C Programming - A Modern Approach. Norton. [[http://knking.com/books/c2/index.html][Online:
   knking.com]].
-  
+
 * Footnotes
 
 [fn:1]You can find [[https://emacsthemes.com/][themes for GNU Emacs]] here, and install them
@@ -165,5 +201,5 @@ Emacs:
   ;; always display line numbers
   (global-display-line-numbers-mode)
   ;; enable global highlighting
-  (global-hl-line-mode 1) 
+  (global-hl-line-mode 1)
 #+end_src

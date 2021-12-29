@@ -15,6 +15,7 @@
   * Compiler workflow
   * Shell execution
   * Syntax highlighting
+  * Tangling code
   -----
 * Program structure
 
@@ -25,44 +26,72 @@
 
 * Hello world program
 
-  * You can run the code block below ([[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-C.html][more on C code blocks]])
-  * What happens here:
-    
-    * A header file (~stdio.h~) is included for input/output    
-    * A function (~main~) without arguments (~void~) is defined 
-    * A string (~"..."~) is printed out                         
-    * A new-line is added at the end (~\n~)                     
-    * If successful, the program returns the value ~0~          
+  In this section, we're once again running code blocks from within
+  Org-mode - with two new features:
+  * To distinguish (and reference) code blocks, we will name them
+  * To turn the code block into a source code C file (~.c~)
+  * The workflow of "tangling" and "weaving"[fn:4] looks like this:
 
-  #+begin_src C :exports both
-    #include <stdio.h>
-    int main(void) 
-    {
-      printf("Hello world\n");
-      return 0;
-    }
-    #+end_src
+    #+attr_html: :width 600px
+    [[./img/cweb.png]]
 
-  #+RESULTS:
-  : Hello world
+** Version 1
+   * You can run the code block below ([[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-C.html][more on C code blocks]])
+   * What happens here:
+     - A header file (~stdio.h~) is included for input/output
+     - A function (~main~) without arguments (~void~) is defined
+     - A string (~"..."~) is printed out
+     - A new-line is added at the end (~\n~)
+     - If successful, the program returns the value ~0~
 
-  The function could have been written as ~int main(int argc, char **argv)~
-  as well - indicating the possibility of passing two arguments to its
-  body for further processing.
+   #+begin_src C :exports both
+     #include <stdio.h>
+     int main(void)
+     {
+       printf("Hello world\n");
+       return 0;
+     }
+   #+end_src
 
-  The program could also have been written much simpler:
+   #+RESULTS:
+   : Hello world
 
-  #+begin_src C :exports both
-    #include <stdio.h>
-    main() {
-      printf("Hello world\n");
-    }
-  #+end_src
+** Version 2
 
-  #+RESULTS:
+   The program could also have been written much simpler:
+   * This function ~main~ is missing the ~void~ argument, and the
+     ~int~ (indicating the type of variable returned - an integer).
+   * Alas, in Org-mode, this program will not compile, though outside
+     of Org-mode, it will (with a warning). Try it!
 
-  Alas, in Org-mode, this program will not compile, though outside of
-  Org-mode, it will (with a warning). Try it!
+   #+begin_src C :exports both
+     #include <stdio.h>
+     main()
+     {
+       printf("Hello world\n");
+     }
+   #+end_src
+
+   #+RESULTS:
+
+** Version 3
+
+   The program could also have been written more complicated, like
+   this:
+
+   #+begin_src C :exports both
+     #include <stdio.h>
+
+     int main(int argc, char **argv)
+     {
+       printf("hello world\n");
+       return 0;
+     }
+   #+end_src
+
+   #+RESULTS:
+   : hello world
+
 
 * Compiler workflow
 
@@ -83,11 +112,11 @@
   I compiled the ~hello.c~ program on a Linux box - the executable is
   called ~hello.out~. Compare the two executables - what do you
   notice?
-  
-  [[./img/files.png]]  
+
+  [[./img/files.png]]
 
   | Challenge: are these executables portable?[fn:3] |
-  
+
 * Shell execution
 
   * You can also save the code in a program ~pun.c~
@@ -208,8 +237,13 @@
 
   tutorialspoint.com (n.d.). C Library - <stdio.h> [website]. [[https://www.tutorialspoint.com/c_standard_library/stdio_h.htm][URL:
   tutorialspoint.com]].
-  
+
 * Footnotes
+
+[fn:4] In our case, instead of weaving TeX files (~.tex~) to print, we
+weave Markdown files (~.md~), or WORD (~*.odt~) files, or we
+dispense with the weaving altogether (because the Org-mode files
+look find on GitHub.
 
 [fn:3]Executables are the result of compilation for a specific
 computer architecture and OS. The ~.exe~ program was compiled for

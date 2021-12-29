@@ -55,7 +55,7 @@
   /Image: "K&R" (Kernighan/Ritchie, 1978)/
 
   * By-product of the UNIX operating system 1969 [fn:3]
-  * Developed on DEC PDP-7 (8K words of main memory)0
+  * Developed on DEC PDP-7 (computer with 8K words of main memory)
   * Written originally in assembly language
   * UNIX rewritten in C by 1973 for [[https://en.wikipedia.org/wiki/PDP-11][DEC PDP-11]]
   * Standardization of C, 1973-2018
@@ -124,7 +124,6 @@
    * C always wins the size battle (memory allocation)
    * Some very specialized languages are even faster
 
-
 ** Strengths and weaknesses
 
    | STRENGTH              | WEAKNESS                     |
@@ -143,11 +142,12 @@
   #+attr_html: :width 400px
   [[./img/ccpp.png]]
 
-  | WHAT | C                      | C++                     |
-  |------+------------------------+-------------------------|
-  | TIME | Thompson/Ritchie 1970s | Stroustrup 1980s        |
-  | TYPE | Imperative procedural  | Object-oriented         |
-  | USE  | System programming     | Games, graphics, search |
+  | WHAT | C                      | C++                |
+  |------+------------------------+--------------------|
+  | TIME | Thompson/Ritchie 1970s | Stroustrup 1980s   |
+  | TYPE | Imperative procedural  | Object-oriented    |
+  | GOOD | System programming     | Games and graphics |
+  | USED | Internet of Things     | Flight Software    |
 
   Source: [[lemonaki][Lemonaki, 2021]]
 

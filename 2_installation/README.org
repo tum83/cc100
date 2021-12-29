@@ -625,7 +625,7 @@
    programs in the background. For example, you need some extras to
    generate a PDF file straight from a LaTeX file. ~.odt~ files are
    Apache [[https://www.openoffice.org/][OpenOffice]] files (XML formatted) that can also be opened in
-   Google Docs[fn:13].
+   Google Docs[fn:12].
 
    What always works is HTML (~.html~) export, and Markdown (~.md~)
    export. Markdown is the standard format for GitHub text
@@ -732,10 +732,6 @@
 
 * Footnotes
 
-[fn:13]However, on my Windows 10 PC, WORD refuses to open OpenOffice
-files (perhaps because the package is only available as a 32-bit
-version from [[https://www.openoffice.org/][Apache OpenOffice]]?).  
-
 [fn:1]Code::Blocks, CodeLite, Netbeans, Microsoft Visual Studio (VS),
 are all free IDEs for C/C++, with VS being the most popular one right
 now.
@@ -807,6 +803,10 @@ correct), and an anchor with the link name must be put into the file,
 in this case, the link is ~~/.babel.org~, and the anchor is
 ~<<babel.org>>~
 
-[fn:12]The best way is to find the folder in the file explorer and copy
+[fn:12]However, on my Windows 10 PC, WORD refuses to open OpenOffice
+files (perhaps because the package is only available as a 32-bit
+version from [[https://www.openoffice.org/][Apache OpenOffice]]?).
+
+[fn:13]The best way is to find the folder in the file explorer and copy
 the address as text:
 [[./img/address.png]]

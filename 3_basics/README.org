@@ -9,12 +9,21 @@
 
   * First program
   * Program structure
+    - Directives
+    - Functions
+    - Statements
+    - Delimiters
   * Functions
   * Variables
   * Statements
 
   Source: King (2008) ch. 2 C Fundamentals - see also [[https://docs.google.com/presentation/d/14qvh00aVb_R09_hrQY0EDEK_JLAkgZ0S/edit?usp=sharing&ouid=102963037093118135110&rtpof=true&sd=true][slides (GDrive)]]
   -----
+* Program structure
+
+  #+attr_html: :width 600px
+  [[./img/structure.png]]
+  
 * Program: Printing a Pun
 
    * You can run the code block below
@@ -48,18 +57,6 @@
    | Link       | The linker combines object code and functions like ~printf()~ |   |
    | Run        | The final ~*.exe~ program is a binary (machine) program       |   |
    | Debug      | The debugger controls rule violations along the way           |   |
-   
-** Structure of a program
-
-   C programs look schematically like this:
-   
-   #+begin_example
-   directives
-   int main (void)
-   {
-       statements
-   }
-   #+end_example
 
 ** Shell execution
 
@@ -94,10 +91,19 @@
      #+attr_html: :width 600px
      [[./img/pun.png]]
      
-* Summary
+* Concept summary
 
+  * C programs must be compiled and linked
+  * Programs consist of directives, functions, and statements
   * 
+* Code summary
 
+  | CODE       | EXPLANATION                         |
+  |------------+-------------------------------------|
+  | ~#include~ | directive to include other programs |
+  | ~stdio.h~  | standard input/output header file   |
+  | ~main()~     | main function                       |
+  
 * Jargon
 
   | CONCEPT          | EXPLANATION                                       |

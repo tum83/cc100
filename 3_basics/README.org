@@ -18,6 +18,11 @@
 * Program: Printing a Pun
 
    * You can run the code block below
+   * What happens here:
+     - The standard input/output library is included
+     - A function without arguments is defined
+     - A string is printed out
+     - If successful, the program returns ~0~ 
     
   #+begin_src C
 
@@ -36,6 +41,8 @@
 
 ** Structure of a program
 
+   C programs look schematically like this:
+   
    #+begin_example
    directives
    int main (void)
@@ -62,19 +69,24 @@
     * The shell is an Emacs Lisp simulation of a Linux shell (~bash~)
     * Windows ~PowerShell~ would also work (run with ~./pun[.exe]~)
     
-** Editing aspects
+** Syntax highlighting
 
    * Notice the slight syntax highlighting difference to ~repl.it~
 
      #+attr_html: :width 330px
      [[./img/replit.png]]
 
-   * There is no standard - experiment with different themes[fn:1]
-   * Show line numbers with ~display-line-numbers-mode~[fn:2]
+   * There is no highlighting standard - you should experiment with
+     different themes[fn:1]
+   * Display line numbers with ~display-line-numbers-mode~, and
+     highlight lines with ~hl-line-mode~[fn:2]: 
+
+     #+attr_html: :width 600px
+     [[./img/pun.png]]
      
 * Summary
 
-  *
+  * 
 
 * Jargon
 

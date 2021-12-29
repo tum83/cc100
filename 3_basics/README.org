@@ -39,6 +39,16 @@
   #+RESULTS:
   : To C or not to C: that is the question.
 
+** Compiler workflow
+
+   The machine cannot process ~pun.c~ without help. It must
+
+   | Preprocess | The preprocessor acts on lines beginning with ~#~             |   |
+   | Compile    | The compiler translates instructions into object code         |   |
+   | Link       | The linker combines object code and functions like ~printf()~ |   |
+   | Run        | The final ~*.exe~ program is a binary (machine) program       |   |
+   | Debug      | The debugger controls rule violations along the way           |   |
+   
 ** Structure of a program
 
    C programs look schematically like this:

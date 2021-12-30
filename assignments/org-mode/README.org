@@ -34,7 +34,7 @@
       #+end_example
 
    6) Save the file as ~YourName.org~ (e.g. ~MarcusBirkenkrahe.org~)
-   7) Upload the file to [[https://github.com/birkenkrahe/cc100/tree/main/2_installation/org_mode_assignment][this GitHub repo]]: ~birkenkrahe/cc100/assignments/org-mode~
+   7) Upload the file to [[https://github.com/birkenkrahe/cc100/tree/main/assignments/org-mode][this GitHub repo]]: ~birkenkrahe/cc100/assignments/org-mode~
 
 ** Glossary
 

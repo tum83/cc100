@@ -1,4 +1,80 @@
-* My first Org-mode file
+#+options: toc:nil
+#+options: num:nil
+* Sample solution (R)
 
-  My sample solution will appear here after the deadline.
+*** My first Org-mode file
+
+    * The function ~str()~ prints all variables (column vectors) of a
+      data structure.
+    * In the code block, ~str()~ is applied to the built-in data frame
+      ~mtcars~.
+    * The result shows that ~mtcars~ contains 32 rows (observations)
+      of 11 variables.
+    * The syntax is not highlighted (language keywords like ~str~ and
+      data like ~mtcars~ are not visually distinguished).
+    * The code block header has the following arguments:
+
+      | HEADER ARGUMENT      | MEANING                                                |
+      |----------------------+--------------------------------------------------------|
+      | ~:session *R*~       | Run R in a session in the Emacs buffer ~*R*~           |
+      | ~:var DATA="mtcars"~ | Assign ~mtcars~ to the variable ~DATA~                 |
+      | ~:results output~    | insert output directly in the org file                 |
+      | ~:tangle first.R~    | export source code as R file ~first.R~  ("tangle")     |
+      | ~:exports both~      | both result and source code will be exported           |
+      | ~:comments both~     | link source code and org files, add comments to source |
+
+    #+name: mtcars
+    #+begin_src R :session *R* :var DATA="mtcars" :results output :tangle mtcars.R :exports both :comments both
+      ## print structure of mtcars data frame
+      str(mtcars)
+    #+end_src
+
+    #+RESULTS: mtcars
+    #+begin_example
+
+    'data.frame':       32 obs. of  11 variables:
+     $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+     $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+     $ disp: num  160 160 108 258 360 ...
+     $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+     $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+     $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+     $ qsec: num  16.5 17 18.6 19.4 17 ...
+     $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+     $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+     $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+     $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
+    #+end_example
+
+*** Executing the program on the command line
+
+    In Emacs - provided the ~R~ software is installed and in the ~PATH~:
+    #+begin_example
+    M-x eshell
+    Rscript mtcars.R
+    #+end_example
+
+    In the screenshot, the(script command in buffer ~2~ and tangled
+    file in buffer ~3~, ar highlighted.
+    #+attr_html: :width 600px
+    [[./img/rscript.png]]
+
+*** References
+    * GCC, the GNU Compiler Collection. [[https://gcc.gnu.org][URL: gcc.gnu.org.]]
+    * GitHub: software hosting platform. [[https://github.com][URL: github.com]].
+    * Kernighan, Brian W.; Ritchie, Dennis M. (February 1978). The C
+      Programming Language (1st ed.). Englewood Cliffs, NJ: Prentice
+      Hall. ISBN 0-13-110163-3. [[https://archive.org/details/TheCProgrammingLanguageFirstEdition][URL: archive.org]].
+    * Knuth (1992). Literate Programming. Stanford: CSLI. [[https://www-cs-faculty.stanford.edu/~knuth/lp.html][URL:
+      stanford.edu]].
+    * ~mtcars~: Motor Trend Car Road Tests. [[https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars][URL: rdocumentation.org]].
+    * R Core Team (2021). R: A language and environment for statistical
+      computing. R Foundation for Statistical Computing, Vienna, Austria.
+      [[https://r-project.org][URL: r-project.org]].
+    * ~str~: Compactly Display the Structure of an Arbitrary R
+      Object. [[https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/str][URL: rdocumentation.org]].
+    * tecosaur (n.d.). The Org Manual: 16 Working with Source Code
+      [website]. [[https://orgmode.org/manual/Working-with-Source-Code.html][URL: orgmode.org]].
+
+  
     

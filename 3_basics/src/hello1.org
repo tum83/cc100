@@ -7,13 +7,12 @@
 /*      - A new-line is added at the end (~\n~) */
 /*      - If successful, the program returns the value ~0~ */
 
-/*    #+NAME: hello1 */
 
-/* [[file:../README.org::hello1][hello1]] */
+/* [[file:../README.org::*Hello World Version 1][Hello World Version 1:1]] */
 #include <stdio.h>
 int main(void)
 {
   printf("Hello world\n");
   return 0;
 }
-/* hello1 ends here */
+/* Hello World Version 1:1 ends here */

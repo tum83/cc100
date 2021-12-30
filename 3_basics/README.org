@@ -31,18 +31,28 @@
    #+end_quote
 
    In this section, we're once again running code blocks from within
-   Org-mode - with two new features:
+   Org-mode - with a few new literate programming features:
+
    * To distinguish (and reference) code blocks, we will name them
-     (~#+NAME:~)
+     (~#+NAME:~). The name can can then be referenced anywhere
    * To turn the code block into a source code C file (~.c~), we will
-     add a ~:tangle~ statement to the header
+     add a ~:tangle FILENAME~ statement to the header
+   * To create the tangled (source code) file from a block, use the
+     keys ~C-c C-v t~ (~org-babel-tangle~)
+   * To create the tangled (source code) from a file (all blocks), use
+     the keys ~C-c C-v f~ (~org-babel-tangle-file~)
+   * Since source code files should have comments, we add the header
+     argument ~:comments both~: now, the most recent org block is used
+     as a comment
    * The workflow of "tangling" and "weaving"[fn:4] looks like this:
 
      #+attr_html: :width 600px
      [[./img/cweb.png]]
 
-** Version 1
-   * You can run the code block below ([[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-C.html][more on C code blocks]])
+     [[https://orgmode.org/manual/Extracting-Source-Code.html][Learn more about extracting source code from Org files.]]
+
+** Hello World Version 1
+
    * What happens here:
      - A header file (~stdio.h~) is included for input/output
      - A function (~main~) without arguments (~void~) is defined
@@ -50,19 +60,20 @@
      - A new-line is added at the end (~\n~)
      - If successful, the program returns the value ~0~
 
-   #+begin_src C :exports both
+   #+NAME: hello1
+   #+begin_src C :exports both :tangle ./src/hello1.c :comments both
      #include <stdio.h>
      int main(void)
      {
        printf("Hello world\n");
        return 0;
      }
-   #+end_src
+     #+end_src
 
    #+RESULTS:
    : Hello world
 
-** Version 2
+** Hello World Version 2
 
    The program could also have been written much simpler:
    * This function ~main~ is missing the ~void~ argument, and the
@@ -70,7 +81,8 @@
    * Alas, in Org-mode, this program will not compile, though outside
      of Org-mode, it will (with a warning). Try it!
 
-   #+begin_src C :exports both
+   #+NAME: hello2     
+   #+begin_src C :exports both :tangle ./src/hello2.c :comments both
      #include <stdio.h>
      main()
      {
@@ -80,12 +92,13 @@
 
    #+RESULTS:
 
-** Version 3
+** Hello World Version 3
 
    The program could also have been written more complicated, like
    this:
 
-   #+begin_src C :exports both
+   #+NAME: hello3
+   #+begin_src C :exports both :tangle ./src/hello3.c :comments both
      #include <stdio.h>
 
      int main(int argc, char **argv)

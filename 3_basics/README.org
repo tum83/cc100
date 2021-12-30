@@ -1,10 +1,8 @@
 #+TITLE:C Basics
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:CSC100 Introduction to programming in C/C++
-#+STARTUP:overview
+#+STARTUP:overview hideblocks
 #+OPTIONS: toc:nil
-#+STARTUP: hideblocks
-#+INFOJS_OPT: :view:info
 * What are you going to learn?
 
   This script summarizes and adds to the treatment by King (2008),
@@ -25,15 +23,23 @@
   (Image source: Collingbourne, 2017)
 
 * Hello world program
+** "What a Tangled Web We Weave..."
 
-  In this section, we're once again running code blocks from within
-  Org-mode - with two new features:
-  * To distinguish (and reference) code blocks, we will name them
-  * To turn the code block into a source code C file (~.c~)
-  * The workflow of "tangling" and "weaving"[fn:4] looks like this:
+   #+begin_quote
+   "Oh, what a tangled web we weave, when first we practice to deceive!"
+   (Sir Walter Scott, 1808)
+   #+end_quote
 
-    #+attr_html: :width 600px
-    [[./img/cweb.png]]
+   In this section, we're once again running code blocks from within
+   Org-mode - with two new features:
+   * To distinguish (and reference) code blocks, we will name them
+     (~#+NAME:~)
+   * To turn the code block into a source code C file (~.c~), we will
+     add a ~:tangle~ statement to the header
+   * The workflow of "tangling" and "weaving"[fn:4] looks like this:
+
+     #+attr_html: :width 600px
+     [[./img/cweb.png]]
 
 ** Version 1
    * You can run the code block below ([[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-C.html][more on C code blocks]])
@@ -91,7 +97,6 @@
 
    #+RESULTS:
    : hello world
-
 
 * Compiler workflow
 
@@ -229,21 +234,18 @@
 * What's next
 
 * References
-
-  Collingbourne (2019). The Little Book of C (Rev. 1.2). Dark Neon.
-
-  King (2008). C Programming - A Modern Approach. Norton. [[http://knking.com/books/c2/index.html][Online:
-  knking.com]].
-
-  tutorialspoint.com (n.d.). C Library - <stdio.h> [website]. [[https://www.tutorialspoint.com/c_standard_library/stdio_h.htm][URL:
-  tutorialspoint.com]].
-
+  * Collingbourne (2019). The Little Book of C (Rev. 1.2). Dark Neon.
+  * King (2008). C Programming - A Modern Approach. Norton. [[http://knking.com/books/c2/index.html][Online:
+    knking.com]].
+  * tutorialspoint.com (n.d.). C Library - <stdio.h> [website]. [[https://www.tutorialspoint.com/c_standard_library/stdio_h.htm][URL:
+    tutorialspoint.com]].
 * Footnotes
 
 [fn:4] In our case, instead of weaving TeX files (~.tex~) to print, we
-weave Markdown files (~.md~), or WORD (~*.odt~) files, or we
-dispense with the weaving altogether (because the Org-mode files
-look find on GitHub.
+weave Markdown files (~.md~), or WORD (~*.odt~) files, or we dispense
+with the weaving altogether because Org-mode files (equivalent of the
+~*.w~ or "web" files) look fine on GitHub.
+GitHub.
 
 [fn:3]Executables are the result of compilation for a specific
 computer architecture and OS. The ~.exe~ program was compiled for

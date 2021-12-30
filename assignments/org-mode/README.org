@@ -97,7 +97,7 @@
 
     See screenshot:
     #+attr_html: :width 600px
-    [[../img/rscript.png]]
+    [[./img/rscript.png]]
 
 *** References
     * ~mtcars~: Motor Trend Car Road Tests. [[https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars][URL: rdocumentation.org]].

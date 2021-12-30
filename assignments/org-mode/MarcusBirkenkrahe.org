@@ -2,6 +2,10 @@
 #+options: num:nil
 * Sample solution (R)
 
+  When you look at this solution as a PDF or on GitHub, you will not
+  see the *Org-mode* commands delimited by ~#+~. Org-mode files need to be
+  edited/viewed in GNU Emacs.
+
 *** My first Org-mode file
 
     * The function ~str()~ prints all variables (column vectors) of a
@@ -75,6 +79,3 @@
       Object. [[https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/str][URL: rdocumentation.org]].
     * tecosaur (n.d.). The Org Manual: 16 Working with Source Code
       [website]. [[https://orgmode.org/manual/Working-with-Source-Code.html][URL: orgmode.org]].
-
-  
-    

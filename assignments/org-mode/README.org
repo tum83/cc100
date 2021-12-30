@@ -67,9 +67,7 @@
 
     #+name: first_program
     #+begin_src R :exports both :session :results output :tangle str.R
-
       str(mtcars)
-
     #+end_src
 
     #+RESULTS: first_program
@@ -91,7 +89,7 @@
 
 *** Executing the program on the command line
 
-    In Emacs:
+    In Emacs - provided the ~R~ software is installed and in the ~PATH~:
     #+begin_example
     M-x eshell
     Rscript str.R

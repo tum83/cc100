@@ -61,7 +61,7 @@
     In the screenshot, the(script command in buffer ~2~ and tangled
     file in buffer ~3~, ar highlighted.
     #+attr_html: :width 600px
-    [[./img/rscript.png]]
+    [[./img/rscriptlight.png]]
 
 *** References
     * GCC, the GNU Compiler Collection. [[https://gcc.gnu.org][URL: gcc.gnu.org.]]

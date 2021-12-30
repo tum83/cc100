@@ -3,8 +3,8 @@
 * Sample solution (R)
 
   When you look at this solution as a PDF or on GitHub, you will not
-  see the *Org-mode* commands delimited by ~#+~. Org-mode files need to be
-  edited/viewed in GNU Emacs.
+  see the *Org-mode* commands delimited by ~#+~. Org-mode files are
+  meant to be edited/viewed in GNU Emacs.
 
 *** My first Org-mode file
 

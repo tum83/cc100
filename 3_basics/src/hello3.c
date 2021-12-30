@@ -1,10 +1,10 @@
 /* Hello World Version 3 */
 
 /*    The program could also have been written more complicated: */
-/*    - ~int argc~ is an integer, or single number, argument that could */
-/*      be passed to ~main~ */
+/*    - ~int argc~ is an integer, or single number - the number of */
+/*      arguments that were passed to ~main~ */
 /*    - ~char **argv~ (or ~char *argv[]~) is a pointer that refers to an */
-/*      array of characters - a more complicated data structure */
+/*      array of characters - a more complicated data structure. */
 
 /*    #+NAME: hello3 */
 

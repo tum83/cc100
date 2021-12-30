@@ -6,7 +6,7 @@
 /*    * Alas, in Org-mode, this program will not compile, though outside */
 /*      of Org-mode, it will (with a warning). Try it! */
 
-/*    #+NAME: hello2      */
+/*    #+NAME: hello2 */
 
 /* [[file:../README.org::hello2][hello2]] */
 int main() {

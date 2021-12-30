@@ -56,6 +56,7 @@
    * What happens here:
      - A header file (~stdio.h~) is included for input/output
      - A function (~main~) without arguments (~void~) is defined
+     - The function returns integer data (~int~)
      - A string (~"..."~) is printed out
      - A new-line is added at the end (~\n~)
      - If successful, the program returns the value ~0~
@@ -70,8 +71,8 @@
      }
      #+end_src
 
-   #+RESULTS:
-   : Hello world
+     #+RESULTS: hello1
+     : Hello world
 
 ** Hello World Version 2
 
@@ -90,12 +91,17 @@
      }
    #+end_src
 
+   #+RESULTS: hello2
+
    #+RESULTS:
 
 ** Hello World Version 3
 
-   The program could also have been written more complicated, like
-   this:
+   The program could also have been written more complicated:
+   - ~int argc~ is an integer, or single number, argument that could
+     be passed to ~main~
+   - ~char **argv~ (or ~char *argv[]~) is a pointer that refers to an
+     array of characters - a more complicated data structure
 
    #+NAME: hello3
    #+begin_src C :exports both :tangle ./src/hello3.c :comments both
@@ -108,7 +114,7 @@
      }
    #+end_src
 
-   #+RESULTS:
+   #+RESULTS: hello3
    : hello world
 
 * Compiler workflow

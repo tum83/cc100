@@ -1,4 +1,16 @@
 #+startup: overview hideblocks
+* Org tips
+
+  Putting together some tips as I go along.
+
+* My custom theme
+
+  I really like my current theme - [[https://github.com/aaronjensen/night-owl-emacs]["night owl"]]. To install, type:
+
+  #+begin_example
+    M-x package-install RET night-owl-theme RET
+  #+end_example
+
 * Code block header
 
   You can set the header arguments anywhere in an Org file, and they
@@ -30,15 +42,14 @@
   : hello
 
   [[https://orgmode.org/manual/Using-Header-Arguments.html][See here for more details on header arguments.]]
-* Babel keyword
+* Results format
 
-  The following keyword can also be used to specify settings:
-  
-#+BABEL: :exports both :tangle yes
+  The header argument is ~:results~. Can have different formats ([[https://orgmode.org/manual/Results-of-Evaluation.html][see
+  here]]), best is ~:results raw~. Example:
 
-  #+begin_src C :tangle ./src/hellotangle.c
-    puts("hello");
+  #+begin_src C :main yes :includes stdio.h :results raw
+    puts("hello world");
   #+end_src
 
   #+RESULTS:
-  : hello
+  hello world

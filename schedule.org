@@ -1,5 +1,7 @@
-#+options: toc:nil
+#+options: toc:nil num:nil
+#+startup: hideblocks overview
 * Schedule
+
    | NO | WEEK | DATE       | TOPIC            | ASSIGNMENT            | PROJECT       | GITHUB FOLDER   | KING CHAPTER[fn:2]        | TEST[fn:1] |
    |----+------+------------+------------------+-----------------------+---------------+-----------------+---------------------------+------------|
    |  1 |    1 | Wed-12-Jan | Course / Systems |                       |               | 0_Systems       |                           |            |

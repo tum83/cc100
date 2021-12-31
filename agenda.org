@@ -5,4 +5,10 @@
 #+STARTUP: overview
 * Week 1 - January 12
 
+  #+attr_html: :width 500px
+  [[./img/fivearmies1.jpg]]
   
+  | WHAT     | HOW  | TIME |
+  |----------+------+------|
+  | Syllabus | Info | 15'  |
+  |          |      |      |

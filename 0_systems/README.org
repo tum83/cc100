@@ -17,9 +17,11 @@
   | Operating systems                     | CSC420 | Operating systems = information systems           |
 
   ...which is why I will give this lecture in every single course. I'm
-  sorry if you have to hear it twice or more!
+  sorry if you have to hear it twice or more! I'll make an effort to
+  adapt it to the specific course setting.
 
 * What is a system?
+
   |System = a whole made up of several parts|
 
   #+attr_html: :width 400px
@@ -196,7 +198,7 @@
 
   In this course, we use:
 
-  * GNU Emacs Org-mode files as literate notebooks
+  * GNU Emacs Org-mode files as literate notebooks for code + doc
   * GitHub as collaborative platform that renders Org files
 
 * Summary

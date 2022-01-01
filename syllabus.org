@@ -10,8 +10,8 @@
   * Office: Derby Science Building 210
   * Phone: (870) 307-7254
   * Office hours: Mon/Wed/Fri 12:00-12:30 PM; Tue/Thu 2.30-3.00 PM
-  * Required text: King (2008). C Programming - A Modern Approach. New York:
-    Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]]
+  * Textbook: King (2008). C Programming - A Modern Approach. New
+    York: Norton. [[http://knking.com/books/c2/index.html][Online: knking.com]]
 
     #+attr_html: :width 300px
     [[./img/king.jpg]]
@@ -191,7 +191,7 @@
    - Details about what constitutes acceptable and unacceptable
      student collaboration on graded work.
 
-* TODO Course specific information
+* Course specific information
 ** Assignments and Honor Code[fn:2]
 
    There will be numerous assignments during the semester - e.g.
@@ -269,7 +269,7 @@
 
    Changes are possible - an [[https://github.com/birkenkrahe/cc100/blob/main/schedule.org][updated schedule with is available]].
 
-   | NO | WEEK | DATE       | ASSIGNMENT            | KING CHAPTER              | TEST    |
+   | NO | WEEK | DATE       | ASSIGNMENT            | TEXTBOOK CHAPTER          | TEST    |
    |----+------+------------+-----------------------+---------------------------+---------|
    |  1 |    1 | Wed-12-Jan |                       |                           |         |
    |  2 |      | Fri-14-Jan |                       | 1 Introducing C           | Quiz 1  |

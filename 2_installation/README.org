@@ -151,7 +151,7 @@
    #+attr_html: :width 600px
    [[./img/gh.png]]
 
-* Install a C compiler
+* Install GNU CC
 
   * Compiler & linker are usually bundled
   * [[https://gcc.gnu.org/][~GCC~]] ("GNU cc") is a popular C/C++ compiler
@@ -256,7 +256,7 @@
 
    See also the article "[[https://opensource.com/article/20/3/getting-started-emacs][Getting started with Emacs"]] (Kenlon, 2020),
    and the video "[[https://youtu.be/48JlgiBpw_I][The Absolute Beginner's Guide to Emacs]]" (System
-   Crafters, 2020) with [[https://github.com/birkenkrahe/org/blob/master/emacs_beginner.org][my notes]].
+   Crafters, 2020) with [[https://github.com/birkenkrahe/org/blob/master/emacs/emacs_beginner.org][my notes]].
 
    #+attr_html: :width 400px
    [[./img/desy.jpg]]
@@ -337,7 +337,7 @@
    new tools. Therefore, almost any effort is justified that goes into
    improving your *meta skills*[fn:9] in this area.
 
-* Assignment: install Emacs
+* Install GNU Emacs
   #+attr_html: :width 500px
   [[./img/emacs.png]]
   /Image: GNU Emacs logo. Source: [[https://www.gnu.org/software/emacs/][GNU Project]]/
@@ -380,7 +380,7 @@
   getting started with Emacs for the first time like you:
 
   * [[https://youtu.be/48JlgiBpw_I][The Absolute Beginner's Guide to Emacs]] (System Crafters, 2021) -
-    1hr11min long - time well invested ([[https://github.com/birkenkrahe/org/blob/master/emacs_beginner.org][I made some notes]]).
+    1hr11min long - time well invested ([[https://github.com/birkenkrahe/org/blob/master/emacs/emacs_beginner.org][I made some notes]]).
 
 ** Create configuration file
 
@@ -685,7 +685,7 @@
 * What's next
 
   * First C program
-  * Getting used to Emacs
+  * GNU Emacs Org-mode assignment
 
 * References
   * Biggs/Donovan (November 9, 2020). Modern IDEs are magic. Why are

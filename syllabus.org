@@ -15,7 +15,7 @@
 
     #+attr_html: :width 300px
     [[./img/king.jpg]]
-  
+
 ** Objectives
 
    This course introduces you to system programming using C. We cover
@@ -29,11 +29,11 @@
    (the other two are Python and Java).  We will endeavour to cover
    most of chapters 1-15 of the textbook by King.
 
-    #+attr_html: :width 600px
-    [[./img/power1.png]]
+   #+attr_html: :width 600px
+   [[./img/power1.png]]
 
    /Image: Computer landscape - modified after Steinhart, 2019/
-   
+
 ** Student Learning Outcomes
 
    Students who complete CSC 100.01 "Introduction to programming in
@@ -172,14 +172,16 @@
 
 ** College-Wide COVID-19 Policies for Spring, 2022
 
-   - Masks are mandated for all students in classrooms, laboratories
-     and studios.  They remain optional for all persons on the Lyon
-     campus in all other locations and outside.
+   - Masks are mandated when indoors in all campus buildings,
+     including academic buildings, Edwards Commons, Becknell Gymnasium
+     and residence halls. Refer to the full campus policy online for
+     more details.
    - Participation in community surveillance testing is mandatory.
    - Vaccines are STRONGLY encouraged for all faculty, staff, and
      students. Vaccines are NOT MANDATED for Lyon College community
      members.
 
+     #+begin_quote
    Details specific to this course may be found in the subsequent
    pages of this syllabus. Those details will include at least the
    following:
@@ -190,6 +192,7 @@
    - Any course-specific attendance policies that go beyond the College policy.
    - Details about what constitutes acceptable and unacceptable
      student collaboration on graded work.
+     #+end_quote
 
 * Course specific information
 ** Assignments and Honor Code[fn:2]
@@ -330,19 +333,19 @@
    | 41 |   16 | Mon-02-May |                       | 15 Writing Large Programs |         |
    | 42 |      | Wed-04-May |                       |                           | Quiz 12 |
    |----+------+------------+-----------------------+---------------------------+---------|
-   
+
 * References
 
   King (2008). C Programming (2nd ed). Norton.
 
   Steinhart (2019). The Secret Life of Programs. NoStarch.
-  
+
 * Footnotes
 
 [fn:4]Academic calendar sent by the Provost, Melissa Taverner.
 
-[fn:3]Sent by the Interim Provost, Anthony Grafton. 
+[fn:3]Sent by the Interim Provost, Anthony Grafton. Updated
 
-[fn:2]Taken from David Sonnier with minor modifications. 
+[fn:2]Taken from David Sonnier with minor modifications.
 
 [fn:1]Schedule may change depending on course load and progress.

@@ -18,15 +18,15 @@
 
 * How to use GitHub
 
-  * Register and get added as a collaborator to ~birkenkrahe/cc100~
+  * Register and get added as a collaborator to this repo
   * Complete the GitHub starter course
-  * Fork the ~birkenkrahe/c100~ repo to your own account
+  * Fork this repo to your own GitHub account
   * File access: on desktop/laptop, open ~.org~ files
   * Mobile file access on the mobile GitHub app (you need ~.md~ files,
     which you might have to create yourself)
   * Check regularly (or setup notification) for changes
   * Commit changes to your fork
-  
+
 * History
 
    First offered @Lyon: Spring 2022 (Undergrad). To be offered: Summer

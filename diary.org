@@ -1,7 +1,7 @@
 #+TITLE:CSC100 Diary
 #+AUTHOR: Marcus Birkenkrahe
 #+SUBTITLE: CSC100 Diary
-#+STARTUP: overview
+#+STARTUP: overview hideblocks
 #+options: ^:nil toc:1
 * What is this?
 
@@ -10,3 +10,4 @@
   avoid lengthy emails and to park content that I may want to develop
   later on, if I find the time.
 
+  The public cross-course all-purpose diary is [[https://github.com/birkenkrahe/org/blob/master/diary.org][here in GitHub]].

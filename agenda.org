@@ -6,7 +6,7 @@
 * Week 1 - January 12, 11:00-11:50
 
   #+attr_html: :width 500px
-  [[./img/fivearmies1.jpg]]
+  [[./img/fivearmies.jpg]]
   
   | WHAT     | HOW     | TIME |
   |----------+---------+------|

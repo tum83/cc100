@@ -1,4 +1,4 @@
-#+TITLE:printf
+#+TITLE:Compiler dependencies
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:printf cp. Collinbourne's C for beginners on Udemy
 #+STARTUP: overview hideblocks
@@ -31,7 +31,7 @@
 * Wrong number of data for input
 
   In this example, two arguments are formatted, but three data are put
-  in, namely an extraneous string.
+  in, namely an extraneous string[fn:3].
 
   #+name:pi2
   #+begin_src C :main yes :includes stdio.h :exports both
@@ -52,7 +52,7 @@ printf_error.c:9:8: warning: too many arguments for format [-Wformat-extra-args]
  printf("%d bottles of beer on the %s", 20, "wall", "wall" );
         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   #+end_example
-
+  
 * Org-mode
 
   | Header arguments used |
@@ -63,6 +63,12 @@ printf_error.c:9:8: warning: too many arguments for format [-Wformat-extra-args]
   | :flags -Wall          |
 
 * Footnotes
+
+[fn:3]What the computer really stores when an extra string is put in
+which was not reserved is a so-called ~NULL~ string. What it contains
+is completely unpredictable. This can lead to serious issues when some
+other program tries to access the memory location where ~NULL~ is
+stored, in the belief that its contents are known.
 
 [fn:2]Setting the compiler flag ~-Wall~ generates a suitable warning
 but the compilation is not halted:

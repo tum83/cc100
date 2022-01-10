@@ -23,7 +23,7 @@ gcc 8.1.0, there is no output but also no complaint<sup><a id="fnr.2" class="foo
 # Wrong number of data for input
 
 In this example, two arguments are formatted, but three data are put
-in, namely an extraneous string.
+in, namely an extraneous string<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.
 
     printf("%d bottles of beer on the %s", 20, "wall", "wall" );
 
@@ -95,3 +95,9 @@ but the compilation is not halted:
      printf("%s bottles of beer on the %s", 20, "wall\n");
              ~^                             ~~
              %d
+
+<sup><a id="fn.3" href="#fnr.3">3</a></sup> What the computer really stores when an extra string is put in
+which was not reserved is a so-called `NULL` string. What it contains
+is completely unpredictable. This can lead to serious issues when some
+other program tries to access the memory location where `NULL` is
+stored, in the belief that its contents are known.

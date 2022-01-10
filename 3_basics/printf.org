@@ -10,12 +10,12 @@
   command.
 
   #+name:pi0
-  #+begin_src C :main yes :includes stdio.h :results raw
+  #+begin_src C :main yes :includes stdio.h 
     printf("%d bottles of beer on the %s", 20, "wall\n");
   #+end_src
 
   #+RESULTS: pi0
-  20 bottles of beer on the wall
+  : 20 bottles of beer on the wall
 
 * Wrong format identifier
 

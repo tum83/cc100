@@ -8,8 +8,6 @@ command.
 
     printf("%d bottles of beer on the %s", 20, "wall\n");
 
-20 bottles of beer on the wall
-
 
 # Wrong format identifier
 

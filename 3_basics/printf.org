@@ -5,12 +5,11 @@
 #+OPTIONS: toc:nil num:nil ^:nil
 * Correct ~printf~ command
 
-  This is one of C's weaknesses, and can be demonstrated using the
-  ~printf~ function. The first code block contains the correct
-  command.
+  This example demonstrates one of C's weaknesses using the ~printf~
+  function. The first code block contains the correct command.
 
   #+name:pi0
-  #+begin_src C :main yes :includes stdio.h 
+  #+begin_src C :main yes :includes stdio.h :exports both
     printf("%d bottles of beer on the %s", 20, "wall\n");
   #+end_src
 
@@ -35,7 +34,7 @@
   in, namely an extraneous string.
 
   #+name:pi2
-  #+begin_src C :main yes :includes stdio.h
+  #+begin_src C :main yes :includes stdio.h :exports both
     printf("%d bottles of beer on the %s", 20, "wall", "wall" );
   #+end_src
 
@@ -53,6 +52,15 @@ printf_error.c:9:8: warning: too many arguments for format [-Wformat-extra-args]
  printf("%d bottles of beer on the %s", 20, "wall", "wall" );
         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   #+end_example
+
+* Org-mode
+
+  | Header arguments used |
+  |-----------------------|
+  | :main yes             |
+  | :includes stdio.h     |
+  | :exports both         |
+  | :flags -Wall          |
 
 * Footnotes
 

@@ -2,11 +2,12 @@
 
 # Correct `printf` command
 
-This is one of C's weaknesses, and can be demonstrated using the
-`printf` function. The first code block contains the correct
-command.
+This example demonstrates one of C's weaknesses using the `printf`
+function. The first code block contains the correct command.
 
     printf("%d bottles of beer on the %s", 20, "wall\n");
+
+    20 bottles of beer on the wall
 
 
 # Wrong format identifier
@@ -26,6 +27,8 @@ in, namely an extraneous string.
 
     printf("%d bottles of beer on the %s", 20, "wall", "wall" );
 
+    20 bottles of beer on the wall
+
 Only when using the `-Wall` (all warnings) flag, will the compiler
 show these warnings (not in org-mode, only during a shell
 compilation):
@@ -35,6 +38,43 @@ compilation):
     printf_error.c:9:8: warning: too many arguments for format [-Wformat-extra-args]
      printf("%d bottles of beer on the %s", 20, "wall", "wall" );
             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+# Org-mode
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Header arguments used</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">:main yes</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:includes stdio.h</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:exports both</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:flags -Wall</td>
+</tr>
+</tbody>
+</table>
 
 
 # Footnotes

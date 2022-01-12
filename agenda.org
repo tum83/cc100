@@ -44,16 +44,21 @@
 
    * Syllabus for this course ([[https://lyon.schoology.com/course/5516220926/materials][Schoology]])
 
-** Homework assignments week 1 (11-Jan/13-Jan-2022)
+** Homework assignments week 1 (12/14-Jan-2022)
 
    #+attr_html: :width 600px
    [[./img/homework.png]]
 
-   * *GitHub Hello World Exercise ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#completing-the-github-hello-world-exercise][Info: FAQ]]) - by Thursday 13-Jan!*
-   * DataCamp platform registration ([[https://lyon.schoology.com/course/5516220833/materials][Link: Schoology]])
-   * GNU Emacs installation ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-install-emacs-ess-under-windows-and-macos][Info: FAQ]])
+   * *GitHub Hello World Exercise ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#completing-the-github-hello-world-exercise][Info: FAQ]]) - by Friday 14-Jan!*
+
+   * DataCamp platform registration ([[https://lyon.schoology.com/course/5516220833/materials][Link: Schoology]]) - first
+     assignment due Jan 31, 2022.
+
+   * GNU Emacs installation ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-install-emacs-ess-under-windows-and-macos][Info: FAQ]]) - you need this for an
+     assignment next week.
 
 *** GitHub
+
 **** What is it?
 
      * Software development platform (like GitLab, BitBucket,
@@ -61,7 +66,7 @@
      * Built around Git by Linus Torvalds
      * Bought by Microsoft in 2018 (like OpenAI - home of GPT3)
      * 77 mio users (developers) + 200+ mio software projects
-     * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
+     * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]] - AI-enabled code generator)
 
      Watch: "[[https://youtu.be/w3jLJU7DT5E][What is GitHub?]]" (GitHub, 2016)
 
